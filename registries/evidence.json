@@ -1,1 +1,163 @@
-[]
+[
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "secondary",
+    "id": "EV-COMM-2026-0001",
+    "path": "research/evidence/EV-COMM-2026-0001--goal-audience-context.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "communication-effectiveness",
+    "retrieved": "2026-07-30",
+    "source_author": "National Academies of Sciences, Engineering, and Medicine",
+    "source_date": "2017-01-01",
+    "source_title": "Communicating Science Effectively - A Research Agenda",
+    "source_uri": "https://doi.org/10.17226/23674",
+    "supports": [
+      "HY-COMM-2026-0001",
+      "TH-COMM-2026-0001"
+    ],
+    "tags": [
+      "audience",
+      "goals",
+      "context",
+      "science-communication"
+    ],
+    "title": "Effective communication depends on goal, audience, and context"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-0002",
+    "path": "research/evidence/EV-COMM-2026-0002--usability-outcomes.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "communication-effectiveness",
+    "retrieved": "2026-07-30",
+    "source_author": "International Organization for Standardization",
+    "source_date": "2018-03-01",
+    "source_title": "ISO 9241-11:2018 - Usability - Definitions and concepts",
+    "source_uri": "https://www.iso.org/standard/63500.html",
+    "supports": [
+      "HY-COMM-2026-0001",
+      "TH-COMM-2026-0001"
+    ],
+    "tags": [
+      "usability",
+      "measurement",
+      "task-success"
+    ],
+    "title": "Usability provides context-bound outcome measures"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-0003",
+    "path": "research/evidence/EV-COMM-2026-0003--operational-usability-metrics.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "communication-effectiveness",
+    "retrieved": "2026-07-30",
+    "source_author": "National Institute of Standards and Technology",
+    "source_date": "2010-11-01",
+    "source_title": "NISTIR 7741 - NIST Guide to the Processes Approach for Improving the Usability of Electronic Health Records",
+    "source_uri": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=907313",
+    "supports": [
+      "HY-COMM-2026-0001"
+    ],
+    "tags": [
+      "measurement",
+      "task-success",
+      "errors",
+      "time-on-task"
+    ],
+    "title": "Task success, time, errors, and satisfaction can operationalize usability"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-0004",
+    "path": "research/evidence/EV-COMM-2026-0004--plain-language-trial.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "communication-effectiveness",
+    "retrieved": "2026-07-30",
+    "source_author": "Sayfi et al.",
+    "source_date": "2024-01-01",
+    "source_title": "A multimethods randomized trial found that plain language versions improved adults understanding of health recommendations",
+    "source_uri": "https://doi.org/10.1016/j.jclinepi.2023.11.009",
+    "supports": [
+      "HY-COMM-2026-0002",
+      "TH-COMM-2026-0001"
+    ],
+    "tags": [
+      "plain-language",
+      "randomized-trial",
+      "comprehension"
+    ],
+    "title": "Plain-language effects vary with source material"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "secondary",
+    "id": "EV-COMM-2026-0005",
+    "path": "research/evidence/EV-COMM-2026-0005--plain-language-evidence-gap.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "communication-effectiveness",
+    "retrieved": "2026-07-30",
+    "source_author": "Stoll et al.",
+    "source_date": "2022-06-01",
+    "source_title": "Plain language summaries - A systematic review of theory, guidelines and empirical research",
+    "source_uri": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9170105/",
+    "supports": [
+      "HY-COMM-2026-0002"
+    ],
+    "tags": [
+      "plain-language",
+      "systematic-review",
+      "evidence-gap"
+    ],
+    "title": "Most plain-language-summary criteria lack direct empirical support"
+  },
+  {
+    "confidence": "medium",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-0006",
+    "path": "research/evidence/EV-COMM-2026-0006--accessibility-boundary.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "communication-effectiveness",
+    "retrieved": "2026-07-30",
+    "source_author": "W3C Web Accessibility Initiative",
+    "source_date": "2021-04-29",
+    "source_title": "Cognitive Accessibility Objective - Use Clear and Understandable Content",
+    "source_uri": "https://www.w3.org/WAI/WCAG2/supplemental/objectives/o3-clear-content/",
+    "supports": [
+      "TH-COMM-2026-0001"
+    ],
+    "tags": [
+      "accessibility",
+      "cognitive-accessibility",
+      "clear-language"
+    ],
+    "title": "Clear content is an accessibility requirement with stated limits"
+  }
+]

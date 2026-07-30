@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "author_agent": "codex",
+    "completion": "partial",
+    "confidence": "medium",
+    "created": "2026-07-30",
+    "discipline": [
+      "communication-science",
+      "technical-communication",
+      "human-factors",
+      "cognitive-psychology"
+    ],
+    "id": "RP-COMM-2026-0001",
+    "keywords": [
+      "audience",
+      "objective",
+      "context",
+      "measurement",
+      "procedural-documentation"
+    ],
+    "path": "research/packages/RP-COMM-2026-0001--mission-foundation.md",
+    "priority": "high",
+    "related_documents": [
+      "JR-COMM-2026-0001",
+      "MS-COMM-2026-0001",
+      "TH-COMM-2026-0001"
+    ],
+    "related_projects": [
+      "PROJECT-CHARTER-communication-engineering"
+    ],
+    "research_area": "communication-effectiveness",
+    "status": "review",
+    "superseded_by": [],
+    "supersedes": [],
+    "tags": [
+      "communication-effectiveness",
+      "research-program",
+      "pilot"
+    ],
+    "title": "Communication Engineering mission foundation and first research slice",
+    "updated": "2026-07-30",
+    "version": "0.1.0"
+  }
+]

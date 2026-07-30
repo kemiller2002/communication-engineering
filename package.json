@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "research:build": "research-publisher build --config ./research-publisher.config.mjs",
+    "research:validate": "research-publisher validate --config ./research-publisher.config.mjs"
+  },
+  "devDependencies": {
+    "research-publisher": "git+https://github.com/kemiller2002/research-publisher.git#1fb44a7a0aed0fe8d154a96f87b46c7583755416"
+  }
+}

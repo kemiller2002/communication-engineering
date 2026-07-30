@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "author_agent": "codex",
+    "confidence": "high",
+    "created": "2026-07-30",
+    "id": "DF-COMM-2026-0001",
+    "path": "research/decisions/DF-COMM-2026-0001--portfolio-queue-model.md",
+    "related_documents": [
+      "RP-COMM-2026-0001",
+      "JR-COMM-2026-0002"
+    ],
+    "research_area": "research-portfolio",
+    "status": "accepted",
+    "superseded_by": [],
+    "supersedes": [],
+    "tags": [
+      "portfolio",
+      "queue",
+      "roadmap",
+      "governance"
+    ],
+    "title": "Model the research portfolio as a staged dependency graph",
+    "updated": "2026-07-30",
+    "version": "1.0.0"
+  }
+]

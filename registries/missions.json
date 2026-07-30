@@ -1,1 +1,63 @@
-[]
+[
+  {
+    "artifact_tier": "full-rep",
+    "created": "2026-07-30",
+    "depends_on": [
+      "RP-COMM-2026-0001"
+    ],
+    "discipline": [
+      "technical-communication",
+      "human-factors",
+      "cognitive-psychology"
+    ],
+    "id": "MS-COMM-2026-0001",
+    "outputs": [
+      "research/packages/RP-COMM-2026-0002--procedural-documentation-experiment.md"
+    ],
+    "owner_agent": "unassigned",
+    "path": "missions/backlog/MS-COMM-2026-0001--procedural-documentation-pilot.md",
+    "priority": "high",
+    "related_projects": [
+      "PROJECT-CHARTER-communication-engineering"
+    ],
+    "required_framework": [
+      "framework/REP-SPECIFICATION.md",
+      "framework/policies/RESEARCH-POLICY.md",
+      "framework/policies/EVIDENCE-POLICY.md"
+    ],
+    "research_area": "communication-effectiveness",
+    "status": "proposed",
+    "title": "Select and validate a procedural-documentation pilot"
+  },
+  {
+    "artifact_tier": "full-rep",
+    "created": "2026-07-30",
+    "depends_on": [
+      "RP-COMM-2026-0001"
+    ],
+    "discipline": [
+      "psychometrics",
+      "human-factors",
+      "cognitive-psychology",
+      "decision-science"
+    ],
+    "id": "MS-COMM-2026-0002",
+    "outputs": [
+      "research/packages/RP-COMM-2026-0002--outcome-measure-validity.md"
+    ],
+    "owner_agent": "unassigned",
+    "path": "missions/active/MS-COMM-2026-0002--outcome-measure-validity.md",
+    "priority": "high",
+    "related_projects": [
+      "PROJECT-CHARTER-communication-engineering"
+    ],
+    "required_framework": [
+      "framework/REP-SPECIFICATION.md",
+      "framework/policies/RESEARCH-POLICY.md",
+      "framework/policies/EVIDENCE-POLICY.md"
+    ],
+    "research_area": "communication-measurement",
+    "status": "active",
+    "title": "Validate the communication outcome-measure architecture"
+  }
+]

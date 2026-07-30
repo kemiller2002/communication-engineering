@@ -17,11 +17,24 @@ This repository is a greenfield pilot running Repository Operating System
 ./ros registry check
 ./ros registry build
 ./ros validate
+npm ci
+npm run research:validate
+npm run research:build
 ```
 
 The installed snapshot is self-contained. It does not read from the source ROS
 repository. `.ros/installation.json` records the package version and checksums
 of installed files.
+
+## Research site publishing
+
+Pull requests and pushes to `main` validate and build the research site. Pushes
+to `main` also publish the generated `dist/` directory to GitHub Pages. The
+publication workflow can be run manually from the Actions tab.
+
+Before the first publication, set **Settings → Pages → Build and deployment →
+Source** to **GitHub Actions**. Configure `communication.echelonfoundry.com` as
+the repository's Pages custom domain and point its DNS at GitHub Pages.
 
 ## Pilot rule
 

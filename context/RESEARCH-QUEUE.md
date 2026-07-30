@@ -1,9 +1,30 @@
 # Communication Engineering research queue
 
-| Priority | Question | Decision affected | Discriminating evidence | Status |
-|---:|---|---|---|---|
-| 1 | Which concrete communication problem should be the first vertical slice? | Pilot scope | Candidate comparison against value, risk, and measurability | open |
-| 2 | What does “Communication Engineering” add beyond adjacent fields? | Boundary language | Mechanism and utility comparison with communication theory, HCI, information architecture, rhetoric, and systems engineering | open |
-| 3 | What baseline workflow should ROS be compared against? | Pilot evaluation | Pre-registered lightweight workflow and common outcome measures | open |
-| 4 | Which privacy, security, accessibility, and ethical constraints apply? | Architecture and data use | Data-flow/threat review and user-context analysis | open |
-| 5 | Which outcome measures detect useful communication improvement? | Acceptance criteria | Reliability, comprehension, action accuracy, latency, rework, and harm measures | open |
+This is the compact current-state view. Stable item definitions, relationships,
+scores, exit evidence, and review triggers are in
+[`research/frontier/PORTFOLIO-ROADMAP.md`](../research/frontier/PORTFOLIO-ROADMAP.md).
+The model is governed by `DF-COMM-2026-0001`.
+
+| Tier | ID | Question | Maturity | Confidence | Dependencies | Next evidence |
+|---|---|---|---|---|---|---|
+| P0 | RQ-COMM-003 | Which outcomes validly detect useful communication improvement? | Background Research | Medium | none for scoping | validate operational definitions and pilot metric set |
+| P0 | RQ-COMM-004 | Which ethical, privacy, safety, and accessibility constraints apply? | Scoping | Medium | candidate task/data flow | task-specific harm and data review |
+| P0 | RQ-COMM-001 | Which procedural task and audience should be the first slice? | Scoping | Low for exact task | RQ-003, RQ-004 | user-need evidence and candidate feasibility |
+| P1 | RQ-COMM-005 | What baseline should ROS be compared against? | Scoping | Medium | RQ-001 scope freeze | preregister counterfactual workflow |
+| P1 | RQ-COMM-006 | Is the proposed experiment feasible and sensitive? | Idea | Low | RQ-001, RQ-003, RQ-004 | pilot without floor/ceiling effects |
+| P1 | RQ-COMM-012 | What boundaries distinguish ethical persuasion from manipulation? | Idea | Low | representative use cases | abuse cases and red lines |
+| P2 | RQ-COMM-002 | What does Communication Engineering add beyond adjacent fields? | Idea | Low | two empirical cycles | comparative boundary analysis |
+| P2 | RQ-COMM-007 | What effects do controlled communication variants cause? | Idea | Low | RQ-006 | controlled comparison |
+| P2 | RQ-COMM-008 | What functional communication taxonomy is useful and reliable? | Idea | Low | RQ-002, RQ-007 | classification criteria and agreement test |
+| P2 | RQ-COMM-010 | Which effects generalize across audiences and contexts? | Idea | Low | replicated RQ-007 result | cross-context replication |
+| P2 | RQ-COMM-011 | Why does some documentation remain useful for decades? | Idea | Very Low | corpus and outcome definition | longitudinal study scope |
+| P3 | RQ-COMM-009 | How should AI select communication strategies safely? | Idea | Very Low | RQ-004, RQ-008, RQ-010 | validated inputs and abstention rules |
+
+## Portfolio status
+
+- **Highest-value work:** RQ-COMM-003 and evidence collection for RQ-COMM-001.
+- **Experiment gate:** do not activate MS-COMM-2026-0001 until RQ-COMM-001,
+  RQ-COMM-003, and RQ-COMM-004 meet their exit evidence.
+- **Last review:** 2026-07-30 after RP-COMM-2026-0001.
+- **Next mandatory review:** after the next REP, material contradiction, or
+  experiment outcome; otherwise 2026-08-29 for P0/P1 items.

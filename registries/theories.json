@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "confidence": "medium",
+    "contradicting_evidence": [],
+    "created": "2026-07-30",
+    "derived_from": [
+      "HY-COMM-2026-0001",
+      "HY-COMM-2026-0002"
+    ],
+    "id": "TH-COMM-2026-0001",
+    "path": "research/theories/TH-COMM-2026-0001--conditional-fit.md",
+    "research_area": "communication-effectiveness",
+    "status": "candidate",
+    "superseded_by": [],
+    "supersedes": [],
+    "supporting_evidence": [
+      "EV-COMM-2026-0001",
+      "EV-COMM-2026-0002",
+      "EV-COMM-2026-0003",
+      "EV-COMM-2026-0004",
+      "EV-COMM-2026-0005",
+      "EV-COMM-2026-0006"
+    ],
+    "title": "Conditional-fit model of communication effectiveness",
+    "updated": "2026-07-30",
+    "version": "0.1.0"
+  }
+]
