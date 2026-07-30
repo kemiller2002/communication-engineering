@@ -7,7 +7,7 @@ The model is governed by `DF-COMM-2026-0001`.
 
 | Tier | ID | Question | Maturity | Confidence | Dependencies | Next evidence |
 |---|---|---|---|---|---|---|
-| P0 | RQ-COMM-003 | Which outcomes validly detect useful communication improvement? | Background Research | Medium | none for scoping | validate operational definitions and pilot metric set |
+| P0 | RQ-COMM-003 | Which outcomes validly detect useful communication improvement? | Deep Investigation | Medium | RQ-001 candidate tasks for validation | test scoring reliability, sensitivity, burden, and accessibility |
 | P0 | RQ-COMM-004 | Which ethical, privacy, safety, and accessibility constraints apply? | Scoping | Medium | candidate task/data flow | task-specific harm and data review |
 | P0 | RQ-COMM-001 | Which procedural task and audience should be the first slice? | Scoping | Low for exact task | RQ-003, RQ-004 | user-need evidence and candidate feasibility |
 | P1 | RQ-COMM-005 | What baseline should ROS be compared against? | Scoping | Medium | RQ-001 scope freeze | preregister counterfactual workflow |
@@ -22,9 +22,11 @@ The model is governed by `DF-COMM-2026-0001`.
 
 ## Portfolio status
 
-- **Highest-value work:** RQ-COMM-003 and evidence collection for RQ-COMM-001.
+- **Highest-value work:** obtain named-audience/task evidence for RQ-COMM-001,
+  then use it to complete task-specific validation for RQ-COMM-003.
 - **Experiment gate:** do not activate MS-COMM-2026-0001 until RQ-COMM-001,
   RQ-COMM-003, and RQ-COMM-004 meet their exit evidence.
-- **Last review:** 2026-07-30 after RP-COMM-2026-0001.
+- **Last review:** 2026-07-30 after partial RP-COMM-2026-0002. The primary
+  measurement hierarchy is resolved provisionally; feasibility remains open.
 - **Next mandatory review:** after the next REP, material contradiction, or
   experiment outcome; otherwise 2026-08-29 for P0/P1 items.

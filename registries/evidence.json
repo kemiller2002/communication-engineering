@@ -159,5 +159,114 @@
       "clear-language"
     ],
     "title": "Clear content is an accessibility requirement with stated limits"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-0007",
+    "path": "research/evidence/EV-COMM-2026-0007--critical-task-measures.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "communication-measurement",
+    "retrieved": "2026-07-30",
+    "source_author": "Lowry et al., National Institute of Standards and Technology",
+    "source_date": "2012-02-01",
+    "source_title": "Technical Evaluation, Testing, and Validation of the Usability of Electronic Health Records (NISTIR 7804)",
+    "source_uri": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=909701",
+    "supports": [
+      "HY-COMM-2026-0003"
+    ],
+    "tags": [
+      "measurement",
+      "task-success",
+      "assistance",
+      "critical-errors",
+      "time-on-task"
+    ],
+    "title": "Validation should separate unassisted completion, assistance, critical errors, and time"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-0008",
+    "path": "research/evidence/EV-COMM-2026-0008--critical-error-observation.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "communication-measurement",
+    "retrieved": "2026-07-30",
+    "source_author": "U.S. Food and Drug Administration",
+    "source_date": "2016-02-03",
+    "source_title": "Applying Human Factors and Usability Engineering to Medical Devices",
+    "source_uri": "https://www.fda.gov/files/medical%20devices/published/Applying-Human-Factors-and-Usability-Engineering-to-Medical-Devices---Guidance-for-Industry-and-Food-and-Drug-Administration-Staff.pdf",
+    "supports": [
+      "HY-COMM-2026-0003"
+    ],
+    "tags": [
+      "measurement",
+      "critical-errors",
+      "observation",
+      "risk"
+    ],
+    "title": "Critical errors require observation because participants may not recognize them"
+  },
+  {
+    "confidence": "medium",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-0009",
+    "path": "research/evidence/EV-COMM-2026-0009--subjective-objective-divergence.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "communication-measurement",
+    "retrieved": "2026-07-30",
+    "source_author": "Yen and Bakken",
+    "source_date": "2012-01-01",
+    "source_title": "A Pilot Study on Usability Analysis of Emergency Department Information System by Nurses",
+    "source_uri": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3613014/",
+    "supports": [
+      "HY-COMM-2026-0003"
+    ],
+    "tags": [
+      "measurement",
+      "satisfaction",
+      "task-performance",
+      "metric-divergence"
+    ],
+    "title": "Subjective task ratings can correlate weakly with observed performance"
+  },
+  {
+    "confidence": "medium",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "secondary",
+    "id": "EV-COMM-2026-0010",
+    "path": "research/evidence/EV-COMM-2026-0010--delayed-learning-claims.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "communication-measurement",
+    "retrieved": "2026-07-30",
+    "source_author": "Pashler et al., Institute of Education Sciences",
+    "source_date": "2007-09-01",
+    "source_title": "Organizing Instruction and Study to Improve Student Learning",
+    "source_uri": "https://ies.ed.gov/ncee/WWC/Docs/PracticeGuide/20072004.pdf",
+    "supports": [
+      "HY-COMM-2026-0003"
+    ],
+    "tags": [
+      "measurement",
+      "retention",
+      "transfer",
+      "learning"
+    ],
+    "title": "Durable learning claims require delayed or transfer-sensitive assessment"
   }
 ]

@@ -1,6 +1,6 @@
 # Communication Engineering portfolio roadmap
 
-**Portfolio version:** 0.1.0  
+**Portfolio version:** 0.2.0
 **Updated:** 2026-07-30  
 **Authority:** mutable frontier view governed by DF-COMM-2026-0001  
 **Program objective:** develop and validate a context-sensitive framework that
@@ -40,7 +40,7 @@ flowchart TD
     RQ008["RQ-COMM-008<br/>Build functional taxonomy"]
     RQ009["RQ-COMM-009<br/>Design AI selection model"]
     RQ010["RQ-COMM-010<br/>Validate across contexts"]
-    RQ003 --> RQ001
+    RQ001 --> RQ003
     RQ004 --> RQ001
     RQ001 --> RQ006
     RQ003 --> RQ006
@@ -105,20 +105,24 @@ flowchart TD
 
 - **Parent:** program objective
 - **Children:** RQ-COMM-001, RQ-COMM-006, RQ-COMM-007
-- **Maturity:** Background Research
+- **Maturity:** Deep Investigation
 - **Priority:** P0; score 14/15
-- **Supporting evidence:** EV-COMM-2026-0001 through 0005
-- **Contradicting evidence:** EV-COMM-2026-0004 shows metric divergence
+- **Supporting evidence:** EV-COMM-2026-0001 through 0005 and 0007 through
+  0010; HY-COMM-2026-0003
+- **Contradicting evidence:** EV-COMM-2026-0004 and 0009 show metric divergence;
+  EV-COMM-2026-0007 contradicts universal use of time
 - **Dependencies:** none for scoping; task selection for validation
 - **Related research:** psychometrics, usability, learning science, decision
   science
-- **Produced artifacts:** preliminary matrix below; RP-COMM-2026-0001;
-  active mission MS-COMM-2026-0002
+- **Produced artifacts:** preliminary matrix below; RP-COMM-2026-0001 and
+  0002; active mission MS-COMM-2026-0002
 - **Engineering enabled:** scoring rubric, instrumentation, acceptance tests
 - **Confidence:** Medium
-- **Largest uncertainty:** minimum metric set that resists proxy optimization
-- **Next action:** validate operational definitions and choose primary/guardrail
-  metrics for RQ-COMM-006
+- **Largest uncertainty:** task-specific reliability, sensitivity, burden, and
+  accessibility feasibility
+- **Next action:** apply the RP-COMM-2026-0002 scoring specification to three
+  RQ-COMM-001 candidate tasks, then run an independent-rater and floor/ceiling
+  feasibility check
 - **Exit evidence:** reliability, validity, sensitivity, burden, and failure-mode
   assessment for each selected measure
 - **Review trigger:** primary outcome chosen or pilot produces metric conflict
@@ -128,7 +132,7 @@ Preliminary outcome architecture:
 | Communication purpose | Primary candidate outcome | Guardrails | Common invalid proxy |
 |---|---|---|---|
 | Inform | accurate comprehension | calibration, accessibility | reading level |
-| Instruct | unassisted correct task completion | critical errors, time, retention | preference |
+| Instruct | unassisted correct task completion | critical errors, assistance, accessibility | preference or speed alone |
 | Teach | delayed transfer to a new problem | misconceptions, effort | immediate recall |
 | Support a decision | decision quality relative to stated values/evidence | uncertainty understanding, harm | conversion |
 | Persuade ethically | informed, autonomous attitude/action change | truth, coercion, subgroup harm | engagement |
@@ -181,14 +185,15 @@ Preliminary outcome architecture:
 - **Children:** RQ-COMM-007
 - **Maturity:** Idea
 - **Priority:** P1; score 10/15
-- **Supporting evidence:** HY-COMM-2026-0001
+- **Supporting evidence:** HY-COMM-2026-0001 and 0003
 - **Contradicting evidence:** none
 - **Dependencies:** RQ-COMM-001, 003, 004
 - **Related research:** MS-COMM-2026-0001
 - **Produced artifacts:** planned EX-COMM-2026-0001
 - **Engineering enabled:** frozen experimental harness
 - **Confidence:** Low before task selection
-- **Largest uncertainty:** effect sensitivity and participant burden
+- **Largest uncertainty:** scoring reliability, effect sensitivity, and
+  participant burden
 - **Next action:** remain blocked from activation until dependencies exit
 - **Exit evidence:** executable protocol, usable scoring, acceptable burden, no
   floor/ceiling effect
@@ -204,7 +209,7 @@ Preliminary outcome architecture:
 - **Contradicting evidence:** none
 - **Dependencies:** successful RQ-COMM-006 and analysis plan
 - **Related research:** HY-COMM-2026-0002
-- **Produced artifacts:** planned RP-COMM-2026-0002
+- **Produced artifacts:** planned RP-COMM-2026-0003
 - **Engineering enabled:** evidence-based document transformation
 - **Confidence:** Low
 - **Largest uncertainty:** causal separation of wording, structure, and visuals
@@ -333,7 +338,9 @@ are invalid, or boundary conditions narrow materially.
 
 ## Current portfolio decision
 
-Activate MS-COMM-2026-0002 to advance RQ-COMM-003 in parallel with evidence
-gathering for RQ-COMM-001.
+Continue MS-COMM-2026-0002 at Deep Investigation. Its desk-research phase
+selected an outcome vector, but task-specific validity remains blocked on
+RQ-COMM-001 candidate tasks. The highest-value next input is evidence from a
+named audience and comparison of three candidate tasks.
 Do not activate the participant experiment until RQ-COMM-001, 003, and 004
 meet their exit evidence.

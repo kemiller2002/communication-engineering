@@ -40,5 +40,50 @@
     "title": "Communication Engineering mission foundation and first research slice",
     "updated": "2026-07-30",
     "version": "0.1.0"
+  },
+  {
+    "author_agent": "codex",
+    "completion": "partial",
+    "confidence": "medium",
+    "created": "2026-07-30",
+    "discipline": [
+      "psychometrics",
+      "human-factors",
+      "cognitive-psychology",
+      "decision-science"
+    ],
+    "id": "RP-COMM-2026-0002",
+    "keywords": [
+      "task-success",
+      "critical-errors",
+      "assistance",
+      "time-on-task",
+      "satisfaction",
+      "retention"
+    ],
+    "path": "research/packages/RP-COMM-2026-0002--outcome-measure-validity.md",
+    "priority": "high",
+    "related_documents": [
+      "MS-COMM-2026-0002",
+      "JR-COMM-2026-0003",
+      "HY-COMM-2026-0003",
+      "TH-COMM-2026-0001"
+    ],
+    "related_projects": [
+      "PROJECT-CHARTER-communication-engineering"
+    ],
+    "research_area": "communication-measurement",
+    "status": "review",
+    "superseded_by": [],
+    "supersedes": [],
+    "tags": [
+      "measurement",
+      "validity",
+      "procedural-documentation",
+      "usability"
+    ],
+    "title": "Procedural communication outcome-measure architecture",
+    "updated": "2026-07-30",
+    "version": "0.1.0"
   }
 ]

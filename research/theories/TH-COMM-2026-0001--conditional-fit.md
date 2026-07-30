@@ -2,13 +2,13 @@
 id: TH-COMM-2026-0001
 title: Conditional-fit model of communication effectiveness
 research_area: communication-effectiveness
-version: 0.1.0
+version: 0.2.0
 status: candidate
 confidence: medium
 created: 2026-07-30
 updated: 2026-07-30
-derived_from: [HY-COMM-2026-0001, HY-COMM-2026-0002]
-supporting_evidence: [EV-COMM-2026-0001, EV-COMM-2026-0002, EV-COMM-2026-0003, EV-COMM-2026-0004, EV-COMM-2026-0005, EV-COMM-2026-0006]
+derived_from: [HY-COMM-2026-0001, HY-COMM-2026-0002, HY-COMM-2026-0003]
+supporting_evidence: [EV-COMM-2026-0001, EV-COMM-2026-0002, EV-COMM-2026-0003, EV-COMM-2026-0004, EV-COMM-2026-0005, EV-COMM-2026-0006, EV-COMM-2026-0007, EV-COMM-2026-0008, EV-COMM-2026-0009, EV-COMM-2026-0010]
 contradicting_evidence: []
 supersedes: []
 superseded_by: []
@@ -34,6 +34,8 @@ An audience interprets signals using attention, prior knowledge, language compet
 - Objective performance, subjective ease, trust, and recall may diverge.
 - Style labels alone will poorly predict outcomes unless paired with audience, goal, task, and context.
 - Accessibility acts as a constraint on acceptable strategies.
+- For immediate procedural execution, correctness, critical errors, assistance,
+  and subjective experience remain distinct; time is conditional on the goal.
 
 ## Failed predictions
 
@@ -41,7 +43,7 @@ None tested experimentally.
 
 ## Supporting evidence
 
-See EV-COMM-2026-0001 through EV-COMM-2026-0006.
+See EV-COMM-2026-0001 through EV-COMM-2026-0010.
 
 ## Contradicting evidence
 
@@ -59,8 +61,12 @@ Medium (0.62 judgment): convergent standards, synthesis, and trial evidence supp
 
 ## Open questions
 
-Which input variables contribute the greatest predictive value? Which constraints are universal? What minimum outcome set prevents Goodhart-style optimization?
+Which input variables contribute the greatest predictive value? Which
+constraints are universal? Can the proposed procedural outcome vector be scored
+reliably and sensitively across tasks?
 
 ## Required updates
 
-Run a bounded procedural experiment and specify a formal context schema before promotion to supported.
+Validate the RP-COMM-2026-0002 scoring specification on candidate tasks, run a
+bounded procedural experiment, and specify a formal context schema before
+promotion to supported.

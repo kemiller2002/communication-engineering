@@ -20,6 +20,13 @@ outputs:
 
 # Mission
 
+## Progress update — 2026-07-30
+
+Desk research is complete and partial `RP-COMM-2026-0002` defines the
+provisional measure hierarchy and scoring specification. The mission remains
+active because reliability, sensitivity, burden, and accessibility feasibility
+require candidate tasks and a named audience from RQ-COMM-001.
+
 ## Objective
 
 Determine which outcome measures can validly, reliably, sensitively, and

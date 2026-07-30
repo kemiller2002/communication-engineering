@@ -10,3 +10,5 @@
 | Queue complexity becomes governance overhead without improving decisions | Medium | Medium | Audit the graph model after two cycles; simplify if relationships are not used | Portfolio Director |
 | Experiment begins before outcome validity or harm constraints are defined | Medium | High | Gate MS-COMM-2026-0001 on RQ-COMM-001, RQ-COMM-003, and RQ-COMM-004 | Portfolio Director |
 | Optimization of a proxy degrades accuracy, autonomy, or accessibility | Medium | High | Require primary outcomes plus guardrails and subgroup/failure analysis | Research owner |
+| Time or satisfaction is treated as evidence of correct procedural performance | Medium | High | Condition time on task purpose and correctness; keep subjective and behavioral outcomes separate | Research owner |
+| A scoring rubric appears objective but has weak rater agreement | Medium | High | Freeze goal/error codes and test independent-rater agreement before the participant experiment | Research owner |

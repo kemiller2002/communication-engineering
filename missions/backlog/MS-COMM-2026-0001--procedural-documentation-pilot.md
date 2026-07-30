@@ -15,7 +15,7 @@ required_framework:
   - framework/policies/RESEARCH-POLICY.md
   - framework/policies/EVIDENCE-POLICY.md
 outputs:
-  - research/packages/RP-COMM-2026-0002--procedural-documentation-experiment.md
+  - research/packages/RP-COMM-2026-0003--procedural-documentation-experiment.md
 ---
 
 # Mission

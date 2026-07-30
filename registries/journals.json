@@ -57,5 +57,32 @@
       "TH-COMM-2026-0001"
     ],
     "title": "Initial portfolio review and queue normalization"
+  },
+  {
+    "author_agent": "codex",
+    "created": "2026-07-30",
+    "evidence_ids": [
+      "EV-COMM-2026-0007",
+      "EV-COMM-2026-0008",
+      "EV-COMM-2026-0009",
+      "EV-COMM-2026-0010"
+    ],
+    "hypothesis_ids": [
+      "HY-COMM-2026-0003"
+    ],
+    "id": "JR-COMM-2026-0003",
+    "path": "research/journals/JR-COMM-2026-0003--outcome-measure-validity.md",
+    "related_mission": "MS-COMM-2026-0002",
+    "related_package": "RP-COMM-2026-0002",
+    "research_area": "communication-measurement",
+    "tags": [
+      "measurement",
+      "validity",
+      "procedural-documentation"
+    ],
+    "theory_ids": [
+      "TH-COMM-2026-0001"
+    ],
+    "title": "Outcome-measure validity investigation"
   }
 ]
