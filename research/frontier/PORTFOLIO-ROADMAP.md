@@ -1,6 +1,6 @@
 # Communication Engineering portfolio roadmap
 
-**Portfolio version:** 0.2.0
+**Portfolio version:** 0.3.0
 **Updated:** 2026-07-30  
 **Authority:** mutable frontier view governed by DF-COMM-2026-0001  
 **Program objective:** develop and validate a context-sensitive framework that
@@ -40,6 +40,7 @@ flowchart TD
     RQ008["RQ-COMM-008<br/>Build functional taxonomy"]
     RQ009["RQ-COMM-009<br/>Design AI selection model"]
     RQ010["RQ-COMM-010<br/>Validate across contexts"]
+    RQ013["RQ-COMM-013<br/>Compare explanatory progression"]
     RQ001 --> RQ003
     RQ004 --> RQ001
     RQ001 --> RQ006
@@ -50,6 +51,8 @@ flowchart TD
     RQ008 --> RQ009
     RQ007 --> RQ010
     RQ010 --> RQ009
+    RQ013 --> RQ008
+    RQ013 --> RQ010
 ```
 
 ## Portfolio items
@@ -58,7 +61,7 @@ flowchart TD
 
 - **Parent:** program objective
 - **Children:** RQ-COMM-006
-- **Maturity:** Scoping
+- **Maturity:** Deep Investigation
 - **Priority:** P0; score 13/15 (leverage 3, uncertainty 3, unlock 3,
   feasibility 2, risk reduction 2)
 - **Supporting evidence:** EV-COMM-2026-0001 through 0003;
@@ -312,6 +315,34 @@ Preliminary outcome architecture:
   persuasion engineering
 - **Exit evidence:** abuse cases, red lines, review thresholds, contested cases
 - **Review trigger:** any persuasion or behavior-change project
+
+### RQ-COMM-013 — Compare explanatory progression across domains
+
+- **Parent:** comparative program mandate MS-COMM-2026-0003
+- **Children:** RQ-COMM-008, RQ-COMM-010
+- **Maturity:** Scoping
+- **Priority:** P1; score 10/15 (leverage 2, uncertainty 3, unlock 2,
+  feasibility 2, risk reduction 1)
+- **Supporting evidence:** RP-COMM-2026-572D, HY-COMM-2026-D246, and eight new
+  evidence records support bounded textual patterns
+- **Contradicting evidence:** author, genre, era, and domain remain confounded;
+  no comparative audience outcome exists
+- **Dependencies:** independent rubric coding and RP-COMM-2026-0002 outcome
+  guidance
+- **Related research:** rhetoric, genre studies, history of ideas, comparative
+  law, mathematical exposition, technical communication
+- **Produced artifacts:** MS-COMM-2026-0003, completed MS-COMM-2026-0004,
+  RP-COMM-2026-572D, frozen corpus/rubric, matrix, and fit framework
+- **Engineering enabled:** evidence-bounded progression patterns and an initial
+  comparison-matrix schema
+- **Confidence:** Medium for textual patterns; Low for reader effects
+- **Largest uncertainty:** whether architecture predicts purpose-bound outcomes
+  beyond content, genre, and audience expertise
+- **Next action:** run an independent second-rater check on 20 stratified units,
+  then preregister one comparative audience experiment
+- **Exit evidence:** independent coding agreement and an outcome comparison with
+  content parity, accessibility analysis, and falsification target
+- **Review trigger:** rubric failure, subgroup harm, or first audience result
 
 ## Stage gates
 

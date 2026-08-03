@@ -13,6 +13,7 @@ The model is governed by `DF-COMM-2026-0001`.
 | P1 | RQ-COMM-005 | What baseline should ROS be compared against? | Scoping | Medium | RQ-001 scope freeze | preregister counterfactual workflow |
 | P1 | RQ-COMM-006 | Is the proposed experiment feasible and sensitive? | Idea | Low | RQ-001, RQ-003, RQ-004 | pilot without floor/ceiling effects |
 | P1 | RQ-COMM-012 | What boundaries distinguish ethical persuasion from manipulation? | Idea | Low | representative use cases | abuse cases and red lines |
+| P1 | RQ-COMM-013 | Which explanatory-progression mechanisms recur across domains, and where do they fail to transfer? | Deep Investigation | Medium for textual patterns; Low for effects | independent coding and RP-002 measures | second-rater rubric check, then preregister one audience comparison |
 | P2 | RQ-COMM-002 | What does Communication Engineering add beyond adjacent fields? | Idea | Low | two empirical cycles | comparative boundary analysis |
 | P2 | RQ-COMM-007 | What effects do controlled communication variants cause? | Idea | Low | RQ-006 | controlled comparison |
 | P2 | RQ-COMM-008 | What functional communication taxonomy is useful and reliable? | Idea | Low | RQ-002, RQ-007 | classification criteria and agreement test |
@@ -24,9 +25,12 @@ The model is governed by `DF-COMM-2026-0001`.
 
 - **Highest-value work:** obtain named-audience/task evidence for RQ-COMM-001,
   then use it to complete task-specific validation for RQ-COMM-003.
+- **Comparative stream:** `MS-COMM-2026-0003` is the approved program mandate;
+  `MS-COMM-2026-0004` is complete as `RP-COMM-2026-572D`. Its patterns are
+  textual hypotheses until independent coding and audience testing.
 - **Experiment gate:** do not activate MS-COMM-2026-0001 until RQ-COMM-001,
   RQ-COMM-003, and RQ-COMM-004 meet their exit evidence.
-- **Last review:** 2026-07-30 after partial RP-COMM-2026-0002. The primary
-  measurement hierarchy is resolved provisionally; feasibility remains open.
+- **Last review:** 2026-08-02 after RP-COMM-2026-572D. The primary measurement
+  hierarchy is resolved provisionally; comparative outcome validity remains open.
 - **Next mandatory review:** after the next REP, material contradiction, or
   experiment outcome; otherwise 2026-08-29 for P0/P1 items.

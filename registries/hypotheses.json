@@ -66,5 +66,96 @@
       "EV-COMM-2026-0010"
     ],
     "title": "Procedural communication requires a purpose-bound outcome vector"
+  },
+  {
+    "author_agent": "codex",
+    "confidence": "medium",
+    "contradicting_evidence": [],
+    "created": "2026-08-02",
+    "id": "HY-COMM-2026-45A8",
+    "path": "research/hypotheses/HY-COMM-2026-45A8--literary-technique-transfer-requires-inference-contract.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "status": "supported",
+    "superseded_by": [],
+    "supersedes": [],
+    "supporting_evidence": [
+      "EV-COMM-2026-3DFC",
+      "EV-COMM-2026-BDC6",
+      "EV-COMM-2026-3FFC",
+      "EV-COMM-2026-E90A",
+      "EV-COMM-2026-2676"
+    ],
+    "title": "Literary technique transfer requires an explicit inference contract"
+  },
+  {
+    "author_agent": "codex",
+    "confidence": "medium",
+    "contradicting_evidence": [],
+    "created": "2026-08-02",
+    "id": "HY-COMM-2026-CFF5",
+    "path": "research/hypotheses/HY-COMM-2026-CFF5--linear-overview-reference-layer.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "status": "proposed",
+    "superseded_by": [],
+    "supersedes": [],
+    "supporting_evidence": [
+      "EV-COMM-2026-3377",
+      "EV-COMM-2026-E9D5"
+    ],
+    "title": "Mixed-expertise technical audiences benefit from overview plus reference layers"
+  },
+  {
+    "author_agent": "codex",
+    "confidence": "medium",
+    "contradicting_evidence": [],
+    "created": "2026-08-02",
+    "id": "HY-COMM-2026-D246",
+    "path": "research/hypotheses/HY-COMM-2026-D246--proof-obligation-dominates-surface-style.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "status": "supported",
+    "superseded_by": [],
+    "supersedes": [],
+    "supporting_evidence": [
+      "EV-COMM-2026-D6B2",
+      "EV-COMM-2026-6A2D",
+      "EV-COMM-2026-8434",
+      "EV-COMM-2026-5479",
+      "EV-COMM-2026-3377",
+      "EV-COMM-2026-6F00",
+      "EV-COMM-2026-7D8D"
+    ],
+    "title": "Proof obligation predicts progression better than surface style"
+  },
+  {
+    "author_agent": "codex",
+    "confidence": "medium",
+    "contradicting_evidence": [],
+    "created": "2026-08-02",
+    "id": "HY-COMM-2026-F19E",
+    "path": "research/hypotheses/HY-COMM-2026-F19E--situated-authority-limits-literary-transfer.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "status": "supported",
+    "superseded_by": [],
+    "supersedes": [],
+    "supporting_evidence": [
+      "EV-COMM-2026-6A27",
+      "EV-COMM-2026-92F1",
+      "EV-COMM-2026-455B",
+      "EV-COMM-2026-9B6C",
+      "EV-COMM-2026-A4F7"
+    ],
+    "title": "Situated authority limits responsible literary transfer"
   }
 ]

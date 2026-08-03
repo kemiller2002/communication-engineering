@@ -85,5 +85,148 @@
     "title": "Procedural communication outcome-measure architecture",
     "updated": "2026-07-30",
     "version": "0.1.0"
+  },
+  {
+    "author_agent": "codex",
+    "completion": "complete",
+    "confidence": "medium",
+    "created": "2026-08-02",
+    "discipline": [
+      "rhetoric",
+      "history-of-science",
+      "mathematics",
+      "law",
+      "philosophy",
+      "software-engineering"
+    ],
+    "id": "RP-COMM-2026-572D",
+    "keywords": [
+      "writer models",
+      "proof obligation",
+      "audience",
+      "progression",
+      "specification",
+      "explanation"
+    ],
+    "path": "research/packages/RP-COMM-2026-572D--cross-domain-explanatory-progression.md",
+    "priority": "medium",
+    "related_documents": [
+      "MS-COMM-2026-0003",
+      "MS-COMM-2026-0004",
+      "JR-COMM-2026-572D",
+      "DF-COMM-2026-96CF",
+      "TH-COMM-2026-0001"
+    ],
+    "related_projects": [
+      "PROJECT-CHARTER-communication-engineering"
+    ],
+    "research_area": "comparative-communication",
+    "status": "review",
+    "superseded_by": [],
+    "supersedes": [],
+    "tags": [
+      "comparative-writing",
+      "explanatory-progression",
+      "conditional-fit",
+      "purpose-selection"
+    ],
+    "title": "Cross-domain explanatory progression and conditional writer-function selection",
+    "updated": "2026-08-02",
+    "version": "1.0.0"
+  },
+  {
+    "author_agent": "codex",
+    "completion": "complete",
+    "confidence": "medium",
+    "created": "2026-08-02",
+    "discipline": [
+      "literary-studies",
+      "poetry",
+      "science-fiction",
+      "rhetoric"
+    ],
+    "id": "RP-COMM-2026-8FB7",
+    "keywords": [
+      "symbolism",
+      "omission",
+      "ambiguity",
+      "science fiction",
+      "spontaneous prose",
+      "public witness"
+    ],
+    "path": "research/packages/RP-COMM-2026-8FB7--modern-american-literary-functions.md",
+    "priority": "medium",
+    "related_documents": [
+      "MS-COMM-2026-0230",
+      "JR-COMM-2026-2833",
+      "RP-COMM-2026-572D",
+      "TH-COMM-2026-0001"
+    ],
+    "related_projects": [
+      "PROJECT-CHARTER-communication-engineering"
+    ],
+    "research_area": "comparative-communication",
+    "status": "review",
+    "superseded_by": [],
+    "supersedes": [],
+    "tags": [
+      "literary-comparison",
+      "beats",
+      "fitzgerald",
+      "hemingway",
+      "frost",
+      "asimov"
+    ],
+    "title": "Modern American literary functions and transfer boundaries",
+    "updated": "2026-08-02",
+    "version": "1.0.0"
+  },
+  {
+    "author_agent": "codex",
+    "completion": "complete",
+    "confidence": "medium",
+    "created": "2026-08-02",
+    "discipline": [
+      "comparative-literature",
+      "Indigenous-studies",
+      "Black-studies",
+      "queer-studies",
+      "migration-studies",
+      "translation-studies"
+    ],
+    "id": "RP-COMM-2026-EFC6",
+    "keywords": [
+      "women Beats",
+      "Harlem Renaissance",
+      "Black Arts",
+      "Indigenous",
+      "diaspora",
+      "queer",
+      "translation"
+    ],
+    "path": "research/packages/RP-COMM-2026-EFC6--plural-literary-traditions.md",
+    "priority": "high",
+    "related_documents": [
+      "MS-COMM-2026-827E",
+      "JR-COMM-2026-C85D",
+      "RP-COMM-2026-8FB7",
+      "TH-COMM-2026-0001"
+    ],
+    "related_projects": [
+      "PROJECT-CHARTER-communication-engineering"
+    ],
+    "research_area": "comparative-communication",
+    "status": "review",
+    "superseded_by": [],
+    "supersedes": [],
+    "tags": [
+      "canon-expansion",
+      "comparative-literature",
+      "situated-authority",
+      "reading-guide"
+    ],
+    "title": "Plural literary traditions, situated authority, and reading paths",
+    "updated": "2026-08-02",
+    "version": "1.0.0"
   }
 ]

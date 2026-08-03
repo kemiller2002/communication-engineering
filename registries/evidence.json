@@ -268,5 +268,501 @@
       "learning"
     ],
     "title": "Durable learning claims require delayed or transfer-sensitive assessment"
+  },
+  {
+    "confidence": "medium",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-2676",
+    "path": "research/evidence/EV-COMM-2026-2676--beat-rhythm-witness-discovery.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "Allen Ginsberg; Jack Kerouac; Lawrence Ferlinghetti",
+    "source_date": "1958-01-01",
+    "source_title": "Howl; Essentials of Spontaneous Prose; Dog",
+    "source_uri": "https://www.poetryfoundation.org/collections/147552/an-introduction-to-the-beat-poets",
+    "supports": [
+      "HY-COMM-2026-45A8"
+    ],
+    "tags": [
+      "beats",
+      "ginsberg",
+      "kerouac",
+      "ferlinghetti",
+      "rhythm",
+      "witness"
+    ],
+    "title": "Beat practices separate accumulative witness, spontaneous discovery, and civic observation"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-3377",
+    "path": "research/evidence/EV-COMM-2026-3377--rfc-layered-reference-progression.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "R. Fielding, M. Nottingham, and J. Reschke",
+    "source_date": "2022-06-01",
+    "source_title": "RFC 9110 - HTTP Semantics",
+    "source_uri": "https://datatracker.ietf.org/doc/rfc9110/",
+    "supports": [
+      "HY-COMM-2026-CFF5",
+      "HY-COMM-2026-D246"
+    ],
+    "tags": [
+      "rfc",
+      "engineering",
+      "specification",
+      "navigation",
+      "terminology"
+    ],
+    "title": "RFC 9110 uses layered definitions and navigation for expert coordination"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-3DFC",
+    "path": "research/evidence/EV-COMM-2026-3DFC--fitzgerald-symbolic-convergence.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "F. Scott Fitzgerald",
+    "source_date": "1925-04-10",
+    "source_title": "The Great Gatsby",
+    "source_uri": "https://www.gutenberg.org/ebooks/64317",
+    "supports": [
+      "HY-COMM-2026-45A8"
+    ],
+    "tags": [
+      "fitzgerald",
+      "narrative",
+      "symbolism",
+      "delayed-disclosure"
+    ],
+    "title": "Gatsby uses filtered narration and recurring motifs for retrospective synthesis"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-3FFC",
+    "path": "research/evidence/EV-COMM-2026-3FFC--frost-dramatic-irresolution.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "Robert Frost",
+    "source_date": "1914-01-01",
+    "source_title": "Mending Wall and After Apple-Picking",
+    "source_uri": "https://www.poetryfoundation.org/poems/44266/mending-wall",
+    "supports": [
+      "HY-COMM-2026-45A8"
+    ],
+    "tags": [
+      "frost",
+      "poetry",
+      "ambiguity",
+      "countervoice",
+      "proverb"
+    ],
+    "title": "Frost stages unresolved interpretation through concrete labor and countervoice"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "secondary",
+    "id": "EV-COMM-2026-455B",
+    "path": "research/evidence/EV-COMM-2026-455B--indigenous-nation-specific-methods.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "Poetry Foundation and Academy of American Poets editors",
+    "source_date": "2026-01-01",
+    "source_title": "Native American Poetry and Culture author records",
+    "source_uri": "https://www.poetryfoundation.org/collections/144560/native-american-poetry-and-culture",
+    "supports": [
+      "HY-COMM-2026-F19E"
+    ],
+    "tags": [
+      "indigenous-literature",
+      "sovereignty",
+      "nation",
+      "relationality"
+    ],
+    "title": "Indigenous literary methods are nation-specific and relational"
+  },
+  {
+    "confidence": "medium",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-5479",
+    "path": "research/evidence/EV-COMM-2026-5479--descartes-problem-to-rules.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "René Descartes; anonymous 1853 English translation",
+    "source_date": "1853-01-01",
+    "source_title": "Discourse on the Method, Part II",
+    "source_uri": "https://en.wikisource.org/wiki/Discourse_on_the_Method/Part_2",
+    "supports": [
+      "HY-COMM-2026-D246"
+    ],
+    "tags": [
+      "descartes",
+      "philosophy",
+      "method",
+      "narrative",
+      "translation"
+    ],
+    "title": "Descartes moves from narrated predicament to four compressed rules"
+  },
+  {
+    "confidence": "medium",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "secondary",
+    "id": "EV-COMM-2026-6A27",
+    "path": "research/evidence/EV-COMM-2026-6A27--women-beats-distinct-practices.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "Poetry Foundation editors",
+    "source_date": "2026-01-01",
+    "source_title": "Diane di Prima biography and related poet records",
+    "source_uri": "https://www.poetryfoundation.org/poets/diane-di-prima",
+    "supports": [
+      "HY-COMM-2026-F19E"
+    ],
+    "tags": [
+      "women-beats",
+      "diane-di-prima",
+      "joanne-kyger",
+      "ruth-weiss"
+    ],
+    "title": "Women associated with the Beats developed distinct practices obscured by one movement label"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-6A2D",
+    "path": "research/evidence/EV-COMM-2026-6A2D--euclid-visible-dependency-chain.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "Euclid; web edition by David E. Joyce based principally on Heath and Heiberg",
+    "source_date": "1996-01-01",
+    "source_title": "Euclid's Elements, Book I, Proposition 1",
+    "source_uri": "https://mathcs.clarku.edu/~djoyce/elements/bookI/propI1.html",
+    "supports": [
+      "HY-COMM-2026-D246"
+    ],
+    "tags": [
+      "euclid",
+      "mathematics",
+      "proof",
+      "dependencies",
+      "diagram"
+    ],
+    "title": "Euclid I.1 exposes construction and proof dependencies"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "secondary",
+    "id": "EV-COMM-2026-6F00",
+    "path": "research/evidence/EV-COMM-2026-6F00--darwin-argument-interpretations-conflict.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "Gregory Radick",
+    "source_date": "2021-09-14",
+    "source_title": "Causal Efficacy - The Structure of Darwin's Argument Strategy in the Origin of Species",
+    "source_uri": "https://doi.org/10.1017/psa.2021.17",
+    "supports": [
+      "HY-COMM-2026-D246"
+    ],
+    "tags": [
+      "darwin",
+      "competing-interpretations",
+      "argument-structure"
+    ],
+    "title": "Scholars disagree on the global structure of Darwin's long argument"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "secondary",
+    "id": "EV-COMM-2026-7D8D",
+    "path": "research/evidence/EV-COMM-2026-7D8D--descartes-method-practice-boundary.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "David Clemenson and Monte Johnson, Stanford Encyclopedia of Philosophy",
+    "source_date": "2020-06-03",
+    "source_title": "Descartes' Method",
+    "source_uri": "https://plato.stanford.edu/entries/descartes-method/",
+    "supports": [
+      "HY-COMM-2026-D246"
+    ],
+    "tags": [
+      "descartes",
+      "method",
+      "compression",
+      "practice"
+    ],
+    "title": "Descartes's four rules are a practice-dependent abridgment"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-8434",
+    "path": "research/evidence/EV-COMM-2026-8434--brown-institutional-progression.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "Supreme Court of the United States; opinion by Chief Justice Warren",
+    "source_date": "1954-05-17",
+    "source_title": "Brown v. Board of Education, 347 U.S. 483",
+    "source_uri": "https://www.govinfo.gov/app/details/USREPORTS-347/USREPORTS-347-483",
+    "supports": [
+      "HY-COMM-2026-D246"
+    ],
+    "tags": [
+      "brown",
+      "law",
+      "institutional-writing",
+      "holding",
+      "legitimacy"
+    ],
+    "title": "Brown narrows the question, acknowledges limits, and states a holding"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "secondary",
+    "id": "EV-COMM-2026-92F1",
+    "path": "research/evidence/EV-COMM-2026-92F1--black-movements-polyphonic-functions.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "Poetry Foundation editors",
+    "source_date": "2026-01-01",
+    "source_title": "Introductions to the Harlem Renaissance and Black Arts Movement",
+    "source_uri": "https://www.poetryfoundation.org/collections/145704/an-introduction-to-the-harlem-renaissance",
+    "supports": [
+      "HY-COMM-2026-F19E"
+    ],
+    "tags": [
+      "harlem-renaissance",
+      "black-arts",
+      "black-feminism",
+      "audience"
+    ],
+    "title": "Harlem Renaissance and Black Arts writing spans incompatible audience and form strategies"
+  },
+  {
+    "confidence": "medium",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "secondary",
+    "id": "EV-COMM-2026-9B6C",
+    "path": "research/evidence/EV-COMM-2026-9B6C--diasporic-queer-form-enacts-border.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "Poetry Foundation editors",
+    "source_date": "2026-01-01",
+    "source_title": "Author records for Anzaldua, Cha, Lee, Jordan, Lorde, and Vuong",
+    "source_uri": "https://www.poetryfoundation.org/poets/gloria-e-anzaldua",
+    "supports": [
+      "HY-COMM-2026-F19E"
+    ],
+    "tags": [
+      "diaspora",
+      "queer",
+      "code-switching",
+      "fracture",
+      "border"
+    ],
+    "title": "Diasporic and queer writers often make linguistic access and formal fracture part of the argument"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "derived",
+    "id": "EV-COMM-2026-A4F7",
+    "path": "research/evidence/EV-COMM-2026-A4F7--translation-bounds-non-us-comparison.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "codex synthesis from primary bibliographies and reference sources",
+    "source_date": "2026-08-02",
+    "source_title": "Comparative bibliography for Achebe, Borges, Mahfouz, Tagore, Lu Xun, and Darwish",
+    "source_uri": "https://www.britannica.com/biography/Chinua-Achebe",
+    "supports": [
+      "HY-COMM-2026-F19E"
+    ],
+    "tags": [
+      "translation",
+      "comparative-literature",
+      "non-us",
+      "provenance"
+    ],
+    "title": "Translation materially limits language-level comparison across non-US traditions"
+  },
+  {
+    "confidence": "medium",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-BDC6",
+    "path": "research/evidence/EV-COMM-2026-BDC6--hemingway-knowledge-backed-omission.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "Ernest Hemingway",
+    "source_date": "1926-10-22",
+    "source_title": "The Sun Also Rises; omission principle in Death in the Afternoon",
+    "source_uri": "https://www.gutenberg.org/ebooks/67138",
+    "supports": [
+      "HY-COMM-2026-45A8"
+    ],
+    "tags": [
+      "hemingway",
+      "omission",
+      "subtext",
+      "inference"
+    ],
+    "title": "Hemingway's omission works through recoverable concrete subtext"
+  },
+  {
+    "confidence": "high",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "primary",
+    "id": "EV-COMM-2026-D6B2",
+    "path": "research/evidence/EV-COMM-2026-D6B2--darwin-natural-selection-progression.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "Charles Darwin",
+    "source_date": "1859-11-24",
+    "source_title": "On the Origin of Species, first edition, Chapter IV",
+    "source_uri": "https://darwin-online.org.uk/converted/published/1859_Origin_F373/1859_Origin_F373.html",
+    "supports": [
+      "HY-COMM-2026-D246"
+    ],
+    "tags": [
+      "darwin",
+      "science",
+      "analogy",
+      "objection",
+      "synthesis"
+    ],
+    "title": "Darwin builds natural selection through analogy, cases, and synthesis"
+  },
+  {
+    "confidence": "medium",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "secondary",
+    "id": "EV-COMM-2026-E90A",
+    "path": "research/evidence/EV-COMM-2026-E90A--asimov-idea-first-modeling.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "Daisy J. Whiting",
+    "source_date": "1987-01-01",
+    "source_title": "The impact of audience on Isaac Asimov's popular science writing",
+    "source_uri": "https://trace.tennessee.edu/utk_gradthes/13622/",
+    "supports": [
+      "HY-COMM-2026-45A8"
+    ],
+    "tags": [
+      "asimov",
+      "popular-science",
+      "audience",
+      "direct-address",
+      "ideas"
+    ],
+    "title": "Asimov foregrounds conceptual models through dialogue, scale, and reversal"
+  },
+  {
+    "confidence": "medium",
+    "contradicts": [],
+    "created_by_agent": "codex",
+    "evidence_type": "secondary",
+    "id": "EV-COMM-2026-E9D5",
+    "path": "research/evidence/EV-COMM-2026-E9D5--text-structure-comprehension-boundary.md",
+    "related_theories": [
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "retrieved": "2026-08-02",
+    "source_author": "Nicole Pyle et al.",
+    "source_date": "2017-04-13",
+    "source_title": "Effects of Expository Text Structure Interventions on Comprehension - A Meta-Analysis",
+    "source_uri": "https://doi.org/10.1002/rrq.179",
+    "supports": [
+      "HY-COMM-2026-CFF5"
+    ],
+    "tags": [
+      "text-structure",
+      "comprehension",
+      "meta-analysis",
+      "education"
+    ],
+    "title": "Text-structure instruction can improve expository comprehension"
   }
 ]

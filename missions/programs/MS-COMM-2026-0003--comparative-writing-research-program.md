@@ -1,3 +1,23 @@
+---
+id: MS-COMM-2026-0003
+title: Comparative study of the world's greatest communicators
+status: approved
+priority: high
+research_area: comparative-communication
+discipline: [rhetoric, linguistics, literary-studies, communication-science, cognitive-science]
+created: 2026-07-30
+owner_agent: unassigned
+artifact_tier: full-rep
+depends_on: []
+related_projects: [PROJECT-CHARTER-communication-engineering]
+required_framework:
+  - framework/REP-SPECIFICATION.md
+  - framework/policies/RESEARCH-POLICY.md
+  - framework/policies/EVIDENCE-POLICY.md
+outputs:
+  - research/packages/
+---
+
 # Communication Engineering Research Mission
 
 ## Research Execution Package (REP)
@@ -5,6 +25,12 @@
 ### Comparative Study of the World's Greatest Communicators
 
 Version: 1.0
+
+> **Program status:** This document is the approved source mandate for the
+> comparative-writing research stream. Its breadth intentionally exceeds one
+> Research Execution Package. Execute it through bounded missions with declared
+> corpora, inclusion criteria, evidence methods, falsification targets, and
+> stopping rules. `MS-COMM-2026-0004` is the first such mission.
 
 ------------------------------------------------------------------------
 

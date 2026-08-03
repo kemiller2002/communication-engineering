@@ -84,5 +84,96 @@
       "TH-COMM-2026-0001"
     ],
     "title": "Outcome-measure validity investigation"
+  },
+  {
+    "author_agent": "codex",
+    "created": "2026-08-02",
+    "evidence_ids": [
+      "EV-COMM-2026-3DFC",
+      "EV-COMM-2026-BDC6",
+      "EV-COMM-2026-3FFC",
+      "EV-COMM-2026-E90A",
+      "EV-COMM-2026-2676"
+    ],
+    "hypothesis_ids": [
+      "HY-COMM-2026-45A8"
+    ],
+    "id": "JR-COMM-2026-2833",
+    "path": "research/journals/JR-COMM-2026-2833--modern-american-literary-comparison.md",
+    "related_mission": "MS-COMM-2026-0230",
+    "related_package": "RP-COMM-2026-8FB7",
+    "research_area": "comparative-communication",
+    "tags": [
+      "literary-comparison",
+      "beats",
+      "fitzgerald",
+      "hemingway",
+      "frost",
+      "asimov"
+    ],
+    "theory_ids": [
+      "TH-COMM-2026-0001"
+    ],
+    "title": "Modern American literary-function comparison"
+  },
+  {
+    "author_agent": "codex",
+    "created": "2026-08-02",
+    "evidence_ids": [
+      "EV-COMM-2026-D6B2",
+      "EV-COMM-2026-6A2D",
+      "EV-COMM-2026-8434",
+      "EV-COMM-2026-5479",
+      "EV-COMM-2026-3377",
+      "EV-COMM-2026-6F00",
+      "EV-COMM-2026-7D8D",
+      "EV-COMM-2026-E9D5"
+    ],
+    "hypothesis_ids": [
+      "HY-COMM-2026-D246",
+      "HY-COMM-2026-CFF5"
+    ],
+    "id": "JR-COMM-2026-572D",
+    "path": "research/journals/JR-COMM-2026-572D--comparative-explanatory-progression.md",
+    "related_mission": "MS-COMM-2026-0004",
+    "related_package": "RP-COMM-2026-572D",
+    "research_area": "comparative-communication",
+    "tags": [
+      "comparative-writing",
+      "explanatory-progression",
+      "rubric-pilot"
+    ],
+    "theory_ids": [
+      "TH-COMM-2026-0001"
+    ],
+    "title": "Comparative explanatory-progression pilot"
+  },
+  {
+    "author_agent": "codex",
+    "created": "2026-08-02",
+    "evidence_ids": [
+      "EV-COMM-2026-6A27",
+      "EV-COMM-2026-92F1",
+      "EV-COMM-2026-455B",
+      "EV-COMM-2026-9B6C",
+      "EV-COMM-2026-A4F7"
+    ],
+    "hypothesis_ids": [
+      "HY-COMM-2026-F19E"
+    ],
+    "id": "JR-COMM-2026-C85D",
+    "path": "research/journals/JR-COMM-2026-C85D--plural-literary-traditions.md",
+    "related_mission": "MS-COMM-2026-827E",
+    "related_package": "RP-COMM-2026-EFC6",
+    "research_area": "comparative-communication",
+    "tags": [
+      "canon-expansion",
+      "reading-guide",
+      "comparative-literature"
+    ],
+    "theory_ids": [
+      "TH-COMM-2026-0001"
+    ],
+    "title": "Plural literary traditions corpus expansion"
   }
 ]

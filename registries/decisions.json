@@ -22,5 +22,31 @@
     "title": "Model the research portfolio as a staged dependency graph",
     "updated": "2026-07-30",
     "version": "1.0.0"
+  },
+  {
+    "author_agent": "codex",
+    "confidence": "high",
+    "created": "2026-08-02",
+    "id": "DF-COMM-2026-96CF",
+    "path": "research/decisions/DF-COMM-2026-96CF--conditional-writer-function-selection.md",
+    "related_documents": [
+      "MS-COMM-2026-0003",
+      "MS-COMM-2026-0004",
+      "RP-COMM-2026-572D",
+      "HY-COMM-2026-D246",
+      "TH-COMM-2026-0001"
+    ],
+    "research_area": "comparative-communication",
+    "status": "accepted",
+    "superseded_by": [],
+    "supersedes": [],
+    "tags": [
+      "writer-selection",
+      "conditional-fit",
+      "decision-framework"
+    ],
+    "title": "Select communication functions conditionally rather than rank writers",
+    "updated": "2026-08-02",
+    "version": "1.0.0"
   }
 ]

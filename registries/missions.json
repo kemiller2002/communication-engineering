@@ -59,5 +59,133 @@
     "research_area": "communication-measurement",
     "status": "active",
     "title": "Validate the communication outcome-measure architecture"
+  },
+  {
+    "artifact_tier": "full-rep",
+    "created": "2026-07-30",
+    "depends_on": [],
+    "discipline": [
+      "rhetoric",
+      "linguistics",
+      "literary-studies",
+      "communication-science",
+      "cognitive-science"
+    ],
+    "id": "MS-COMM-2026-0003",
+    "outputs": [
+      "research/packages/"
+    ],
+    "owner_agent": "unassigned",
+    "path": "missions/programs/MS-COMM-2026-0003--comparative-writing-research-program.md",
+    "priority": "high",
+    "related_projects": [
+      "PROJECT-CHARTER-communication-engineering"
+    ],
+    "required_framework": [
+      "framework/REP-SPECIFICATION.md",
+      "framework/policies/RESEARCH-POLICY.md",
+      "framework/policies/EVIDENCE-POLICY.md"
+    ],
+    "research_area": "comparative-communication",
+    "status": "approved",
+    "title": "Comparative study of the world's greatest communicators"
+  },
+  {
+    "artifact_tier": "full-rep",
+    "created": "2026-07-30",
+    "depends_on": [
+      "MS-COMM-2026-0003",
+      "RP-COMM-2026-0002"
+    ],
+    "discipline": [
+      "history-of-science",
+      "mathematics",
+      "law",
+      "philosophy",
+      "software-engineering"
+    ],
+    "id": "MS-COMM-2026-0004",
+    "outputs": [
+      "research/packages/RP-COMM-2026-572D--cross-domain-explanatory-progression.md"
+    ],
+    "owner_agent": "codex",
+    "path": "missions/completed/MS-COMM-2026-0004--cross-domain-explanatory-progression.md",
+    "priority": "medium",
+    "related_projects": [
+      "PROJECT-CHARTER-communication-engineering"
+    ],
+    "required_framework": [
+      "framework/REP-SPECIFICATION.md",
+      "framework/policies/RESEARCH-POLICY.md",
+      "framework/policies/EVIDENCE-POLICY.md"
+    ],
+    "research_area": "comparative-communication",
+    "status": "completed",
+    "title": "Compare explanatory progression across five communication domains"
+  },
+  {
+    "artifact_tier": "full-rep",
+    "created": "2026-08-02",
+    "depends_on": [
+      "MS-COMM-2026-0003",
+      "RP-COMM-2026-572D"
+    ],
+    "discipline": [
+      "literary-studies",
+      "poetry",
+      "science-fiction",
+      "rhetoric"
+    ],
+    "id": "MS-COMM-2026-0230",
+    "outputs": [
+      "research/packages/RP-COMM-2026-8FB7--modern-american-literary-functions.md"
+    ],
+    "owner_agent": "codex",
+    "path": "missions/completed/MS-COMM-2026-0230--modern-american-literary-functions.md",
+    "priority": "medium",
+    "related_projects": [
+      "PROJECT-CHARTER-communication-engineering"
+    ],
+    "required_framework": [
+      "framework/REP-SPECIFICATION.md",
+      "framework/policies/RESEARCH-POLICY.md",
+      "framework/policies/EVIDENCE-POLICY.md"
+    ],
+    "research_area": "comparative-communication",
+    "status": "completed",
+    "title": "Compare modern American literary communication functions"
+  },
+  {
+    "artifact_tier": "full-rep",
+    "created": "2026-08-02",
+    "depends_on": [
+      "RP-COMM-2026-8FB7"
+    ],
+    "discipline": [
+      "literary-studies",
+      "comparative-literature",
+      "Indigenous-studies",
+      "Black-studies",
+      "queer-studies",
+      "migration-studies"
+    ],
+    "id": "MS-COMM-2026-827E",
+    "outputs": [
+      "research/packages/RP-COMM-2026-EFC6--plural-literary-traditions.md"
+    ],
+    "owner_agent": "codex",
+    "path": "missions/completed/MS-COMM-2026-827E--plural-literary-traditions.md",
+    "priority": "high",
+    "related_projects": [
+      "PROJECT-CHARTER-communication-engineering"
+    ],
+    "required_framework": [
+      "framework/REP-SPECIFICATION.md",
+      "framework/policies/RESEARCH-POLICY.md",
+      "framework/policies/EVIDENCE-POLICY.md"
+    ],
+    "research_area": "comparative-communication",
+    "status": "completed",
+    "title": "Expand the literary corpus across marginalized and non-US traditions"
   }
 ]

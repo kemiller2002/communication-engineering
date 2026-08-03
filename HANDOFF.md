@@ -15,6 +15,10 @@ of communication effectiveness without optimizing an invalid proxy.
 - Advanced RQ-COMM-003 from Background Research to Deep Investigation.
 - Updated the portfolio graph: candidate task selection supplies the concrete
   input needed to validate the measurement architecture.
+- Adopted `MS-COMM-2026-0003` as the approved program-level source mandate for
+  comparative writing research.
+- Added proposed `MS-COMM-2026-0004` and RQ-COMM-013 as the first bounded
+  cross-domain study, without displacing the active measurement work.
 
 ## Current decision
 
@@ -64,3 +68,26 @@ candidates against a frozen rubric, and write observable goal states,
 invalidating errors, allowed resources, timeout logic, and assist codes for
 each. Then run the scoring-reliability and floor/ceiling feasibility check
 specified in `RP-COMM-2026-0002`.
+
+In the comparative stream, `MS-COMM-2026-0004` is complete as
+`RP-COMM-2026-572D`. Corpus criteria and rubric v1.0 are frozen; do not edit
+them in place. Next, run an independent second-rater check on 20 stratified
+units, version any revision as rubric v1.1, and coordinate with
+`RP-COMM-2026-0002` before preregistering an audience experiment. The pilot
+supports conditional writer-function selection at Medium confidence but does
+not establish causal reader effects.
+
+`RP-COMM-2026-8FB7` extends the framework to Fitzgerald, Hemingway, Frost,
+Asimov, Ginsberg, Kerouac, and Ferlinghetti. Retrieve their contributions by
+function—symbolic convergence, knowledge-backed omission, dramatic
+countervoice, conceptual reversal, anaphoric witness, generative momentum, and
+mobile civic observation—not by persona imitation. Its next test is the
+inference-contract experiment in `HY-COMM-2026-45A8`; canon diversification is
+required in parallel.
+
+`RP-COMM-2026-EFC6` addresses that canon debt with a 29-writer reading guide
+covering women Beats, Harlem Renaissance, Black Arts/Black feminist writing,
+five nation-specific Indigenous contexts, immigrant/diasporic/queer writing,
+and non-U.S. traditions. Its key guardrail is situated authority: transfer
+functions, not identity, communal authority, sacred material, or a translator's
+surface language. Specialist and community audit is required before acceptance.

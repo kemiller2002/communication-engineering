@@ -2,9 +2,9 @@
 id: PROJECT-CHARTER-communication-engineering
 title: Communication Engineering Project Charter
 status: draft
-version: 0.1.0
+version: 0.2.0
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-07-30
 ---
 
 # Communication Engineering project charter
@@ -14,6 +14,11 @@ updated: 2026-07-29
 Define the practical problem this project will solve. Do not assume that
 “Communication Engineering” already names a distinct discipline; that is a research
 question, not a starting fact.
+
+The approved long-term source mandate is `MS-COMM-2026-0003`, a comparative
+study of communication mechanisms across disciplines, cultures, purposes, and
+historical periods. Because that mandate is a research program rather than a
+bounded investigation, it is executed through individually scoped REPs.
 
 ## Intended users
 
@@ -28,17 +33,22 @@ specified audience and measure unassisted task completion, critical errors,
 time, assistance, comprehension, and satisfaction. See `RP-COMM-2026-0001`
 and proposed mission `MS-COMM-2026-0001`. This remains subject to review.
 
+The first bounded comparative outcome is proposed in `MS-COMM-2026-0004`: a
+five-domain study of explanatory progression. It runs alongside, and uses the
+measurement discipline developed by, the procedural pilot stream.
+
 ## Included
 
 - Definition of the first user and communication problem.
 - A working vertical slice.
 - Evidence and decision traceability.
 - Evaluation of the Repository Operating System pilot.
+- Bounded comparative studies that operationalize the approved source mandate.
 
 ## Excluded
 
 - Broad discipline claims without comparative evidence.
-- An exhaustive communication taxonomy.
+- An exhaustive communication taxonomy within any single REP.
 - Autonomous acceptance of research or policy.
 - Production handling of secrets or sensitive communication data before a
   privacy and threat review.
