@@ -63,7 +63,17 @@ jobs:
           if [ -f .echelon/research-publisher.json ]; then
             npx @echelon-foundry/research-publisher upgrade
           else
+            set +e
             npx @echelon-foundry/research-publisher init
+            FIRST_INIT=$?
+            set -e
+
+            # Legacy pre-manifest adoption can apply shared-file/script changes
+            # before an interrupted/failed manifest write. Re-running init is
+            # the documented convergence/recovery path.
+            if [ "$FIRST_INIT" -ne 0 ] || [ ! -f .echelon/research-publisher.json ]; then
+              npx @echelon-foundry/research-publisher init
+            fi
           fi
 
           test -f .echelon/research-publisher.json
