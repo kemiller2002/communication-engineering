@@ -1,0 +1,40 @@
+name: CE lifecycle ROS completion
+
+on:
+  push:
+    branches:
+      - work/gh-5-lifecycle-installer
+
+permissions:
+  contents: write
+
+jobs:
+  complete:
+    if: ${{ !contains(github.event.head_commit.message, '[gh5-complete]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Complete governed work
+        run: |
+          NOW="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          ./ros work complete --id CE-LIFECYCLE-001 --occurred-at "$NOW" \
+            --evidence implementation=bin/communication-engineering.mjs \
+            --evidence implementation=package.json \
+            --evidence tests=tests/communication-engineering-lifecycle.test.mjs \
+            --evidence tests=.github/workflows/communication-engineering-lifecycle.yml
+          ./ros registry build
+          ./ros registry check
+          ./ros validate
+      - name: Commit completion and remove temporary workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/gh5-complete.yml
+          git add .ros registries
+          git commit -m "chore: complete CE lifecycle work under ROS [gh5-complete]"
+          git push
