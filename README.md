@@ -23,6 +23,22 @@ For applying the current evidence-bounded communication guidance:
 
 The operational context is intentionally more conservative than the research corpus. It exposes supported foundations while keeping strategy-selection claims visibly provisional.
 
+## Repository lifecycle capability
+
+Communication Engineering now exposes a dependency-free lifecycle CLI for installing the evidence-bounded operational context into another repository:
+
+```bash
+communication-engineering init
+communication-engineering status
+communication-engineering verify --strict
+communication-engineering upgrade
+communication-engineering doctor
+```
+
+The installer writes the operational guidance under `.communication-engineering/`, records installation state in `.echelon/communication-engineering.json`, and adds only a managed briefing region to `AGENTS.md`. It does not install the research corpus or promote provisional research claims into universal rules.
+
+For repository-to-repository rollout before an npm release is available, the package can be installed from a pinned GitHub commit. See [Lifecycle installation](docs/lifecycle-installation.md).
+
 ## Local operating commands
 
 ```bash
