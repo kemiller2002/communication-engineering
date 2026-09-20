@@ -84,6 +84,7 @@ jobs:
             if [ ! -f .echelon/research-publisher.json ]; then
               node tools/finalize-research-publisher.mjs
             fi
+          fi
 
           test -f .echelon/research-publisher.json
           npx @echelon-foundry/research-publisher verify --strict
