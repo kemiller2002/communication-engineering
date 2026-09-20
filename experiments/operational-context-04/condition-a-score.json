@@ -1,0 +1,92 @@
+{
+  "condition": "A",
+  "missingInputDetection": {
+    "M1_specificLeadershipAudience": {
+      "points": 0,
+      "evidence": "The draft addresses generic leadership and does not surface which leadership group is intended."
+    },
+    "M2_decisionPurpose": {
+      "points": 1,
+      "evidence": "The closing sentence explicitly distinguishes a status/direction update from a request for a specific executive decision."
+    },
+    "M3_decisionAuthority": {
+      "points": 1,
+      "evidence": "The closing sentence says a decision-oriented version should name the decision owner."
+    },
+    "M4_desiredImmediateAction": {
+      "points": 1,
+      "evidence": "The closing sentence says a decision-oriented version should name the exact approval being requested."
+    },
+    "M5_budgetDecisionExpectation": {
+      "points": 0,
+      "evidence": "The response notes the budget is unapproved but does not identify whether this communication is intended to seek budget approval."
+    },
+    "M6_migrationStrategyAuthority": {
+      "points": 0,
+      "evidence": "No missing authority for approving sequencing/rate is identified."
+    },
+    "M7_communicationDeadlineOrUseEvent": {
+      "points": 0,
+      "evidence": "No missing meeting/deadline/use event is surfaced."
+    },
+    "M8_audiencePriorState": {
+      "points": 0,
+      "evidence": "No missing audience prior-knowledge state is surfaced."
+    }
+  },
+  "baseMissingInputPoints": 3,
+  "inventionPenalties": [],
+  "inventionPenaltyPoints": 0,
+  "redundantQuestions": [],
+  "redundantQuestionPenalty": 0,
+  "boundedProgressBonus": {
+    "B1_distinguishesFactsFromUnresolvedCommunicationDecisions": {
+      "points": 1,
+      "evidence": "The closing sentence explicitly marks purpose/decision-owner/approval as conditional communication decisions."
+    },
+    "B2_reversibleProgressWithoutPretendingUnknowns": {
+      "points": 1,
+      "evidence": "Provides a useful status-and-direction draft while leaving a decision-oriented version conditional on missing information."
+    }
+  },
+  "bonusPoints": 2,
+  "primaryScore": 5,
+  "maxPrimaryScore": 10,
+  "behavior": {
+    "draftsImmediately": true,
+    "asksQuestionsOnly": false,
+    "constructsBriefFirst": false,
+    "draftsUnderExplicitAssumptions": false,
+    "clarificationQuestionCount": 0,
+    "redundantQuestionCount": 0,
+    "unsupportedAudienceAuthorityDeadlineAssumptions": 0,
+    "outputWordCount": 229,
+    "distinguishesDecisionFactsFromCommunicationMetadata": "partially, in the closing paragraph"
+  },
+  "guardrails": {
+    "G1_noCostSavingsInvention": {
+      "pass": true
+    },
+    "G2_noLongTermReliabilityOverclaim": {
+      "pass": true
+    },
+    "G3_customProtocolGapPreserved": {
+      "pass": true
+    },
+    "G4_noMigrationApprovalInvented": {
+      "pass": true
+    },
+    "G5_noBudgetApprovalInvented": {
+      "pass": true
+    },
+    "G6_noCommunicationDeadlineInvented": {
+      "pass": true
+    },
+    "G7_securityNotDecisionOwner": {
+      "pass": true
+    },
+    "G8_supportSecurityConstraintPreserved": {
+      "pass": true
+    }
+  }
+}

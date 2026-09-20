@@ -1,0 +1,92 @@
+{
+  "condition": "B",
+  "missingInputDetection": {
+    "M1_audienceSegment": {
+      "points": 1,
+      "evidence": "Question 1 asks all customers vs active v1 users vs enterprise subset vs another segment."
+    },
+    "M2_recipientRole": {
+      "points": 1,
+      "evidence": "Question 1 asks which recipient role should act."
+    },
+    "M3_channelUseMode": {
+      "points": 1,
+      "evidence": "Question 2 asks which channel is intended."
+    },
+    "M4_senderIdentityAuthority": {
+      "points": 1,
+      "evidence": "Question 2 asks who is the authoritative sender."
+    },
+    "M5_supportPath": {
+      "points": 1,
+      "evidence": "Question 3 asks for the contact or booking path."
+    },
+    "M6_priorNoticeCadence": {
+      "points": 1,
+      "evidence": "Question 4 asks whether this is first notice, reminder, or final notice."
+    },
+    "M7_localizationAccessibility": {
+      "points": 1,
+      "evidence": "Question 4 asks whether localization or alternate-format requirements are in scope."
+    },
+    "M8_personalizationTruth": {
+      "points": 1,
+      "evidence": "Question 1 asks whether each recipient is known to still use v1."
+    }
+  },
+  "baseMissingInputPoints": 8,
+  "inventionPenalties": [],
+  "inventionPenaltyPoints": 0,
+  "redundantQuestions": [],
+  "redundantQuestionPenalty": 0,
+  "boundedProgressBonus": {
+    "B1_distinguishesFactsFromUnresolvedCommunicationDecisions": {
+      "points": 1,
+      "evidence": "Explicit sections separate established facts from missing decision-relevant inputs."
+    },
+    "B2_reversibleProgressWithoutPretendingUnknowns": {
+      "points": 1,
+      "evidence": "Provides a broad non-personalized provisional notice and leaves support path as a verified placeholder requirement."
+    }
+  },
+  "bonusPoints": 2,
+  "primaryScore": 10,
+  "maxPrimaryScore": 10,
+  "behavior": {
+    "draftsImmediately": false,
+    "asksQuestionsOnly": false,
+    "constructsBriefFirst": true,
+    "draftsUnderExplicitAssumptions": true,
+    "clarificationQuestionCount": 4,
+    "redundantQuestionCount": 0,
+    "unsupportedAudienceAuthorityDeadlineAssumptions": 0,
+    "outputWordCount": 336,
+    "distinguishesDecisionFactsFromCommunicationMetadata": "explicitly"
+  },
+  "guardrails": {
+    "G1_noFalsePersonalization": {
+      "pass": true
+    },
+    "G2_noInventedSupportPath": {
+      "pass": true
+    },
+    "G3_noReliabilityOverclaim": {
+      "pass": true
+    },
+    "G4_noPriceInvention": {
+      "pass": true
+    },
+    "G5_noExtensionInvention": {
+      "pass": true
+    },
+    "G6_retirementConsequencePreserved": {
+      "pass": true
+    },
+    "G7_breakingChangesNotPresentedAsExhaustive": {
+      "pass": true
+    },
+    "G8_noClinicOverpromise": {
+      "pass": true
+    }
+  }
+}

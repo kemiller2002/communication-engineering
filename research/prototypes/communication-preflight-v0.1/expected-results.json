@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "scenario": "EXP01-well-specified-incident",
+      "activationDecision": "HighConsequenceVerificationRequired",
+      "missingMaterialFields": [],
+      "clarificationGroupCount": 0,
+      "boundedProgressPermitted": true,
+      "requiresVerification": true
+    },
+    {
+      "scenario": "EXP04-underspecified-leadership",
+      "activationDecision": "PreflightNeeded",
+      "missingMaterialFields": [
+        "Purpose",
+        "AudienceSegment",
+        "AudiencePriorState",
+        "DecisionAuthority",
+        "DesiredImmediateAction",
+        "BudgetDecisionExpectation",
+        "MigrationStrategyAuthority",
+        "MediumOrUseMode"
+      ],
+      "clarificationGroupCount": 4,
+      "boundedProgressPermitted": true,
+      "requiresVerification": false
+    },
+    {
+      "scenario": "EXP05-underspecified-customer-notice",
+      "activationDecision": "PreflightNeeded",
+      "missingMaterialFields": [
+        "AudienceSegment",
+        "AudienceRole",
+        "PersonalizationAuthority",
+        "MediumOrUseMode",
+        "SenderIdentity",
+        "SupportPath",
+        "PriorCommunicationState",
+        "AccessibilityConstraints"
+      ],
+      "clarificationGroupCount": 4,
+      "boundedProgressPermitted": true,
+      "requiresVerification": false
+    },
+    {
+      "scenario": "clarification-required",
+      "activationDecision": "ClarificationRequired",
+      "missingMaterialFields": [
+        "DecisionAuthority"
+      ],
+      "clarificationGroupCount": 1,
+      "boundedProgressPermitted": false,
+      "requiresVerification": false
+    },
+    {
+      "scenario": "authority-permission-blocked",
+      "activationDecision": "AbstainForAuthorityOrPermission",
+      "missingMaterialFields": [
+        "CulturalPermission"
+      ],
+      "clarificationGroupCount": 1,
+      "boundedProgressPermitted": false,
+      "requiresVerification": false
+    }
+  ]
+}

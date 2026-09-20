@@ -73,6 +73,41 @@ Across all three experiments, the context is non-regressive but has not yet demo
 
 This directly changed the method: the full communication contract is now selectively activated only when decision-relevant inputs are unresolved.
 
+## Brief-construction evidence
+
+### Experiment 04 — internal leadership brief construction
+
+- ordinary response: 5/10
+- Communication Engineering: 10/10
+- +5 points
+- all guardrails passed
+
+### Experiment 05 — external customer notice replication
+
+- ordinary response: 6.5/10
+- Communication Engineering: 10/10
+- +3.5 points
+- all guardrails passed
+
+Both positive conditions recovered eight preregistered missing communication inputs using four grouped clarification questions.
+
+The extra process cost was material, which reinforces selective activation rather than always-on use.
+
+A formal requirements candidate now exists:
+
+`docs/communication-preflight-requirements-candidate-v0.1.md`
+
+A research-only deterministic prototype now exists:
+
+`research/prototypes/communication-preflight-v0.1/`
+
+The prototype does not infer communication state from raw language. It accepts a typed semantic assessment and computes:
+- missing material fields;
+- clarification groups;
+- bounded-progress permission;
+- activation decision;
+- verification escalation.
+
 ## Current decision
 
 Do **not** package Communication Engineering yet.
@@ -83,7 +118,7 @@ Do not run another well-specified first-draft generation comparison.
 
 Review/diagnosis with complete facts has now also produced a null result.
 
-The next high-value validation should test **brief construction**, independent model/provider behavior, human/team consistency, or participant outcomes where communication decisions are actually missing or distributed across people/tools.
+Brief construction now has two positive same-model replications. The next high-value validation is independent model/provider replication, human/team consistency, or participant outcomes.
 
 
 This is not a substitute for the planned participant experiment.

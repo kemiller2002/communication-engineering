@@ -116,3 +116,72 @@ Evidence required before that promotion:
 Keep `agent-context/` as the canonical research/operational source.
 
 It is ready to be used deliberately in further experiments and real communication work, but not yet justified as mandatory ambient context.
+
+
+# Addendum: Brief-Construction Evidence
+
+## Experiment 04 — brief construction
+
+Underspecified internal leadership update.
+
+- Ordinary response: 5/10.
+- Communication Engineering: 10/10.
+- Difference: +5 points.
+- All eight guardrails passed.
+- Communication Engineering recovered all eight preregistered missing communication inputs in four grouped questions.
+- Ordinary response surfaced only part of the missing communication state.
+
+## Experiment 05 — external customer notice
+
+Underspecified API-deprecation notice.
+
+- Ordinary response: 6.5/10.
+- Communication Engineering: 10/10.
+- Difference: +3.5 points.
+- All eight guardrails passed.
+- Communication Engineering again recovered all eight missing inputs in four grouped questions.
+- Ordinary response missed recipient role, cadence, localization/accessibility, and fully explicit personalization authority.
+
+## Revised synthesis
+
+The first five experiments now separate two conditions clearly.
+
+### When the brief is already strong
+
+Experiments 01-03:
+
+- no measured correctness or review-recall gain from full context;
+- no observed regression.
+
+### When decision-relevant communication state is missing
+
+Experiments 04-05:
+
+- replicated improvement in missing-input recovery;
+- no additional unsupported assumptions;
+- no redundant known-fact questions;
+- useful bounded progress remained possible.
+
+The best-supported current role for Communication Engineering is therefore:
+
+> **selective communication preflight before drafting when important communication state is incomplete.**
+
+This remains same-model process evidence. Downstream reader outcomes and independent-model reproducibility remain unproven.
+
+## Tooling consequence
+
+Do not build an always-on prose wrapper.
+
+The next product candidate is a small preflight capability that:
+
+- receives typed communication-state assessment;
+- preserves field provenance;
+- identifies material missing fields;
+- groups clarifications;
+- selects bounded-progress vs clarification vs verification;
+- gets out of the way when ordinary drafting is already appropriate.
+
+See:
+
+- `docs/communication-preflight-requirements-candidate-v0.1.md`
+- `research/prototypes/communication-preflight-v0.1/`

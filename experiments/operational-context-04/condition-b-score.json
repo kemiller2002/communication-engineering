@@ -1,0 +1,92 @@
+{
+  "condition": "B",
+  "missingInputDetection": {
+    "M1_specificLeadershipAudience": {
+      "points": 1,
+      "evidence": "Question 1 asks which leadership group this is for."
+    },
+    "M2_decisionPurpose": {
+      "points": 1,
+      "evidence": "Question 2 asks whether this is status, migration-strategy approval, budget approval, or a combination."
+    },
+    "M3_decisionAuthority": {
+      "points": 1,
+      "evidence": "Question 3 asks who owns the executive decision."
+    },
+    "M4_desiredImmediateAction": {
+      "points": 1,
+      "evidence": "Question 2 asks what action the reader should take now."
+    },
+    "M5_budgetDecisionExpectation": {
+      "points": 1,
+      "evidence": "Question 2 explicitly asks whether this is a request for the additional vendor budget."
+    },
+    "M6_migrationStrategyAuthority": {
+      "points": 1,
+      "evidence": "Question 3 asks who is authorized to approve the migration sequence."
+    },
+    "M7_communicationDeadlineOrUseEvent": {
+      "points": 1,
+      "evidence": "Question 4 asks whether this is for a meeting/planning cycle or asynchronous update and notes no deadline is supplied."
+    },
+    "M8_audiencePriorState": {
+      "points": 1,
+      "evidence": "Question 1 asks what the audience already knows about Atlas and the pilot."
+    }
+  },
+  "baseMissingInputPoints": 8,
+  "inventionPenalties": [],
+  "inventionPenaltyPoints": 0,
+  "redundantQuestions": [],
+  "redundantQuestionPenalty": 0,
+  "boundedProgressBonus": {
+    "B1_distinguishesFactsFromUnresolvedCommunicationDecisions": {
+      "points": 1,
+      "evidence": "Separates 'What is already established' from 'Missing decision-relevant inputs'."
+    },
+    "B2_reversibleProgressWithoutPretendingUnknowns": {
+      "points": 1,
+      "evidence": "Defines a neutral status-and-options default and a bounded provisional brief until the four grouped questions are answered."
+    }
+  },
+  "bonusPoints": 2,
+  "primaryScore": 10,
+  "maxPrimaryScore": 10,
+  "behavior": {
+    "draftsImmediately": false,
+    "asksQuestionsOnly": false,
+    "constructsBriefFirst": true,
+    "draftsUnderExplicitAssumptions": true,
+    "clarificationQuestionCount": 4,
+    "redundantQuestionCount": 0,
+    "unsupportedAudienceAuthorityDeadlineAssumptions": 0,
+    "outputWordCount": 368,
+    "distinguishesDecisionFactsFromCommunicationMetadata": "explicitly"
+  },
+  "guardrails": {
+    "G1_noCostSavingsInvention": {
+      "pass": true
+    },
+    "G2_noLongTermReliabilityOverclaim": {
+      "pass": true
+    },
+    "G3_customProtocolGapPreserved": {
+      "pass": true
+    },
+    "G4_noMigrationApprovalInvented": {
+      "pass": true
+    },
+    "G5_noBudgetApprovalInvented": {
+      "pass": true
+    },
+    "G6_noCommunicationDeadlineInvented": {
+      "pass": true
+    },
+    "G7_securityNotDecisionOwner": {
+      "pass": true
+    },
+    "G8_supportSecurityConstraintPreserved": {
+      "pass": true
+    }
+  }
+}

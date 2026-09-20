@@ -1,0 +1,313 @@
+{
+  "scenarios": [
+    {
+      "id": "EXP01-well-specified-incident",
+      "consequence": "high",
+      "authorityPermissionBlocked": false,
+      "fields": [
+        {
+          "id": "Purpose",
+          "state": "known",
+          "provenance": "ExplicitRequest",
+          "materiality": "RequiredNow",
+          "group": "purpose-action",
+          "safeDefault": false
+        },
+        {
+          "id": "AudienceRole",
+          "state": "known",
+          "provenance": "ExplicitRequest",
+          "materiality": "RequiredNow",
+          "group": "audience",
+          "safeDefault": false
+        },
+        {
+          "id": "AudienceTask",
+          "state": "known",
+          "provenance": "ExplicitRequest",
+          "materiality": "RequiredNow",
+          "group": "audience",
+          "safeDefault": false
+        },
+        {
+          "id": "DesiredImmediateAction",
+          "state": "known",
+          "provenance": "AuthoritativeSource",
+          "materiality": "RequiredNow",
+          "group": "purpose-action",
+          "safeDefault": false
+        },
+        {
+          "id": "ProofObligation",
+          "state": "known",
+          "provenance": "AuthoritativeSource",
+          "materiality": "RequiredNow",
+          "group": "proof",
+          "safeDefault": false
+        },
+        {
+          "id": "MaterialUncertainty",
+          "state": "known",
+          "provenance": "AuthoritativeSource",
+          "materiality": "RequiredNow",
+          "group": "proof",
+          "safeDefault": false
+        },
+        {
+          "id": "MediumOrUseMode",
+          "state": "known",
+          "provenance": "ExplicitRequest",
+          "materiality": "RequiredNow",
+          "group": "delivery",
+          "safeDefault": false
+        },
+        {
+          "id": "AccessibilityConstraints",
+          "state": "known",
+          "provenance": "ExplicitRequest",
+          "materiality": "RequiredNow",
+          "group": "delivery",
+          "safeDefault": false
+        }
+      ],
+      "expected": "HighConsequenceVerificationRequired",
+      "rationale": "No material communication field is missing, so preflight should not create clarification; consequence still requires verification."
+    },
+    {
+      "id": "EXP04-underspecified-leadership",
+      "consequence": "medium",
+      "authorityPermissionBlocked": false,
+      "fields": [
+        {
+          "id": "Purpose",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "purpose-action",
+          "safeDefault": true
+        },
+        {
+          "id": "AudienceSegment",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "audience",
+          "safeDefault": true
+        },
+        {
+          "id": "AudiencePriorState",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "audience",
+          "safeDefault": true
+        },
+        {
+          "id": "DecisionAuthority",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "authority",
+          "safeDefault": true
+        },
+        {
+          "id": "DesiredImmediateAction",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "purpose-action",
+          "safeDefault": true
+        },
+        {
+          "id": "BudgetDecisionExpectation",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "purpose-action",
+          "safeDefault": true
+        },
+        {
+          "id": "MigrationStrategyAuthority",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "authority",
+          "safeDefault": true
+        },
+        {
+          "id": "MediumOrUseMode",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "delivery",
+          "safeDefault": true
+        },
+        {
+          "id": "SupportEndDate",
+          "state": "known",
+          "provenance": "AuthoritativeSource",
+          "materiality": "RequiredNow",
+          "group": "evidence",
+          "safeDefault": false
+        },
+        {
+          "id": "MigrationFacts",
+          "state": "known",
+          "provenance": "AuthoritativeSource",
+          "materiality": "RequiredNow",
+          "group": "evidence",
+          "safeDefault": false
+        }
+      ],
+      "expected": "PreflightNeeded",
+      "rationale": "All missing required communication fields have a safe neutral status-update default, so work may proceed without inventing authority."
+    },
+    {
+      "id": "EXP05-underspecified-customer-notice",
+      "consequence": "medium",
+      "authorityPermissionBlocked": false,
+      "fields": [
+        {
+          "id": "AudienceSegment",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "audience-personalization",
+          "safeDefault": true
+        },
+        {
+          "id": "AudienceRole",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "audience-personalization",
+          "safeDefault": true
+        },
+        {
+          "id": "PersonalizationAuthority",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "audience-personalization",
+          "safeDefault": true
+        },
+        {
+          "id": "MediumOrUseMode",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "channel-sender",
+          "safeDefault": true
+        },
+        {
+          "id": "SenderIdentity",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "channel-sender",
+          "safeDefault": true
+        },
+        {
+          "id": "SupportPath",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "support",
+          "safeDefault": true
+        },
+        {
+          "id": "PriorCommunicationState",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "cadence-accessibility",
+          "safeDefault": true
+        },
+        {
+          "id": "AccessibilityConstraints",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "cadence-accessibility",
+          "safeDefault": true
+        },
+        {
+          "id": "RetirementDate",
+          "state": "known",
+          "provenance": "AuthoritativeSource",
+          "materiality": "RequiredNow",
+          "group": "evidence",
+          "safeDefault": false
+        },
+        {
+          "id": "MigrationGuide",
+          "state": "known",
+          "provenance": "AuthoritativeSource",
+          "materiality": "RequiredNow",
+          "group": "evidence",
+          "safeDefault": false
+        }
+      ],
+      "expected": "PreflightNeeded",
+      "rationale": "Broad non-personalized notice is a safe bounded default while audience/channel/support decisions remain unresolved."
+    },
+    {
+      "id": "clarification-required",
+      "consequence": "medium",
+      "authorityPermissionBlocked": false,
+      "fields": [
+        {
+          "id": "Purpose",
+          "state": "known",
+          "provenance": "ExplicitRequest",
+          "materiality": "RequiredNow",
+          "group": "purpose-action",
+          "safeDefault": false
+        },
+        {
+          "id": "DecisionAuthority",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "authority",
+          "safeDefault": false
+        },
+        {
+          "id": "DesiredImmediateAction",
+          "state": "known",
+          "provenance": "ExplicitRequest",
+          "materiality": "RequiredNow",
+          "group": "purpose-action",
+          "safeDefault": false
+        }
+      ],
+      "expected": "ClarificationRequired",
+      "rationale": "A required authority field is unknown and has no safe default."
+    },
+    {
+      "id": "authority-permission-blocked",
+      "consequence": "medium",
+      "authorityPermissionBlocked": true,
+      "fields": [
+        {
+          "id": "Purpose",
+          "state": "known",
+          "provenance": "ExplicitRequest",
+          "materiality": "RequiredNow",
+          "group": "purpose-action",
+          "safeDefault": false
+        },
+        {
+          "id": "CulturalPermission",
+          "state": "unknown",
+          "provenance": "Unknown",
+          "materiality": "RequiredNow",
+          "group": "authority",
+          "safeDefault": false
+        }
+      ],
+      "expected": "AbstainForAuthorityOrPermission",
+      "rationale": "Missing authority/permission is modeled as a stronger stop condition."
+    }
+  ]
+}
