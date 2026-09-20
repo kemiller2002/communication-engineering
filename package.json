@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "scripts": {
     "research:build": "research-publisher build --config ./research-publisher.config.mjs",
     "research:validate": "research-publisher validate --config ./research-publisher.config.mjs",
@@ -11,9 +11,29 @@
     "context:validate": "node scripts/validate-communication-context.mjs",
     "preflight:prototype:test": "node research/prototypes/communication-preflight-v0.1/test-preflight.mjs",
     "preflight:fsharp:build": "dotnet build research/prototypes/communication-preflight-fsharp-v0.1/src/CommunicationPreflight.fsproj --configuration Release",
-    "preflight:fsharp:test": "dotnet run --project research/prototypes/communication-preflight-fsharp-v0.1/tests/CommunicationPreflight.Tests.fsproj --configuration Release"
+    "preflight:fsharp:test": "dotnet run --project research/prototypes/communication-preflight-fsharp-v0.1/tests/CommunicationPreflight.Tests.fsproj --configuration Release",
+    "test:lifecycle": "node --test tests/communication-engineering-lifecycle.test.mjs"
   },
   "devDependencies": {
     "@echelon-foundry/research-publisher": "^0.1.0"
+  },
+  "name": "@echelon-foundry/communication-engineering",
+  "version": "1.0.0",
+  "description": "Evidence-bounded Communication Engineering operational context and repository lifecycle tooling.",
+  "type": "module",
+  "bin": {
+    "communication-engineering": "bin/communication-engineering.mjs"
+  },
+  "files": [
+    "bin/",
+    "agent-context/",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }
