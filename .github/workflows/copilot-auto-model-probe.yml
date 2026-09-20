@@ -22,5 +22,36 @@ jobs:
       - name: Probe auto-selected model
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          COPILOT_OTEL_FILE_EXPORTER_PATH: /tmp/copilot-otel.jsonl
         run: |
           copilot -p "Reply with exactly AVAILABLE." --model auto
+
+          node <<'NODE'
+          const fs = require('fs');
+          const lines = fs.readFileSync('/tmp/copilot-otel.jsonl', 'utf8')
+            .split(/\r?\n/)
+            .filter(Boolean);
+
+          const hits = [];
+          for (const line of lines) {
+            let obj;
+            try { obj = JSON.parse(line); } catch { continue; }
+
+            const text = JSON.stringify(obj);
+            if (!text.includes('gen_ai.response.model') &&
+                !text.includes('gen_ai.request.model')) continue;
+
+            hits.push(obj);
+          }
+
+          console.log('MODEL_TRACE_BEGIN');
+          for (const hit of hits) {
+            const text = JSON.stringify(hit);
+            const models = [...text.matchAll(/gen_ai\.(?:response|request)\.model[^A-Za-z0-9_.:-]*([A-Za-z0-9_.:/-]+)/g)]
+              .map(m => m[1]);
+            const providers = [...text.matchAll(/gen_ai\.provider\.name[^A-Za-z0-9_.:-]*([A-Za-z0-9_.:/-]+)/g)]
+              .map(m => m[1]);
+            console.log(JSON.stringify({models, providers}));
+          }
+          console.log('MODEL_TRACE_END');
+          NODE
