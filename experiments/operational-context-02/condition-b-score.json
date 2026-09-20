@@ -1,0 +1,111 @@
+{
+  "condition": "B",
+  "materialItems": 20,
+  "materialDefects": 0,
+  "guardrailItems": 3,
+  "guardrailDefects": 0,
+  "passCount": 23,
+  "total": 23,
+  "items": {
+    "1_decision_explicit": {
+      "pass": true,
+      "evidence": "VP decision: approve or reject the 90-day hybrid policy."
+    },
+    "2_recommendation_upfront": {
+      "pass": true,
+      "evidence": "Recommendation appears immediately below the decision-request heading."
+    },
+    "3_reversibility_visible": {
+      "pass": true,
+      "evidence": "avoid migrating all 18 consumers now, and reassess after 90 days"
+    },
+    "4_authority_correct": {
+      "pass": true,
+      "evidence": "The final action is explicitly labelled VP decision; Staff Architect is not assigned approval authority."
+    },
+    "5_incident_scope": {
+      "pass": true,
+      "evidence": "Four incidents are scoped to conversion scripts; none to npm client authentication."
+    },
+    "6_pilot_scope": {
+      "pass": true,
+      "evidence": "Three repositories, three artifact types, and 60 runs are explicit."
+    },
+    "7_performance_tradeoff": {
+      "pass": true,
+      "evidence": "OCI slower: 48s vs 35s publish and 43s vs 28s restore."
+    },
+    "8_security_visible": {
+      "pass": true,
+      "evidence": "Both paths acceptable for pilot requirements."
+    },
+    "9_operations_visible": {
+      "pass": true,
+      "evidence": "Operations preference for one mechanism to reduce custom scripting is explicit."
+    },
+    "10_js_preference_visible": {
+      "pass": true,
+      "evidence": "JavaScript teams prefer npm's native integration."
+    },
+    "11_migration_effort_visible": {
+      "pass": true,
+      "evidence": "Two engineer-days publisher work and nine additional engineer-days for all 18 consumers."
+    },
+    "12_no_long_term_reliability_claim": {
+      "pass": true,
+      "evidence": "Three repositories are too small a sample to establish long-term failure rates."
+    },
+    "13_dr_gap_visible": {
+      "pass": true,
+      "evidence": "Disaster recovery was not tested."
+    },
+    "14_no_cost_claim": {
+      "pass": true,
+      "evidence": "No cost difference is known."
+    },
+    "15_no_deadline_claim": {
+      "pass": true,
+      "evidence": "There is no migration deadline."
+    },
+    "16_recommendation_evidence_separated": {
+      "pass": true,
+      "evidence": "Evidence section is distinct; memo says recommendation is a bounded next step rather than proof."
+    },
+    "17_executive_path_scannable": {
+      "pass": true,
+      "evidence": "Decision request and recommendation precede evidence; final VP decision repeats the action."
+    },
+    "18_audit_path_available": {
+      "pass": true,
+      "evidence": "Evidence section retains incidents, sample, timing, security, and effort."
+    },
+    "19_downside_not_buried": {
+      "pass": true,
+      "evidence": "Dedicated Tradeoffs and unresolved evidence section."
+    },
+    "20_one_screen": {
+      "pass": true,
+      "evidence": "216 words, below 300-word target."
+    },
+    "21_no_invented_facts": {
+      "pass": true,
+      "evidence": "No unsupported facts introduced."
+    },
+    "22_stable_terminology": {
+      "pass": true,
+      "evidence": "npm, OCI, hybrid policy, pilot, and reassessment remain consistent."
+    },
+    "23_no_borrowed_authority": {
+      "pass": true,
+      "evidence": "Security review and operations preference remain properly scoped."
+    }
+  },
+  "secondary": {
+    "wordCount": 216,
+    "headingCount": 3,
+    "bulletCount": 5,
+    "inputTokens": "not captured",
+    "outputTokens": "not captured",
+    "repairConceptsRequired": 0
+  }
+}

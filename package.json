@@ -7,7 +7,8 @@
     "research:status": "research-publisher status",
     "research:verify": "research-publisher verify",
     "research:doctor": "research-publisher doctor",
-    "research:clean": "research-publisher clean --config ./research-publisher.config.mjs"
+    "research:clean": "research-publisher clean --config ./research-publisher.config.mjs",
+    "context:validate": "node scripts/validate-communication-context.mjs"
   },
   "devDependencies": {
     "@echelon-foundry/research-publisher": "^0.1.0"

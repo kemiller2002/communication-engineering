@@ -1,0 +1,104 @@
+{
+  "condition": "A",
+  "defectDetection": {
+    "detected": 12,
+    "partial": 0,
+    "missed": 0,
+    "points": 12,
+    "possible": 12,
+    "recall": 1,
+    "falsePositives": 0,
+    "falsePositiveDescriptions": []
+  },
+  "correctedMemoGuardrails": {
+    "preserve90DayHybrid": {
+      "pass": true
+    },
+    "slowerOciPerformance": {
+      "pass": true
+    },
+    "longTermReliabilityAndDrUncertainty": {
+      "pass": true
+    },
+    "noCostClaim": {
+      "pass": true
+    },
+    "jsTeamPreference": {
+      "pass": true
+    },
+    "operationsPreferenceWithoutAuthority": {
+      "pass": true
+    },
+    "securityScope": {
+      "pass": true
+    },
+    "twoAndNineDayEffort": {
+      "pass": true
+    },
+    "vpApproveReject": {
+      "pass": true
+    },
+    "under300Words": {
+      "pass": true,
+      "evidence": "169 words"
+    }
+  },
+  "injectedDefects": {
+    "D1": {
+      "result": "detected",
+      "points": 1
+    },
+    "D2": {
+      "result": "detected",
+      "points": 1
+    },
+    "D3": {
+      "result": "detected",
+      "points": 1
+    },
+    "D4": {
+      "result": "detected",
+      "points": 1
+    },
+    "D5": {
+      "result": "detected",
+      "points": 1
+    },
+    "D6": {
+      "result": "detected",
+      "points": 1
+    },
+    "D7": {
+      "result": "detected",
+      "points": 1
+    },
+    "D8": {
+      "result": "detected",
+      "points": 1
+    },
+    "D9": {
+      "result": "detected",
+      "points": 1
+    },
+    "D10": {
+      "result": "detected",
+      "points": 1
+    },
+    "D11": {
+      "result": "detected",
+      "points": 1
+    },
+    "D12": {
+      "result": "detected",
+      "points": 1
+    }
+  },
+  "secondary": {
+    "reviewTotalWordCount": 363,
+    "correctedMemoWordCount": 169,
+    "terminologyStyle": "ordinary descriptive review language",
+    "inputTokens": "not captured",
+    "outputTokens": "not captured",
+    "repairConceptsRequired": 0
+  }
+}
