@@ -213,6 +213,19 @@ NODE
         run: |
           npx --yes --package=@echelon-foundry/repository-operating-system@3.0.3 ros upgrade
 
+          # The legacy repo-level launcher pin is user/shared state and is preserved
+          # by ROS upgrade. Force it forward so the newly installed launcher resolves
+          # the current binary instead of the retired 1.0.0 release.
+          node <<'NODE'
+          const fs = require('fs');
+          const path = 'ros.json';
+          if (fs.existsSync(path)) {
+            const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+            data.rosVersion = '3.0.3';
+            fs.writeFileSync(path, JSON.stringify(data, null, 2) + '\n');
+          }
+          NODE
+
           if [ "$ros_legacy_identity_shim" = "true" ]; then
             cp /tmp/communication-modernization/legacy-installation.json .ros/installation.json
           fi
