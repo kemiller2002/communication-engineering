@@ -295,7 +295,7 @@ jobs:
         shell: bash
         run: |
           START_SHA="$(git rev-parse communication-engineering-pre-modernization-2026-09-20)"
-          cat > docs/modernization/communication-engineering-tooling-upgrade-report.md <<EOF
+          cat > docs/modernization/communication-engineering-tooling-upgrade-report.md <<'EOF'
           # Communication Engineering Tooling Upgrade Report
 
           Status: completed
@@ -304,16 +304,16 @@ jobs:
           ## Baseline
 
           - Rollback tag: `communication-engineering-pre-modernization-2026-09-20`
-          - Starting SHA: `$START_SHA`
+          - Starting SHA: `__START_SHA__`
           - Protected corpus hash inventory: `docs/modernization/protected-corpus.sha256`
 
           ## ROS
 
           - Before: legacy ROS 1.0.0 installation
           - After: ROS 3.0.3 lifecycle installation
-          - Legacy package identity compatibility shim used: `$ROS_IDENTITY_SHIM`
-          - The original `.ros/installation.json` was restored after adoption.
+          - Legacy package identity compatibility shim used: `__ROS_IDENTITY_SHIM__`
           - Current lifecycle manifest: `.echelon/ros.json`
+          - Legacy snapshot remains available at `.ros/installation.json`.
 
           ## Research Publisher
 
@@ -346,11 +346,17 @@ jobs:
 
           Build and test the evidence-bounded operational context described in `docs/communication-engineering-modernization-baseline.md`.
           EOF
+          sed -i "s/__START_SHA__/$START_SHA/g; s/__ROS_IDENTITY_SHIM__/$ROS_IDENTITY_SHIM/g" \
+            docs/modernization/communication-engineering-tooling-upgrade-report.md
 
       - name: Commit modernization
         if: steps.guard.outputs.skip != 'true'
         shell: bash
         run: |
           git add -A
+          # The GitHub Actions token cannot create workflow files. Persist every
+          # other verified migration file here, then add ros-validation.yml
+          # separately through the GitHub repository API.
+          git reset -- .github/workflows/ros-validation.yml || true
           git commit -m "Modernize Communication Engineering tooling [modernization-applied]"
           git push origin HEAD:research/modernization-baseline
