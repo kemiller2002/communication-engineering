@@ -1,0 +1,26 @@
+name: Copilot Auto Model Probe
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  copilot-requests: write
+
+jobs:
+  probe-auto:
+    if: github.head_ref == 'research/independent-preflight-replication-06' || github.ref_name == 'research/independent-preflight-replication-06'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm install -g @github/copilot
+      - name: Probe auto-selected model
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          copilot -p "Reply with exactly AVAILABLE." --model auto
