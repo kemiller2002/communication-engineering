@@ -1,0 +1,38 @@
+name: Independent Model Availability Probe
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  copilot-requests: write
+
+jobs:
+  probe:
+    if: github.head_ref == 'research/independent-preflight-replication-06' || github.ref_name == 'research/independent-preflight-replication-06'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        model:
+          - claude-haiku-4.5
+          - gemini-3.1-pro-preview
+          - gemini-3.5-flash
+
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install GitHub Copilot CLI
+        run: npm install -g @github/copilot
+
+      - name: Probe model
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          copilot -p "Reply with exactly AVAILABLE." -s --model "${{ matrix.model }}" > /tmp/probe.txt
+          grep -Fx "AVAILABLE." /tmp/probe.txt
