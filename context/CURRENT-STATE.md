@@ -37,6 +37,33 @@ The context is not yet a packaged lifecycle product.
 
 Promotion to packaging depends on prospective validation showing useful communication gains without unacceptable ceremony, context burden, or false certainty.
 
+## Operational-context experiment results
+
+### Operational Context Experiment 01 — incident procedure
+
+- Condition A, ordinary request: 18/18 preregistered checks passed.
+- Condition B, Communication Engineering context + explicit contract: 18/18 passed.
+- Both outputs were 91 words.
+- Result: null correctness result.
+- Interpretation: the fixed task already supplied nearly all decision-relevant communication state.
+
+### Operational Context Experiment 02 — executive decision memo
+
+- Condition A, ordinary request: 23/23 preregistered checks passed.
+- Condition B, Communication Engineering context + explicit contract: 23/23 passed.
+- A: 206 words.
+- B: 216 words.
+- Result: second null correctness result.
+- Interpretation: when the source brief already contains audience, decision, evidence, uncertainty, and use-mode information, the full context may add structure without adding measured correctness.
+
+### Resulting method change
+
+The operational context now uses selective activation.
+
+Do not require a full communication-contract exercise for fully specified, low-ambiguity tasks.
+
+Use the full method when decision-relevant communication inputs are missing, conflicting, consequential, or difficult to verify.
+
 ## Assumptions
 
 - A small operational briefing can improve communication decisions without turning provisional research into doctrine.
