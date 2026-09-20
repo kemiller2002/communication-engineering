@@ -1,0 +1,165 @@
+name: Independent MAI Communication Preflight Replication 07
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  copilot-requests: write
+
+concurrency:
+  group: independent-preflight-replication-07
+  cancel-in-progress: false
+
+jobs:
+  replicate:
+    if: github.head_ref == 'research/independent-preflight-replication-06' || github.ref_name == 'research/independent-preflight-replication-06'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out replication branch
+        uses: actions/checkout@v4
+        with:
+          ref: research/independent-preflight-replication-06
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Guard completed replication
+        id: guard
+        shell: bash
+        run: |
+          BASE="experiments/independent-preflight-replication-07"
+          if [ -f "$BASE/condition-a-first-pass.md" ] && [ -f "$BASE/condition-b-first-pass.md" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Node.js
+        if: steps.guard.outputs.skip != 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install GitHub Copilot CLI
+        if: steps.guard.outputs.skip != 'true'
+        run: npm install -g @github/copilot
+
+      - name: Build frozen prompts
+        if: steps.guard.outputs.skip != 'true'
+        shell: bash
+        run: |
+          BASE="experiments/independent-preflight-replication-07"
+
+          cat "$BASE/condition-a-instruction.md" "$BASE/task.md"             > /tmp/condition-a-prompt.md
+
+          {
+            cat "$BASE/condition-b-instruction.md"
+            echo
+            echo "# Communication Engineering operational context"
+            for file in               agent-context/COMMUNICATION-FOUNDATIONS.md               agent-context/COMMUNICATION-DECISION-CHECKLIST.md               agent-context/PURPOSE-OUTCOME-MATRIX.md               agent-context/COMMUNICATION-ANTI-PATTERNS.md               agent-context/RESEARCH-STATUS.md
+            do
+              echo
+              echo "## SOURCE: $file"
+              cat "$file"
+            done
+            echo
+            cat "$BASE/task.md"
+          } > /tmp/condition-b-prompt.md
+
+      - name: Generate Condition A with auto route
+        if: steps.guard.outputs.skip != 'true'
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          COPILOT_OTEL_FILE_EXPORTER_PATH: /tmp/condition-a-otel.jsonl
+        run: |
+          BASE="experiments/independent-preflight-replication-07"
+
+          copilot             -p "$(cat /tmp/condition-a-prompt.md)"             -s             --model auto             --no-custom-instructions             --disable-builtin-mcps             --no-ask-user             > "$BASE/condition-a-first-pass.md"
+
+          test -s "$BASE/condition-a-first-pass.md"
+          node scripts/extract-copilot-model.mjs /tmp/condition-a-otel.jsonl             > "$BASE/condition-a-model.json"
+
+      - name: Assert Condition A resolved model
+        if: steps.guard.outputs.skip != 'true'
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const p = 'experiments/independent-preflight-replication-07/condition-a-model.json';
+          const x = JSON.parse(fs.readFileSync(p, 'utf8'));
+          if (x.resolvedModels.length !== 1 || x.resolvedModels[0] !== 'mai-code-1.1-flash') {
+            throw new Error('Condition A did not resolve to mai-code-1.1-flash: ' + JSON.stringify(x));
+          }
+          NODE
+
+      - name: Generate Condition B with auto route
+        if: steps.guard.outputs.skip != 'true'
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          COPILOT_OTEL_FILE_EXPORTER_PATH: /tmp/condition-b-otel.jsonl
+        run: |
+          BASE="experiments/independent-preflight-replication-07"
+
+          copilot             -p "$(cat /tmp/condition-b-prompt.md)"             -s             --model auto             --no-custom-instructions             --disable-builtin-mcps             --no-ask-user             > "$BASE/condition-b-first-pass.md"
+
+          test -s "$BASE/condition-b-first-pass.md"
+          node scripts/extract-copilot-model.mjs /tmp/condition-b-otel.jsonl             > "$BASE/condition-b-model.json"
+
+      - name: Assert Condition B resolved model
+        if: steps.guard.outputs.skip != 'true'
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const p = 'experiments/independent-preflight-replication-07/condition-b-model.json';
+          const x = JSON.parse(fs.readFileSync(p, 'utf8'));
+          if (x.resolvedModels.length !== 1 || x.resolvedModels[0] !== 'mai-code-1.1-flash') {
+            throw new Error('Condition B did not resolve to mai-code-1.1-flash: ' + JSON.stringify(x));
+          }
+          NODE
+
+      - name: Freeze execution metadata
+        if: steps.guard.outputs.skip != 'true'
+        shell: bash
+        run: |
+          BASE="experiments/independent-preflight-replication-07"
+          A_SHA="$(sha256sum "$BASE/condition-a-first-pass.md" | awk '{print $1}')"
+          B_SHA="$(sha256sum "$BASE/condition-b-first-pass.md" | awk '{print $1}')"
+
+          cat > "$BASE/first-pass-freeze.md" <<EOF
+          # Independent replication 07 first-pass freeze
+
+          Status: Frozen before scoring
+          Date: 2026-09-20
+
+          - Execution surface: GitHub Copilot CLI
+          - Requested model: `auto`
+          - Required resolved model: `mai-code-1.1-flash`
+          - Condition execution: separate stateless CLI invocations
+          - Condition A SHA-256: `$A_SHA`
+          - Condition B SHA-256: `$B_SHA`
+          - Condition A model evidence: `condition-a-model.json`
+          - Condition B model evidence: `condition-b-model.json`
+          - Prior experiment outputs supplied: no
+          - Scoring/preregistration supplied: no
+          - Communication Engineering context supplied to A: no
+          - Communication Engineering context supplied to B: yes
+          EOF
+
+      - name: Commit frozen outputs
+        if: steps.guard.outputs.skip != 'true'
+        shell: bash
+        run: |
+          git config user.name "communication-engineering-replication"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add experiments/independent-preflight-replication-07/
+          git commit -m "Freeze independent MAI preflight replication 07 outputs"
+          git push origin HEAD:research/independent-preflight-replication-06
