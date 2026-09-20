@@ -1,0 +1,5 @@
+{
+  "reason": "Research Publisher 0.1.0 legacy init applied shared artifacts/scripts but did not write its manifest during convergence.",
+  "authority": "Research Publisher 0.1.0 documented manifest schema plus the verified current repository state.",
+  "verificationRequired": "npx @echelon-foundry/research-publisher verify --strict"
+}

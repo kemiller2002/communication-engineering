@@ -1,0 +1,29 @@
+{
+  "command": "doctor",
+  "schemaVersion": 1,
+  "healthy": true,
+  "installation": {
+    "schemaVersion": 1,
+    "tool": "ros",
+    "package": "@echelon-foundry/repository-operating-system",
+    "cliVersion": "3.0.3",
+    "installedVersion": "3.0.3",
+    "configurationVersion": 1,
+    "profile": "greenfield",
+    "managedArtifactCount": 82,
+    "state": "installed",
+    "verified": true,
+    "upgradeAvailable": null
+  },
+  "errorCount": 0,
+  "warningCount": 0,
+  "diagnoses": [
+    {
+      "severity": "information",
+      "code": "seeded-file-modified",
+      "message": "ros.json: shared file has local changes, which the tool preserves",
+      "path": "ros.json",
+      "remedy": null
+    }
+  ]
+}

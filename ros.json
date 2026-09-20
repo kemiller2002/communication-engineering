@@ -1,7 +1,7 @@
 {
   "name": "communication-engineering",
   "project": "Communication Engineering",
-  "rosVersion": "1.0.0",
+  "rosVersion": "3.0.3",
   "repSpecificationVersion": "2.0",
   "profile": "greenfield",
   "bootstrap": "BOOTSTRAP.md",

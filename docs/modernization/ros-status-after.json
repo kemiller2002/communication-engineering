@@ -1,0 +1,27 @@
+{
+  "repository": "communication-engineering",
+  "protocolVersion": "1.0.0",
+  "validation": "passed",
+  "findingCount": 0,
+  "workItems": [],
+  "telemetry": {
+    "executionCount": 0,
+    "activeExecutionCount": 0
+  },
+  "nextActions": [
+    "Select an allowed work transition or begin a new work item."
+  ],
+  "installation": {
+    "schemaVersion": 1,
+    "tool": "ros",
+    "package": "@echelon-foundry/repository-operating-system",
+    "cliVersion": "3.0.3",
+    "installedVersion": "3.0.3",
+    "configurationVersion": 1,
+    "profile": "greenfield",
+    "managedArtifactCount": 82,
+    "state": "installed",
+    "verified": true,
+    "upgradeAvailable": null
+  }
+}

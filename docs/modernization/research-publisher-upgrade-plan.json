@@ -1,0 +1,305 @@
+[2m12:38:56[22m [34m[content][39m Syncing content
+[2m12:38:56[22m [34m[content][39m Synced content
+[2m12:38:56[22m [34m[types][39m Generated [2m127ms[22m
+[2m12:38:56[22m [34m[build][39m output: [34m"static"[39m
+[2m12:38:56[22m [34m[build][39m mode: [34m"static"[39m
+[2m12:38:56[22m [34m[build][39m directory: [34m/home/runner/work/communication-engineering/communication-engineering/dist/[39m
+[2m12:38:56[22m [34m[build][39m Collecting build info...
+[2m12:38:56[22m [34m[build][39m [32m✓ Completed in 144ms.[39m
+[2m12:38:56[22m [34m[build][39m Building static entrypoints...
+[2m12:38:57[22m [34m[vite][39m [32m✓ built in 755ms[39m
+[2m12:38:57[22m [34m[build][39m [32m✓ Completed in 786ms.[39m
+
+[42m[30m generating static routes [39m[49m
+[2m12:38:57[22m [32m▶[39m src/pages/404.astro
+[2m12:38:57[22m   [34m└─[39m [2m/404.html[22m [2m(+10ms)[22m 
+[2m12:38:57[22m [32m▶[39m src/pages/collections/[taxonomy]/[term].astro
+[2m12:38:57[22m   [34m├─[39m [2m/collections/artifact-type/research-document/index.html[22m [2m(+4ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/artifact-type/decision-framework/index.html[22m [2m(+2ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/artifact-type/evidence/index.html[22m [2m(+2ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/artifact-type/hypothesis/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/artifact-type/journal-entry/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/artifact-type/research-package/index.html[22m [2m(+2ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/artifact-type/theory/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/research-area/general-research/index.html[22m [2m(+2ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/research-area/research-portfolio/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/research-area/comparative-communication/index.html[22m [2m(+2ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/research-area/communication-effectiveness/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/research-area/communication-measurement/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/communication-science/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/technical-communication/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/human-factors/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/cognitive-psychology/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/psychometrics/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/decision-science/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/rhetoric/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/history-of-science/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/mathematics/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/law/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/philosophy/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/software-engineering/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/literary-studies/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/poetry/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/science-fiction/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/comparative-literature/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/indigenous-studies/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/black-studies/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/queer-studies/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/migration-studies/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/translation-studies/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/portfolio/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/queue/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/roadmap/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/governance/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/writer-selection/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/conditional-fit/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/decision-framework/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/audience/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/goals/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/context/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/science-communication/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/usability/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/measurement/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/task-success/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/errors/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/time-on-task/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/plain-language/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/randomized-trial/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/comprehension/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/systematic-review/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/evidence-gap/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/accessibility/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/cognitive-accessibility/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/clear-language/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/assistance/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/critical-errors/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/observation/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/risk/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/satisfaction/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/task-performance/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/metric-divergence/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/retention/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/transfer/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/learning/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/beats/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/ginsberg/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/kerouac/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/ferlinghetti/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/rhythm/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/witness/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/rfc/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/engineering/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/specification/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/navigation/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/terminology/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/fitzgerald/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/narrative/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/symbolism/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/delayed-disclosure/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/frost/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/poetry/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/ambiguity/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/countervoice/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/proverb/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/indigenous-literature/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/sovereignty/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/nation/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/relationality/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/descartes/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/philosophy/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/method/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/translation/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/women-beats/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/diane-di-prima/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/joanne-kyger/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/ruth-weiss/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/euclid/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/mathematics/index.html[22m [2m(+7ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/proof/index.html[22m [2m(+2ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/dependencies/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/diagram/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/darwin/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/competing-interpretations/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/argument-structure/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/compression/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/practice/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/brown/index.html[22m [2m(+15ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/law/index.html[22m [2m(+2ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/institutional-writing/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/holding/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/legitimacy/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/harlem-renaissance/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/black-arts/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/black-feminism/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/diaspora/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/queer/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/code-switching/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/fracture/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/border/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/comparative-literature/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/non-us/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/provenance/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/hemingway/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/omission/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/subtext/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/inference/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/science/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/analogy/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/objection/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/synthesis/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/asimov/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/popular-science/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/direct-address/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/ideas/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/text-structure/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/meta-analysis/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/education/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/agents/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/operations/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/decisions/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/phase-1/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/quality/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/index/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/research/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/rep/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/constitution/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/lifecycle/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/mission-framing/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/pilot-selection/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/portfolio-review/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/validity/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/procedural-documentation/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/literary-comparison/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/comparative-writing/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/explanatory-progression/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/rubric-pilot/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/canon-expansion/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/reading-guide/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/communication-effectiveness/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/research-program/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/pilot/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/purpose-selection/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/situated-authority/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/status/draft/index.html[22m [2m(+2ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/status/accepted/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/status/canonical/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/status/supported/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/status/proposed/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/status/review/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m└─[39m [2m/collections/status/candidate/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m [32m▶[39m src/pages/collections/[taxonomy]/index.astro
+[2m12:38:57[22m   [34m├─[39m [2m/collections/artifact-type/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/research-area/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/discipline/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/tag/index.html[22m [2m(+3ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/status/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/project/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/collections/purpose/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m└─[39m [2m/collections/audience/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m [32m▶[39m src/pages/index.astro
+[2m12:38:57[22m   [34m└─[39m [2m/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m [32m▶[39m src/pages/research/[...slug].astro
+[2m12:38:57[22m   [34m├─[39m [2m/research/adaptive-development-telemetry/index.html[22m [2m(+2ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/applied-validation-cases/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/communication-engineering-architecture-records/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/communication-engineering-decision-navigation/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/communication-engineering-modernization-baseline/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/communication-engineering-portfolio-roadmap/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/communication-engineering-research-frontier/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/comparative-writer-matrix-explanatory-progression/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/cross-domain-explanatory-progression-corpus-manifest-v1-0/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/df-comm-2026-0001-model-the-research-portfolio-as-a-staged-dependency-graph/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/df-comm-2026-96cf-select-communication-functions-conditionally-rather-than-rank-writers/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-0001-effective-communication-depends-on-goal-audience-and-context/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-0002-usability-provides-context-bound-outcome-measures/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-0003-task-success-time-errors-and-satisfaction-can-operationalize-usability/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-0004-plain-language-effects-vary-with-source-material/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-0005-most-plain-language-summary-criteria-lack-direct-empirical-support/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-0006-clear-content-is-an-accessibility-requirement-with-stated-limits/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-0007-validation-should-separate-unassisted-completion-assistance-critical-errors-and-time/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-0008-critical-errors-require-observation-because-participants-may-not-recognize-them/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-0009-subjective-task-ratings-can-correlate-weakly-with-observed-performance/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-0010-durable-learning-claims-require-delayed-or-transfer-sensitive-assessment/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-2676-beat-practices-separate-accumulative-witness-spontaneous-discovery-and-civic-observation/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-3377-rfc-9110-uses-layered-definitions-and-navigation-for-expert-coordination/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-3dfc-gatsby-uses-filtered-narration-and-recurring-motifs-for-retrospective-synthesis/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-3ffc-frost-stages-unresolved-interpretation-through-concrete-labor-and-countervoice/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-455b-indigenous-literary-methods-are-nation-specific-and-relational/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-5479-descartes-moves-from-narrated-predicament-to-four-compressed-rules/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-6a27-women-associated-with-the-beats-developed-distinct-practices-obscured-by-one-movement-label/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-6a2d-euclid-i-1-exposes-construction-and-proof-dependencies/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-6f00-scholars-disagree-on-the-global-structure-of-darwin-s-long-argument/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-7d8d-descartes-s-four-rules-are-a-practice-dependent-abridgment/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-8434-brown-narrows-the-question-acknowledges-limits-and-states-a-holding/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-92f1-harlem-renaissance-and-black-arts-writing-spans-incompatible-audience-and-form-strategies/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-9b6c-diasporic-and-queer-writers-often-make-linguistic-access-and-formal-fracture-part-of-the-argument/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-a4f7-translation-materially-limits-language-level-comparison-across-non-us-traditions/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-bdc6-hemingway-s-omission-works-through-recoverable-concrete-subtext/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-d6b2-darwin-builds-natural-selection-through-analogy-cases-and-synthesis/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-e90a-asimov-foregrounds-conceptual-models-through-dialogue-scale-and-reversal/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ev-comm-2026-e9d5-text-structure-instruction-can-improve-expository-comprehension/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/executive-synthesis-choose-functions-not-famous-voices/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/explanatory-progression-coding-rubric-v1-0/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/external-work-system-adapter-contract-1-0/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/functional-profiles-explanatory-progression-pilot/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/gv-agent-001-agent-operating-manual/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/gv-dec-001-governance-decision-log/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/gv-eng-001-engineering-standards/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/gv-index-001-governance-index/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/gv-rep-001-research-execution-package-specification/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/gv-ros-001-ai-repository-operating-system/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/hy-comm-2026-0001-procedural-documentation-is-the-highest-value-first-vertical-slice/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/hy-comm-2026-0002-plain-language-is-beneficial-but-not-a-universal-optimization-rule/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/hy-comm-2026-0003-procedural-communication-requires-a-purpose-bound-outcome-vector/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/hy-comm-2026-45a8-literary-technique-transfer-requires-an-explicit-inference-contract/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/hy-comm-2026-cff5-mixed-expertise-technical-audiences-benefit-from-overview-plus-reference-layers/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/hy-comm-2026-d246-proof-obligation-predicts-progression-better-than-surface-style/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/hy-comm-2026-f19e-situated-authority-limits-responsible-literary-transfer/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/jr-comm-2026-0001-mission-framing-and-first-slice-selection/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/jr-comm-2026-0002-initial-portfolio-review-and-queue-normalization/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/jr-comm-2026-0003-outcome-measure-validity-investigation/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/jr-comm-2026-2833-modern-american-literary-function-comparison/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/jr-comm-2026-572d-comparative-explanatory-progression-pilot/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/jr-comm-2026-c85d-plural-literary-traditions-corpus-expansion/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/modern-american-literary-function-comparison/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/pilot-measurement-communication-engineering-communication-engineering-ros-pilot-measurement-plan/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/plural-literary-traditions-comparison-and-reading-guide/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/ros-work-protocol-1-0/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/rp-comm-2026-0001-communication-engineering-mission-foundation-and-first-research-slice/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/rp-comm-2026-0002-procedural-communication-outcome-measure-architecture/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/rp-comm-2026-572d-cross-domain-explanatory-progression-and-conditional-writer-function-selection/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/rp-comm-2026-8fb7-modern-american-literary-functions-and-transfer-boundaries/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/rp-comm-2026-efc6-plural-literary-traditions-situated-authority-and-reading-paths/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m├─[39m [2m/research/th-comm-2026-0001-conditional-fit-model-of-communication-effectiveness/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m   [34m└─[39m [2m/research/writer-to-purpose-fit-framework-v1-0/index.html[22m [2m(+2ms)[22m 
+[2m12:38:57[22m [32m▶[39m src/pages/search.astro
+[2m12:38:57[22m   [34m└─[39m [2m/search/index.html[22m [2m(+1ms)[22m 
+[2m12:38:57[22m [32m✓ Completed in 335ms.
+[39m
+[2m12:38:57[22m [34m[build][39m 257 page(s) built in [1m1.28s[22m
+[2m12:38:57[22m [34m[build][39m [1mComplete![22m
+
+Running Pagefind v1.5.2 (Extended)
+Running from: "/home/runner/work/communication-engineering/communication-engineering/node_modules/@echelon-foundry/research-publisher"
+Source:       "/home/runner/work/communication-engineering/communication-engineering/dist"
+Output:       "/home/runner/work/communication-engineering/communication-engineering/dist/pagefind"
+
+[Walking source directory]
+Found 257 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: en
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 73 pages
+  Indexed 4840 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 0.186 seconds
