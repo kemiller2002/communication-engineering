@@ -34,6 +34,9 @@ jobs:
       - name: Validate Communication Engineering context
         run: npm run context:validate
 
+      - name: Test Communication preflight prototype
+        run: npm run preflight:prototype:test
+
       - name: Validate research content
         run: npm run research:validate
 
