@@ -32,26 +32,39 @@ jobs:
             .split(/\r?\n/)
             .filter(Boolean);
 
-          const hits = [];
+          const targetKeys = new Set([
+            'gen_ai.request.model',
+            'gen_ai.response.model',
+            'gen_ai.provider.name'
+          ]);
+
+          const found = [];
+
+          function walk(value, path = '') {
+            if (Array.isArray(value)) {
+              value.forEach((item, i) => walk(item, path + '[' + i + ']'));
+              return;
+            }
+            if (!value || typeof value !== 'object') return;
+
+            for (const [key, child] of Object.entries(value)) {
+              const next = path ? path + '.' + key : key;
+              if (targetKeys.has(key)) {
+                found.push({ key, value: child, path: next });
+              }
+              walk(child, next);
+            }
+          }
+
           for (const line of lines) {
-            let obj;
-            try { obj = JSON.parse(line); } catch { continue; }
-
-            const text = JSON.stringify(obj);
-            if (!text.includes('gen_ai.response.model') &&
-                !text.includes('gen_ai.request.model')) continue;
-
-            hits.push(obj);
+            try { walk(JSON.parse(line)); } catch {}
           }
 
           console.log('MODEL_TRACE_BEGIN');
-          for (const hit of hits) {
-            const text = JSON.stringify(hit);
-            const models = [...text.matchAll(/gen_ai\.(?:response|request)\.model[^A-Za-z0-9_.:-]*([A-Za-z0-9_.:/-]+)/g)]
-              .map(m => m[1]);
-            const providers = [...text.matchAll(/gen_ai\.provider\.name[^A-Za-z0-9_.:-]*([A-Za-z0-9_.:/-]+)/g)]
-              .map(m => m[1]);
-            console.log(JSON.stringify({models, providers}));
-          }
+          console.log(JSON.stringify(found, null, 2));
           console.log('MODEL_TRACE_END');
+
+          if (!found.some(x => x.key === 'gen_ai.response.model')) {
+            process.exitCode = 2;
+          }
           NODE
