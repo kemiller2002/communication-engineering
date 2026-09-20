@@ -10,7 +10,6 @@
     "research:clean": "research-publisher clean --config ./research-publisher.config.mjs"
   },
   "devDependencies": {
-    "@echelon-foundry/research-publisher": "^0.1.0",
-    "research-publisher": "github:kemiller2002/research-publisher#main"
+    "@echelon-foundry/research-publisher": "^0.1.0"
   }
 }
