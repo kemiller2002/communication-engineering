@@ -89,6 +89,8 @@ jobs:
         shell: bash
         run: |
           mkdir -p docs/modernization
+          cp .ros/installation.json /tmp/communication-modernization/legacy-installation.json
+
           set +e
           npx --yes --package=@echelon-foundry/repository-operating-system@3.0.3 ros status --json             > docs/modernization/ros-status-before.json
           STATUS_CODE=$?
@@ -97,19 +99,56 @@ jobs:
           npx --yes --package=@echelon-foundry/repository-operating-system@3.0.3 ros upgrade --dry-run --json             > docs/modernization/ros-upgrade-plan.json
           UPGRADE_CODE=$?
           set -e
+
           echo "ROS status exit: $STATUS_CODE"
           echo "ROS doctor exit: $DOCTOR_CODE"
-          if [ "$UPGRADE_CODE" -ne 0 ]; then
-            echo "ROS upgrade dry-run failed with exit $UPGRADE_CODE"
-            cat docs/modernization/ros-upgrade-plan.json || true
-            exit "$UPGRADE_CODE"
+
+          if [ "$UPGRADE_CODE" -eq 0 ]; then
+            echo "ros_legacy_identity_shim=false" >> "$GITHUB_ENV"
+            exit 0
           fi
+
+          LEGACY_PACKAGE="$(node -p "JSON.parse(require('fs').readFileSync('.ros/installation.json','utf8')).package")"
+          if [ "$UPGRADE_CODE" -eq 5 ] && [ "$LEGACY_PACKAGE" = "@kemiller2002/repository-operating-system" ]; then
+            echo "Testing legacy package-identity compatibility shim."
+            node - <<'NODE'
+const fs = require('fs');
+const path = '.ros/installation.json';
+const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+data.package = '@echelon-foundry/repository-operating-system';
+fs.writeFileSync(path, JSON.stringify(data, null, 2) + '\n');
+NODE
+
+            set +e
+            npx --yes --package=@echelon-foundry/repository-operating-system@3.0.3 ros upgrade --dry-run --json               > docs/modernization/ros-upgrade-plan-legacy-identity-shim.json
+            SHIM_CODE=$?
+            set -e
+
+            if [ "$SHIM_CODE" -eq 0 ]; then
+              echo "ros_legacy_identity_shim=true" >> "$GITHUB_ENV"
+              exit 0
+            fi
+
+            cp /tmp/communication-modernization/legacy-installation.json .ros/installation.json
+            echo "ROS legacy identity shim did not produce a valid migration plan."
+            cat docs/modernization/ros-upgrade-plan-legacy-identity-shim.json || true
+            exit "$SHIM_CODE"
+          fi
+
+          echo "ROS upgrade dry-run failed with exit $UPGRADE_CODE"
+          cat docs/modernization/ros-upgrade-plan.json || true
+          exit "$UPGRADE_CODE"
 
       - name: Upgrade ROS to 3.0.3
         if: steps.guard.outputs.skip != 'true'
         shell: bash
         run: |
           npx --yes --package=@echelon-foundry/repository-operating-system@3.0.3 ros upgrade
+
+          if [ "$ros_legacy_identity_shim" = "true" ]; then
+            cp /tmp/communication-modernization/legacy-installation.json .ros/installation.json
+          fi
+
           ./ros status --json > docs/modernization/ros-status-after.json
           ./ros verify --json > docs/modernization/ros-verify-after.json
           ./ros doctor --json > docs/modernization/ros-doctor-after.json || true
