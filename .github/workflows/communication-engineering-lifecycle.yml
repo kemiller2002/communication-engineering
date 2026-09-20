@@ -18,4 +18,16 @@ jobs:
       - run: npm ci
       - run: npm run context:validate
       - run: npm run test:lifecycle
+      - name: Exercise the packed artifact in a clean repository
+        shell: bash
+        run: |
+          TARBALL="$(npm pack --silent)"
+          PACKAGE_PATH="$PWD/$TARBALL"
+          ROOT="$(mktemp -d)"
+          git -C "$ROOT" init -q
+          npm exec --yes --package="$PACKAGE_PATH" communication-engineering -- init --root "$ROOT"
+          npm exec --yes --package="$PACKAGE_PATH" communication-engineering -- verify --strict --root "$ROOT"
+          npm exec --yes --package="$PACKAGE_PATH" communication-engineering -- init --check --root "$ROOT"
+          test -f "$ROOT/.echelon/communication-engineering.json"
+          test -f "$ROOT/.communication-engineering/COMMUNICATION-FOUNDATIONS.md"
       - run: npm pack --dry-run
