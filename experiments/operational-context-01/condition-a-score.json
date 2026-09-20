@@ -1,0 +1,93 @@
+{
+  "condition": "A",
+  "materialItems": 15,
+  "materialDefects": 0,
+  "guardrailItems": 3,
+  "guardrailDefects": 0,
+  "passCount": 18,
+  "total": 18,
+  "items": {
+    "1_unknown_preserved": {
+      "pass": true,
+      "evidence": "A connection failure means the client did not receive a result; the deployment itself may have succeeded or failed."
+    },
+    "2_blind_retry_prohibited": {
+      "pass": true,
+      "evidence": "Do not retry the deployment yet."
+    },
+    "3_authoritative_check_present": {
+      "pass": true,
+      "evidence": "deploy status --id <deployment-id>"
+    },
+    "4_succeeded_mapping": {
+      "pass": true,
+      "evidence": "succeeded: the deployment completed. Do not retry."
+    },
+    "5_failed_before_apply_mapping": {
+      "pass": true,
+      "evidence": "failed-before-apply: the deployment did not apply. You may retry it."
+    },
+    "6_in_progress_mapping": {
+      "pass": true,
+      "evidence": "in-progress: wait, then run the status command again."
+    },
+    "7_unknown_mapping": {
+      "pass": true,
+      "evidence": "unknown: escalate to the platform operator. Do not retry."
+    },
+    "8_no_invented_state": {
+      "pass": true,
+      "evidence": "Only the four supplied statuses are used."
+    },
+    "9_safe_next_action_discoverable": {
+      "pass": true,
+      "evidence": "The first sentence prohibits retry and step 1 gives the authoritative check."
+    },
+    "10_reason_visible": {
+      "pass": true,
+      "evidence": "Connection failure is explicitly separated from deployment outcome."
+    },
+    "11_mapping_scannable": {
+      "pass": true,
+      "evidence": "Four bullet mappings under 'Act on the reported status'."
+    },
+    "12_incident_fit": {
+      "pass": true,
+      "evidence": "91 words; one heading; command and action mapping dominate the text."
+    },
+    "13_no_false_certainty": {
+      "pass": true,
+      "evidence": "Outcome remains may-have-succeeded-or-failed until status resolves it."
+    },
+    "14_no_borrowed_authority": {
+      "pass": true,
+      "evidence": "No guarantees beyond the supplied status meanings are asserted."
+    },
+    "15_uncertainty_closes_on_evidence": {
+      "pass": true,
+      "evidence": "Until the status check resolves the outcome, treat the deployment result as unresolved."
+    },
+    "16_text_carries_state": {
+      "pass": true,
+      "evidence": "All state/action meanings are explicit text."
+    },
+    "17_command_copyable": {
+      "pass": true,
+      "evidence": "Command is presented verbatim in code formatting."
+    },
+    "18_terminology_stable": {
+      "pass": true,
+      "evidence": "Uses the supplied status names consistently."
+    }
+  },
+  "secondary": {
+    "wordCount": 91,
+    "headingCount": 1,
+    "bulletCount": 4,
+    "explicitWarningOccurrences": 3,
+    "caveatCount": "not separately operationalized; uncertainty statements are captured by rubric items 1, 13, and 15",
+    "inputTokens": "not captured",
+    "outputTokens": "not captured",
+    "repairConceptsRequired": 0
+  }
+}
