@@ -1,0 +1,102 @@
+name: Finalize Communication Engineering Publisher
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: communication-publisher-finalize
+  cancel-in-progress: false
+
+jobs:
+  finalize:
+    if: github.head_ref == 'research/modernization-baseline'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out modernization branch
+        uses: actions/checkout@v4
+        with:
+          ref: research/modernization-baseline
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Detect whether finalization is needed
+        id: guard
+        shell: bash
+        run: |
+          HAS_LEGACY="$(node -p "Boolean(require('./package.json').devDependencies?.['research-publisher'])")"
+          if [ "$HAS_LEGACY" = "false" ] && [ -f .echelon/research-publisher.json ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Set up Node 24
+        if: steps.guard.outputs.skip != 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Configure git
+        if: steps.guard.outputs.skip != 'true'
+        run: |
+          git config user.name "communication-engineering-modernizer"
+          git config user.email "actions@users.noreply.github.com"
+
+      - name: Remove legacy publisher dependency
+        if: steps.guard.outputs.skip != 'true'
+        shell: bash
+        run: |
+          npm uninstall --save-dev research-publisher
+          npm install --save-dev @echelon-foundry/research-publisher@0.1.0
+
+      - name: Adopt released publisher lifecycle
+        if: steps.guard.outputs.skip != 'true'
+        shell: bash
+        run: |
+          if [ -f .echelon/research-publisher.json ]; then
+            npx @echelon-foundry/research-publisher upgrade
+          else
+            npx @echelon-foundry/research-publisher init
+          fi
+
+          test -f .echelon/research-publisher.json
+          npx @echelon-foundry/research-publisher verify --strict
+          npm run research:inventory
+          npm run research:validate
+          npm run research:build
+
+      - name: Confirm one publisher authority
+        if: steps.guard.outputs.skip != 'true'
+        shell: bash
+        run: |
+          node <<'NODE'
+          const pkg = require('./package.json');
+          if (pkg.devDependencies?.['research-publisher']) {
+            throw new Error('Legacy research-publisher GitHub dependency still present');
+          }
+          if (!pkg.devDependencies?.['@echelon-foundry/research-publisher']) {
+            throw new Error('Scoped Research Publisher dependency missing');
+          }
+          NODE
+
+      - name: Commit publisher finalization
+        if: steps.guard.outputs.skip != 'true'
+        shell: bash
+        run: |
+          git add package.json package-lock.json .echelon/research-publisher.json
+          if [ -f prompts/research-publisher-mark-documents.md ]; then
+            git add prompts/research-publisher-mark-documents.md
+          fi
+          if git diff --cached --quiet; then
+            echo "No publisher finalization changes to commit."
+            exit 0
+          fi
+          git commit -m "Finalize Research Publisher lifecycle"
+          git push origin HEAD:research/modernization-baseline
