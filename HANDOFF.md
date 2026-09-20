@@ -62,6 +62,15 @@ Two prospective operational-context experiments have been frozen.
 
 The context did not harm either task, but it did not demonstrate incremental first-draft correctness when the prompt/source material already formed a strong communication brief.
 
+### Experiment 03 — flawed memo review
+
+- ordinary review: 12/12 injected defects detected, 0 false positives
+- Communication Engineering review: 12/12 detected, 0 false positives
+- both corrected memos passed all guardrails
+- result: third null correctness difference
+
+Across all three experiments, the context is non-regressive but has not yet demonstrated incremental value for this model when facts are complete.
+
 This directly changed the method: the full communication contract is now selectively activated only when decision-relevant inputs are unresolved.
 
 ## Current decision
@@ -72,7 +81,9 @@ First run prospective operational-context validation.
 
 Do not run another well-specified first-draft generation comparison.
 
-The next high-value validation should test Communication Engineering as **review/diagnosis or brief construction** where communication decisions are actually missing.
+Review/diagnosis with complete facts has now also produced a null result.
+
+The next high-value validation should test **brief construction**, independent model/provider behavior, human/team consistency, or participant outcomes where communication decisions are actually missing or distributed across people/tools.
 
 
 This is not a substitute for the planned participant experiment.
