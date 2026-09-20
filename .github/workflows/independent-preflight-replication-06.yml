@@ -1,11 +1,7 @@
 name: Independent Communication Preflight Replication 06
 
 on:
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
-
 permissions:
   contents: write
   copilot-requests: write
