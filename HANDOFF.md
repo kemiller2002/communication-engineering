@@ -2,92 +2,131 @@
 
 ## Objective
 
-Advance the research portfolio toward a valid, low-risk first behavioral test
-of communication effectiveness without optimizing an invalid proxy.
+Validate a small, evidence-bounded operational Communication Engineering context while continuing the research portfolio toward a valid participant-facing behavioral test.
 
-## Work completed
+## Tooling state
 
-- Reviewed the complete twelve-item portfolio and retained RQ-COMM-003 as the
-  highest-leverage active research item.
-- Completed the desk-research phase of MS-COMM-2026-0002.
-- Created partial `RP-COMM-2026-0002`, journal `JR-COMM-2026-0003`, hypothesis
-  `HY-COMM-2026-0003`, and evidence `EV-COMM-2026-0007` through `0010`.
-- Advanced RQ-COMM-003 from Background Research to Deep Investigation.
-- Updated the portfolio graph: candidate task selection supplies the concrete
-  input needed to validate the measurement architecture.
-- Adopted `MS-COMM-2026-0003` as the approved program-level source mandate for
-  comparative writing research.
-- Added proposed `MS-COMM-2026-0004` and RQ-COMM-013 as the first bounded
-  cross-domain study, without displacing the active measurement work.
+Repository modernization completed on 2026-09-20:
+
+- ROS 3.0.3 lifecycle installation;
+- released `@echelon-foundry/research-publisher@0.1.0`;
+- strict lifecycle verification;
+- protected research-corpus hash match;
+- normal ROS validation and research-site build green.
+
+Modernization evidence is under `docs/modernization/`.
+
+## Operational context completed
+
+Created the first human-maintained source briefing under `agent-context/`:
+
+- `COMMUNICATION-FOUNDATIONS.md`
+- `COMMUNICATION-DECISION-CHECKLIST.md`
+- `COMMUNICATION-ANTI-PATTERNS.md`
+- `PURPOSE-OUTCOME-MATRIX.md`
+- `RESEARCH-STATUS.md`
+
+The briefing operationalizes only bounded foundations:
+
+- communication contract;
+- conditional fit;
+- purpose-specific outcomes;
+- architecture before style;
+- proof obligation;
+- truth/uncertainty/authority separation;
+- audience/task context;
+- autonomy;
+- accessibility;
+- function rather than persona transfer;
+- situated-authority/translation/cultural boundaries.
+
+It keeps writer-to-purpose mappings, explanatory-progression taxonomies, literary transfer, and automated strategy selection visibly provisional.
 
 ## Current decision
 
-For a task whose purpose is immediate procedural execution, use unassisted
-correct completion as the primary outcome. Report task-invalidating/critical
-errors and facilitator assistance separately. Treat time, workload,
-satisfaction, and confidence as diagnostics. Add delayed repeat or transfer
-only before claiming durable learning.
+Do **not** package Communication Engineering yet.
 
-This architecture is provisionally supported, not validated. Do not activate
-the participant experiment until RQ-COMM-001, RQ-COMM-003, and RQ-COMM-004
-meet their exit evidence.
+First run prospective operational-context validation.
 
-## Key assumptions and risks
+The first experiment should test whether explicitly supplying the communication contract changes first-pass communication structure versus an ordinary task request.
 
-- A safe synthetic task can still represent a recognizable user need.
-- Goal states and error codes can be scored reliably by independent raters.
-- Candidate-task performance will avoid floor and ceiling effects.
-- Accessibility accommodations can preserve the target construct.
-- Time or satisfaction may be misused as success proxies; the REP explicitly
-  prevents that interpretation.
+This is not a substitute for the planned participant experiment.
 
-## Validation
+The operational experiment may establish:
+- reduced omission;
+- better explicitness;
+- better uncertainty/proof coverage;
+- lower or higher rework;
+- process cost.
 
-Run:
+It may **not** establish reader comprehension, task completion, learning transfer, trust, or persuasion without audience evidence.
+
+## Existing research position
+
+For immediate procedural execution, unassisted correct completion remains the provisional primary participant outcome. Critical errors and facilitator assistance remain guardrails; time, workload, satisfaction, and confidence remain diagnostics.
+
+The comparative-writing stream supports conditional communication-function selection at Medium confidence, not causal reader effects.
+
+The plural-literary-traditions work requires situated-authority, translation, circulation, and community-specific boundaries.
+
+## Key risks
+
+- Operational guidance becomes a second unvalidated doctrine.
+- More context improves apparent thoroughness but not communication outcomes.
+- The communication contract becomes ceremony for simple tasks.
+- Agents infer audience properties that were not supplied.
+- Provisional writer/function research leaks into deterministic style selection.
+- Self-evaluation is mistaken for reader evidence.
+- A generic "quality" score hides tradeoffs among comprehension, task success, confidence, accessibility, and cost.
+
+## Validation commands
 
 ```bash
 ./ros registry build
 ./ros registry check
 ./ros validate
+./ros verify
+
+npm ci
+npm run research:inventory
 npm run research:validate
 npm run research:build
+npm run research:verify
 ```
-
-## Unresolved questions
-
-1. Which named audience has an observed need for which procedural task?
-2. Which three synthetic task candidates best represent that need?
-3. Can two raters apply the proposed rubric consistently?
-4. What accommodations and data handling are required?
-5. What difference in task success would justify engineering investment?
 
 ## Next recommended action
 
-Obtain evidence from at least one intended user group, compare three task
-candidates against a frozen rubric, and write observable goal states,
-invalidating errors, allowed resources, timeout logic, and assist codes for
-each. Then run the scoring-reliability and floor/ceiling feasibility check
-specified in `RP-COMM-2026-0002`.
+Pre-register Operational Context Experiment 01.
 
-In the comparative stream, `MS-COMM-2026-0004` is complete as
-`RP-COMM-2026-572D`. Corpus criteria and rubric v1.0 are frozen; do not edit
-them in place. Next, run an independent second-rater check on 20 stratified
-units, version any revision as rubric v1.1, and coordinate with
-`RP-COMM-2026-0002` before preregistering an audience experiment. The pilot
-supports conditional writer-function selection at Medium confidence but does
-not establish causal reader effects.
+The first work unit should be a bounded procedural or technical communication where:
 
-`RP-COMM-2026-8FB7` extends the framework to Fitzgerald, Hemingway, Frost,
-Asimov, Ginsberg, Kerouac, and Ferlinghetti. Retrieve their contributions by
-function—symbolic convergence, knowledge-backed omission, dramatic
-countervoice, conceptual reversal, anaphoric witness, generative momentum, and
-mobile civic observation—not by persona imitation. Its next test is the
-inference-contract experiment in `HY-COMM-2026-45A8`; canon diversification is
-required in parallel.
+- facts are fixed;
+- audience assumptions can be declared;
+- proof obligation is concrete;
+- critical omissions can be scored;
+- no personal persuasion or cultural imitation is involved.
 
-`RP-COMM-2026-EFC6` addresses that canon debt with a 29-writer reading guide
-covering women Beats, Harlem Renaissance, Black Arts/Black feminist writing,
-five nation-specific Indigenous contexts, immigrant/diasporic/queer writing,
-and non-U.S. traditions. Its key guardrail is situated authority: transfer
-functions, not identity, communal authority, sacred material, or a translator's
-surface language. Specialist and community audit is required before acceptance.
+Compare:
+
+A. ordinary task request;
+
+B. same task plus explicit communication contract and current operational briefing.
+
+Freeze both first-pass outputs before revision.
+
+Evaluate only pre-registered process/structural measures.
+
+After that result, decide whether to:
+- refine the briefing;
+- test another communication purpose;
+- test generated contracts;
+- or stop if ceremony exceeds value.
+
+## Research portfolio next actions
+
+In parallel:
+
+1. obtain evidence from an intended user group for the participant-facing procedural study;
+2. compare candidate tasks under the frozen measurement architecture;
+3. complete independent second-rater validation of explanatory progression;
+4. do not promote cross-cultural transfer claims without the required specialist/community/translation review.
