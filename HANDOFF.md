@@ -42,13 +42,38 @@ The briefing operationalizes only bounded foundations:
 
 It keeps writer-to-purpose mappings, explanatory-progression taxonomies, literary transfer, and automated strategy selection visibly provisional.
 
+## Prospective validation completed
+
+Two prospective operational-context experiments have been frozen.
+
+### Experiment 01 — incident procedure
+
+- ordinary request: 18/18
+- Communication Engineering: 18/18
+- both 91 words
+- result: null correctness difference
+
+### Experiment 02 — executive decision memo
+
+- ordinary request: 23/23
+- Communication Engineering: 23/23
+- 206 vs 216 words
+- result: null correctness difference
+
+The context did not harm either task, but it did not demonstrate incremental first-draft correctness when the prompt/source material already formed a strong communication brief.
+
+This directly changed the method: the full communication contract is now selectively activated only when decision-relevant inputs are unresolved.
+
 ## Current decision
 
 Do **not** package Communication Engineering yet.
 
 First run prospective operational-context validation.
 
-The first experiment should test whether explicitly supplying the communication contract changes first-pass communication structure versus an ordinary task request.
+Do not run another well-specified first-draft generation comparison.
+
+The next high-value validation should test Communication Engineering as **review/diagnosis or brief construction** where communication decisions are actually missing.
+
 
 This is not a substitute for the planned participant experiment.
 
