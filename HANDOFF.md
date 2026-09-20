@@ -108,6 +108,56 @@ The prototype does not infer communication state from raw language. It accepts a
 - activation decision;
 - verification escalation.
 
+## Independent-model validation attempt
+
+Experiments 06-08 attempted to reproduce the brief-construction effect through GitHub Copilot CLI.
+
+### Experiment 06
+
+- target: Claude Sonnet 4.6
+- result: target model unavailable
+- no output scored
+
+### Experiments 07-08
+
+Copilot `auto` was instrumented with OpenTelemetry.
+
+Both experiments required A and B to resolve to the same independent model.
+
+Observed twice:
+
+- A ordinary request -> `mai-code-1.1-flash`
+- B Communication Engineering treatment -> `gpt-5.6-luna`
+
+This occurred with:
+- the full five-file operational context;
+- a compact generic preflight context.
+
+Both comparisons were invalidated before scoring.
+
+This is now a research finding: ambient Communication Engineering prompt context can change auto-model routing and therefore confound quality, cost, latency, and capability comparisons.
+
+See:
+
+`docs/communication-preflight-independent-validation-summary.md`
+
+## F# deterministic prototype
+
+A research-only typed implementation now exists at:
+
+`research/prototypes/communication-preflight-fsharp-v0.1/`
+
+The F# kernel owns only Compute:
+
+- validate unique field identity;
+- validate provenance for known fields;
+- derive materially missing/optional/not-applicable state;
+- group clarifications;
+- derive activation decision;
+- derive bounded-progress and verification flags.
+
+It deliberately does not parse natural language, infer audience/authority, or call an AI provider.
+
 ## Current decision
 
 Do **not** package Communication Engineering yet.
@@ -118,7 +168,7 @@ Do not run another well-specified first-draft generation comparison.
 
 Review/diagnosis with complete facts has now also produced a null result.
 
-Brief construction now has two positive same-model replications. The next high-value validation is independent model/provider replication, human/team consistency, or participant outcomes.
+Brief construction has two positive same-model replications. Controlled independent-model replication was attempted but blocked by model availability/routing confounds. The next high-value validation is a human/agent workflow using the typed preflight kernel, or a future explicitly pinnable independent provider/model, followed by participant outcomes where appropriate.
 
 
 This is not a substitute for the planned participant experiment.
@@ -167,31 +217,14 @@ npm run research:verify
 
 ## Next recommended action
 
-Pre-register Operational Context Experiment 01.
+Validate the F# prototype in CI, then run a human/agent workflow experiment in which:
 
-The first work unit should be a bounded procedural or technical communication where:
+1. communication state is classified explicitly;
+2. the F# kernel computes missing/material fields and activation;
+3. the agent receives only the unresolved clarification/judgment problem;
+4. rework, corrected assumptions, clarification count, context size, and outcome-specific verification are recorded.
 
-- facts are fixed;
-- audience assumptions can be declared;
-- proof obligation is concrete;
-- critical omissions can be scored;
-- no personal persuasion or cultural imitation is involved.
-
-Compare:
-
-A. ordinary task request;
-
-B. same task plus explicit communication contract and current operational briefing.
-
-Freeze both first-pass outputs before revision.
-
-Evaluate only pre-registered process/structural measures.
-
-After that result, decide whether to:
-- refine the briefing;
-- test another communication purpose;
-- test generated contracts;
-- or stop if ceremony exceeds value.
+Do not build the production npm lifecycle package yet.
 
 ## Research portfolio next actions
 

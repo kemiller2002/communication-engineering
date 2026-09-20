@@ -35,7 +35,7 @@ Current human-maintained source files:
 
 The context is not yet a packaged lifecycle product.
 
-Full always-on packaging remains deferred. Two later brief-construction experiments showed a positive same-model preflight effect, which is sufficient for a formal requirements candidate and research prototype. Production lifecycle distribution still requires independent-model, human/team, or participant evidence.
+Full always-on packaging remains deferred. Two brief-construction experiments showed a positive same-model preflight effect, which justified a formal requirements candidate and research prototypes. Independent-model attempts did not produce a valid controlled comparison because adding either the full or compact Communication Engineering context changed Copilot's auto-selected model. Production lifecycle distribution still requires human/team, participant, or explicitly pinnable independent-model evidence.
 
 ## Operational-context experiment results
 
@@ -84,6 +84,34 @@ Communication Engineering currently shows value as a **selective pre-drafting pr
 
 It has not shown incremental value as mandatory context for already well-specified drafting/review.
 
+### Independent validation Experiments 06-08
+
+- Experiment 06 targeted Claude Sonnet 4.6 through GitHub Copilot CLI; the model was unavailable and no output was scored.
+- Explicit selection was also unavailable for the other tested Claude, Gemini, GPT, and MAI model names on this Copilot account.
+- Copilot `auto` telemetry resolved an ordinary Atlas condition to `mai-code-1.1-flash`.
+- Experiment 07 required both conditions to remain on MAI-Code; adding the full Communication Engineering context routed B to `gpt-5.6-luna`, invalidating the comparison.
+- Experiment 08 repeated with only a compact generic preflight context; B again routed to `gpt-5.6-luna`, invalidating the comparison.
+- Result: no valid independent-model replication. A reproducible **model-routing confound** was found.
+- Engineering response: move stable preflight mechanics into deterministic typed code rather than relying on ambient prompt context.
+
+### F# deterministic preflight prototype
+
+A research-only F# prototype exists at:
+
+`research/prototypes/communication-preflight-fsharp-v0.1/`
+
+It accepts already-classified communication state and computes:
+
+- state/provenance validation;
+- materially missing fields;
+- optional unknowns;
+- clarification groups;
+- activation decision;
+- bounded-progress permission;
+- verification escalation.
+
+Natural-language interpretation and materiality judgment remain outside the deterministic kernel as Decide/Deliberate work.
+
 ### Resulting method change
 
 The operational context now uses selective activation.
@@ -102,23 +130,17 @@ Use the full method when decision-relevant communication inputs are missing, con
 
 Two workstreams are active and must remain separate.
 
-### Operational-context validation
+### Operational preflight engineering and validation
 
-Pre-register and run the first communication-contract experiment:
+Current research work:
 
-- ordinary task instruction;
-- explicit communication contract;
-- later, generated communication contract if the manual treatment is useful.
+- validate the F# deterministic preflight kernel;
+- keep AI/model interpretation outside the Compute layer;
+- design a human/agent workflow test using the executable preflight;
+- measure clarification usefulness, rework, corrected assumptions, and context/model cost;
+- do not claim reader comprehension, task success, trust, or transfer without appropriate audience evidence.
 
-Measure process/structural outcomes that can be observed without pretending they are reader outcomes:
-- critical omissions;
-- unsupported inference;
-- visible uncertainty;
-- proof-obligation coverage;
-- rework;
-- context/token cost where measurable.
-
-Do not claim improved comprehension, task success, trust, or transfer without appropriate audience evidence.
+Independent-model replication remains desirable, but only on a surface where the model can be pinned or otherwise controlled.
 
 ### Research portfolio
 
@@ -132,7 +154,7 @@ Continue the existing evidence gates:
 
 ## Largest decision-relevant unknown
 
-Does an explicit Communication Engineering briefing improve first-pass communication architecture and reduce material omissions enough to justify the added context and process cost?
+Does moving Communication Engineering preflight into a small typed executable reduce rework and missing communication state in real human/agent workflows enough to justify production lifecycle packaging?
 
 This is distinct from the still-open participant question:
 

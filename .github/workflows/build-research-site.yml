@@ -37,6 +37,17 @@ jobs:
       - name: Test Communication preflight prototype
         run: npm run preflight:prototype:test
 
+      - name: Set up .NET 8 for F# preflight prototype
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Build F# Communication preflight prototype
+        run: dotnet build research/prototypes/communication-preflight-fsharp-v0.1/src/CommunicationPreflight.fsproj --configuration Release
+
+      - name: Test F# Communication preflight prototype
+        run: dotnet run --project research/prototypes/communication-preflight-fsharp-v0.1/tests/CommunicationPreflight.Tests.fsproj --configuration Release
+
       - name: Validate research content
         run: npm run research:validate
 

@@ -9,7 +9,9 @@
     "research:doctor": "research-publisher doctor",
     "research:clean": "research-publisher clean --config ./research-publisher.config.mjs",
     "context:validate": "node scripts/validate-communication-context.mjs",
-    "preflight:prototype:test": "node research/prototypes/communication-preflight-v0.1/test-preflight.mjs"
+    "preflight:prototype:test": "node research/prototypes/communication-preflight-v0.1/test-preflight.mjs",
+    "preflight:fsharp:build": "dotnet build research/prototypes/communication-preflight-fsharp-v0.1/src/CommunicationPreflight.fsproj --configuration Release",
+    "preflight:fsharp:test": "dotnet run --project research/prototypes/communication-preflight-fsharp-v0.1/tests/CommunicationPreflight.Tests.fsproj --configuration Release"
   },
   "devDependencies": {
     "@echelon-foundry/research-publisher": "^0.1.0"
