@@ -35,7 +35,7 @@ Current human-maintained source files:
 
 The context is not yet a packaged lifecycle product.
 
-Promotion to packaging depends on prospective validation showing useful communication gains without unacceptable ceremony, context burden, or false certainty.
+Packaging is currently deferred. Three prospective same-model experiments showed non-regression but no incremental correctness or defect-recall gain. Promotion now requires independent-model, human/team, participant, or brief-construction evidence.
 
 ## Operational-context experiment results
 
@@ -55,6 +55,14 @@ Promotion to packaging depends on prospective validation showing useful communic
 - B: 216 words.
 - Result: second null correctness result.
 - Interpretation: when the source brief already contains audience, decision, evidence, uncertainty, and use-mode information, the full context may add structure without adding measured correctness.
+
+### Operational Context Experiment 03 — flawed memo review
+
+- Condition A, ordinary review: detected 12/12 injected defects, 0 false positives.
+- Condition B, Communication Engineering review: detected 12/12 injected defects, 0 false positives.
+- Both corrected memos passed all preregistered guardrails.
+- Result: third null correctness result.
+- Interpretation: explicit Communication Engineering vocabulary did not increase defect recall for this model with complete source facts.
 
 ### Resulting method change
 
