@@ -2,65 +2,95 @@
 
 ## Repository status
 
-Newly initialized with Repository Operating System 1.0.0.
+Modernized to Repository Operating System 3.0.3 on 2026-09-20.
+
+Research Publisher is installed through the released `@echelon-foundry/research-publisher@0.1.0` lifecycle package.
+
+The legacy research corpus was preserved during modernization and verified by a protected SHA-256 inventory.
 
 ## Observed facts
 
-- `RP-COMM-2026-0001` is in review with six evidence records, two hypotheses,
-  and candidate theory `TH-COMM-2026-0001`.
-- Partial `RP-COMM-2026-0002` adds four evidence records and
-  `HY-COMM-2026-0003`, advancing RQ-COMM-003 to Deep Investigation.
-- For immediate procedural execution, the provisional outcome vector uses
-  unassisted correct completion as primary, critical errors and assistance as
-  guardrails, and time/satisfaction/workload as separate diagnostics.
-- A procedural-documentation experiment is proposed as the first vertical
-  slice; no participant experiment has run.
+- `RP-COMM-2026-0001` is in review with six evidence records, two hypotheses, and candidate theory `TH-COMM-2026-0001`.
+- Partial `RP-COMM-2026-0002` adds four evidence records and `HY-COMM-2026-0003`, advancing RQ-COMM-003 to Deep Investigation.
+- For immediate procedural execution, the provisional outcome vector uses unassisted correct completion as primary, critical errors and assistance as guardrails, and time/satisfaction/workload as separate diagnostics.
+- A procedural-documentation experiment is proposed as the first participant-facing vertical slice; no participant experiment has run.
 - No discipline-boundary claim has been tested.
-- `MS-COMM-2026-0003` preserves the uploaded comparative-writing brief as the
-  approved program mandate.
-- `MS-COMM-2026-0004` is completed by `RP-COMM-2026-572D`: a five-domain
-  explanatory-progression pilot with a frozen corpus/rubric, 12/15 internal
-  recode agreement, and a conditional writer-function framework.
-- `MS-COMM-2026-0230` is completed by `RP-COMM-2026-8FB7`, adding bounded
-  functions for Fitzgerald, Hemingway, Frost, Asimov, Ginsberg, Kerouac, and
-  Ferlinghetti. Literary transfer is modeled through an explicit inference
-  contract, not author imitation.
-- `MS-COMM-2026-827E` is completed by `RP-COMM-2026-EFC6`, expanding the
-  literary corpus by 29 writers and adding situated-authority, translation,
-  circulation, overlap, and nation-specific Indigenous guardrails.
+- `MS-COMM-2026-0003` preserves the comparative-writing brief as the approved program mandate.
+- `MS-COMM-2026-0004` is completed by `RP-COMM-2026-572D`: a five-domain explanatory-progression pilot with a frozen corpus/rubric, 12/15 internal recode agreement, and a conditional writer-function framework.
+- `MS-COMM-2026-0230` is completed by `RP-COMM-2026-8FB7`, adding bounded literary functions while explicitly rejecting persona imitation.
+- `MS-COMM-2026-827E` is completed by `RP-COMM-2026-EFC6`, adding situated-authority, translation, circulation, overlap, and nation-specific Indigenous guardrails.
+- Tooling modernization completed without changes to protected canonical research.
+- A first evidence-bounded operational context now exists under `agent-context/`.
+- The operational context deliberately excludes deterministic writer/persona selection and universal communication scoring.
+
+## Operational context v0.1
+
+Current human-maintained source files:
+
+- `agent-context/COMMUNICATION-FOUNDATIONS.md`
+- `agent-context/COMMUNICATION-DECISION-CHECKLIST.md`
+- `agent-context/COMMUNICATION-ANTI-PATTERNS.md`
+- `agent-context/PURPOSE-OUTCOME-MATRIX.md`
+- `agent-context/RESEARCH-STATUS.md`
+
+The context is not yet a packaged lifecycle product.
+
+Promotion to packaging depends on prospective validation showing useful communication gains without unacceptable ceremony, context burden, or false certainty.
 
 ## Assumptions
 
-- A small, concrete communication problem can exercise the operating model.
+- A small operational briefing can improve communication decisions without turning provisional research into doctrine.
+- The communication-contract idea can be tested before participant studies using bounded process/structural measures, while behavioral claims remain reserved for reader/user evidence.
+- A communication context should be judged against purpose-specific outcomes rather than a universal writing-quality score.
 
 ## Active work
 
-Gather named-audience evidence and compare three candidate tasks for
-RQ-COMM-001, then apply the RP-COMM-2026-0002 scoring specification to complete
-the active measurement mission. Do not activate
-`MS-COMM-2026-0001` until RQ-COMM-001, RQ-COMM-003, and RQ-COMM-004 meet their
-exit evidence. In the comparative stream, obtain an independent second-rater
-check on rubric v1.0, then preregister one architecture comparison. Do not
-treat either pilot's textual patterns as causal reader effects. Expand the
-literary corpus beyond its predominantly white male U.S. canon before broader
-generalization. Use the new reading guide, then obtain community and translator
-review before promoting cross-cultural patterns.
+Two workstreams are active and must remain separate.
+
+### Operational-context validation
+
+Pre-register and run the first communication-contract experiment:
+
+- ordinary task instruction;
+- explicit communication contract;
+- later, generated communication contract if the manual treatment is useful.
+
+Measure process/structural outcomes that can be observed without pretending they are reader outcomes:
+- critical omissions;
+- unsupported inference;
+- visible uncertainty;
+- proof-obligation coverage;
+- rework;
+- context/token cost where measurable.
+
+Do not claim improved comprehension, task success, trust, or transfer without appropriate audience evidence.
+
+### Research portfolio
+
+Continue the existing evidence gates:
+
+- gather named-audience evidence for RQ-COMM-001;
+- complete the RQ-COMM-003 measurement work;
+- resolve RQ-COMM-004 prerequisites before activating the participant experiment;
+- obtain an independent second-rater check on explanatory progression;
+- preserve community/translation review requirements before promoting cross-cultural transfer claims.
 
 ## Largest decision-relevant unknown
 
-Which specific procedural task provides recognizable user value,
-representative participants, reliable scoring, and enough difficulty to avoid
-floor and ceiling effects?
+Does an explicit Communication Engineering briefing improve first-pass communication architecture and reduce material omissions enough to justify the added context and process cost?
+
+This is distinct from the still-open participant question:
+
+Which procedural task and named audience provide recognizable value, reliable scoring, and enough difficulty for a valid behavioral experiment?
 
 ## Portfolio
 
-Twelve stable research questions and their dependency graph are maintained in
-`research/frontier/PORTFOLIO-ROADMAP.md`. The compact priority view is
-`context/RESEARCH-QUEUE.md`. Last portfolio review: 2026-08-02 after
-RP-COMM-2026-572D.
+The research-question dependency graph remains in `research/frontier/PORTFOLIO-ROADMAP.md`, with the compact priority view in `context/RESEARCH-QUEUE.md`.
 
 ## Baseline
 
-Research baseline recorded in `JR-COMM-2026-0001`: no accepted domain evidence,
-theory, user, or slice. The experimental baseline must preserve the ordinary
-instruction version and preregister common measures before outcomes are known.
+The original research baseline remains in `JR-COMM-2026-0001`.
+
+Operational-context experiments must preserve an ordinary-request baseline and pre-register evaluation criteria before outputs are produced.
+
+The operational context must not retroactively alter historical research artifacts.
