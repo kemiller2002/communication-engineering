@@ -1,11 +1,7 @@
 name: Copilot Auto Model Probe
 
 on:
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
-
 permissions:
   contents: read
   copilot-requests: write
