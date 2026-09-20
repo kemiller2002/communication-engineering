@@ -70,7 +70,7 @@ jobs:
           mkdir -p /tmp/communication-modernization
           {
             find research missions -type f -print0
-            printf '%s\0' Communication_Engineering_Comparative_Writing_Research_Mission.md
+            printf '%s\0' prompts/communication-engineering-comparative-writer-analysis-prompt.md
           } | sort -z | xargs -0 sha256sum > /tmp/communication-modernization/protected-before.sha256
 
       - name: Baseline validation
@@ -171,7 +171,7 @@ jobs:
         run: |
           {
             find research missions -type f -print0
-            printf '%s\0' Communication_Engineering_Comparative_Writing_Research_Mission.md
+            printf '%s\0' prompts/communication-engineering-comparative-writer-analysis-prompt.md
           } | sort -z | xargs -0 sha256sum > /tmp/communication-modernization/protected-after.sha256
 
           if ! diff -u             /tmp/communication-modernization/protected-before.sha256             /tmp/communication-modernization/protected-after.sha256; then
