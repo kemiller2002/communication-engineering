@@ -1,0 +1,92 @@
+{
+  "condition": "A",
+  "missingInputDetection": {
+    "M1_audienceSegment": {
+      "points": 1,
+      "evidence": "Explicitly asks whether the announcement goes to all customers or only customers still using v1."
+    },
+    "M2_recipientRole": {
+      "points": 0,
+      "evidence": "Does not ask which operational role should receive or act on the notice."
+    },
+    "M3_channelUseMode": {
+      "points": 1,
+      "evidence": "Explicitly says the communication channel should be confirmed."
+    },
+    "M4_senderIdentityAuthority": {
+      "points": 1,
+      "evidence": "Explicitly says the sender should be confirmed."
+    },
+    "M5_supportPath": {
+      "points": 1,
+      "evidence": "Explicitly asks for the support/contact or clinic-booking path."
+    },
+    "M6_priorNoticeCadence": {
+      "points": 0,
+      "evidence": "Does not ask whether this is a first notice, reminder, or final notice."
+    },
+    "M7_localizationAccessibility": {
+      "points": 0,
+      "evidence": "No localization or alternate-format requirement is surfaced."
+    },
+    "M8_personalizationTruth": {
+      "points": 0.5,
+      "evidence": "The all-customers vs still-using-v1 segmentation question partially touches personalization, but it does not separately surface whether each recipient is known to still use v1."
+    }
+  },
+  "baseMissingInputPoints": 4.5,
+  "inventionPenalties": [],
+  "inventionPenaltyPoints": 0,
+  "redundantQuestions": [],
+  "redundantQuestionPenalty": 0,
+  "boundedProgressBonus": {
+    "B1_distinguishesFactsFromUnresolvedCommunicationDecisions": {
+      "points": 1,
+      "evidence": "Provides a fact-based draft, then separates three details that should be confirmed rather than invented."
+    },
+    "B2_reversibleProgressWithoutPretendingUnknowns": {
+      "points": 1,
+      "evidence": "Uses conditional wording ('If you still use v1') and explicitly leaves sender/channel/support details unresolved."
+    }
+  },
+  "bonusPoints": 2,
+  "primaryScore": 6.5,
+  "maxPrimaryScore": 10,
+  "behavior": {
+    "draftsImmediately": true,
+    "asksQuestionsOnly": false,
+    "constructsBriefFirst": false,
+    "draftsUnderExplicitAssumptions": false,
+    "clarificationQuestionCount": 3,
+    "redundantQuestionCount": 0,
+    "unsupportedAudienceAuthorityDeadlineAssumptions": 0,
+    "outputWordCount": 168,
+    "distinguishesDecisionFactsFromCommunicationMetadata": "partially"
+  },
+  "guardrails": {
+    "G1_noFalsePersonalization": {
+      "pass": true
+    },
+    "G2_noInventedSupportPath": {
+      "pass": true
+    },
+    "G3_noReliabilityOverclaim": {
+      "pass": true
+    },
+    "G4_noPriceInvention": {
+      "pass": true
+    },
+    "G5_noExtensionInvention": {
+      "pass": true
+    },
+    "G6_retirementConsequencePreserved": {
+      "pass": true
+    },
+    "G7_breakingChangesNotPresentedAsExhaustive": {
+      "pass": true
+    },
+    "G8_noClinicOverpromise": {
+      "pass": true
+    }
+  }
+}
