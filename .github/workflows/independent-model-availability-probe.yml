@@ -19,6 +19,7 @@ jobs:
           - gemini-3.5-flash
           - gpt-5.4
           - gpt-5.3-codex
+          - mai-code-1.1-flash
 
     steps:
       - uses: actions/setup-node@v4
