@@ -1,0 +1,94 @@
+{
+  "condition": "B",
+  "materialItems": 15,
+  "materialDefects": 0,
+  "guardrailItems": 3,
+  "guardrailDefects": 0,
+  "passCount": 18,
+  "total": 18,
+  "items": {
+    "1_unknown_preserved": {
+      "pass": true,
+      "evidence": "The connection failure tells you only that the client did not receive the result. The deployment may already have succeeded."
+    },
+    "2_blind_retry_prohibited": {
+      "pass": true,
+      "evidence": "Do not rerun the deployment yet."
+    },
+    "3_authoritative_check_present": {
+      "pass": true,
+      "evidence": "deploy status --id <deployment-id>"
+    },
+    "4_succeeded_mapping": {
+      "pass": true,
+      "evidence": "succeeded -> Do not retry. The deployment already completed."
+    },
+    "5_failed_before_apply_mapping": {
+      "pass": true,
+      "evidence": "failed-before-apply -> Retry is allowed."
+    },
+    "6_in_progress_mapping": {
+      "pass": true,
+      "evidence": "in-progress -> Wait, then check status again."
+    },
+    "7_unknown_mapping": {
+      "pass": true,
+      "evidence": "unknown -> Escalate to the platform operator. Do not retry."
+    },
+    "8_no_invented_state": {
+      "pass": true,
+      "evidence": "Only the four supplied statuses are used."
+    },
+    "9_safe_next_action_discoverable": {
+      "pass": true,
+      "evidence": "Heading and first sentence foreground verification-before-retry."
+    },
+    "10_reason_visible": {
+      "pass": true,
+      "evidence": "Transport result loss is explicitly distinguished from deployment outcome."
+    },
+    "11_mapping_scannable": {
+      "pass": true,
+      "evidence": "Status/action mapping is a two-column table."
+    },
+    "12_incident_fit": {
+      "pass": true,
+      "evidence": "91 words; one heading; warning, command, and table are immediately scannable."
+    },
+    "13_no_false_certainty": {
+      "pass": true,
+      "evidence": "Outcome is explicitly unresolved until authoritative status."
+    },
+    "14_no_borrowed_authority": {
+      "pass": true,
+      "evidence": "No guarantee beyond supplied facts/status semantics is asserted."
+    },
+    "15_uncertainty_closes_on_evidence": {
+      "pass": true,
+      "evidence": "Retry only after authoritative status reports failed-before-apply."
+    },
+    "16_text_carries_state": {
+      "pass": true,
+      "evidence": "All states and actions are present as text in the table."
+    },
+    "17_command_copyable": {
+      "pass": true,
+      "evidence": "Command is presented verbatim in code formatting."
+    },
+    "18_terminology_stable": {
+      "pass": true,
+      "evidence": "Uses the supplied status names consistently."
+    }
+  },
+  "secondary": {
+    "wordCount": 91,
+    "headingCount": 1,
+    "bulletCount": 0,
+    "tableRows": 4,
+    "explicitWarningOccurrences": 3,
+    "caveatCount": "not separately operationalized; uncertainty statements are captured by rubric items 1, 13, and 15",
+    "inputTokens": "not captured",
+    "outputTokens": "not captured",
+    "repairConceptsRequired": 0
+  }
+}
