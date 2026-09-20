@@ -98,6 +98,72 @@ jobs:
           npm run research:validate
           npm run research:build
 
+      - name: Prepare forced ROS legacy replacement
+        if: steps.guard.outputs.skip != 'true'
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const legacy = JSON.parse(fs.readFileSync('.ros/installation.json', 'utf8'));
+          const forcedPaths = [
+            'AGENTS.md',
+            'BOOTSTRAP.md',
+            'ros',
+            'docs/00-governance/README.md',
+            'docs/00-governance/AI-Repository-Operating-System.md',
+            'docs/00-governance/Agent-Operating-Manual.md',
+            'docs/00-governance/Engineering-Standards.md',
+            'docs/00-governance/Governance-Decision-Log.md'
+          ];
+
+          if (legacy.package !== '@kemiller2002/repository-operating-system' ||
+              legacy.package_version !== '1.0.0') {
+            throw new Error(`Unexpected legacy ROS identity: ${legacy.package}@${legacy.package_version}`);
+          }
+
+          const byPath = new Map(legacy.files.map(x => [x.path, x]));
+          for (const path of forcedPaths) {
+            const item = byPath.get(path);
+            if (!item || item.managed !== true || item.disposition !== 'installed') {
+              throw new Error(`Refusing forced replacement for ${path}: not recorded as installed+managed by legacy ROS`);
+            }
+          }
+
+          fs.writeFileSync(
+            'docs/modernization/forced-ros-legacy-replacement.json',
+            JSON.stringify({
+              authority: '.ros/installation.json',
+              legacyPackage: legacy.package,
+              legacyVersion: legacy.package_version,
+              forcedPaths: forcedPaths.map(path => ({
+                path,
+                recordedSha256: byPath.get(path).sha256
+              }))
+            }, null, 2) + '\n'
+          );
+          NODE
+
+          sha256sum \
+            AGENTS.md \
+            BOOTSTRAP.md \
+            ros \
+            docs/00-governance/README.md \
+            docs/00-governance/AI-Repository-Operating-System.md \
+            docs/00-governance/Agent-Operating-Manual.md \
+            docs/00-governance/Engineering-Standards.md \
+            docs/00-governance/Governance-Decision-Log.md \
+            > docs/modernization/forced-ros-legacy-current-hashes.sha256
+
+          rm -f \
+            AGENTS.md \
+            BOOTSTRAP.md \
+            ros \
+            docs/00-governance/README.md \
+            docs/00-governance/AI-Repository-Operating-System.md \
+            docs/00-governance/Agent-Operating-Manual.md \
+            docs/00-governance/Engineering-Standards.md \
+            docs/00-governance/Governance-Decision-Log.md
+
       - name: Plan ROS 3.0.3 migration
         if: steps.guard.outputs.skip != 'true'
         shell: bash
