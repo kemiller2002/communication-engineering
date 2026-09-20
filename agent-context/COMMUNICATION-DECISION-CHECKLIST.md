@@ -14,6 +14,20 @@ Use this checklist for drafting, transforming, reviewing, or evaluating conseque
 
 Not every low-stakes message needs every question. Increase rigor with consequence, ambiguity, audience diversity, and difficulty of recovery.
 
+## Fast path
+
+Before using the full checklist, ask:
+
+- Is the purpose already explicit?
+- Is the audience/task already explicit?
+- Are the authoritative facts and required action already supplied?
+- Are uncertainty, authority, accessibility, and consequences low or already resolved?
+- Is the structure obvious for the use mode?
+
+If yes, do not manufacture process. Draft normally and use the relevant verification checks.
+
+If no, use the fuller contract below for the unresolved decisions.
+
 ## Before drafting
 
 ### Communication contract
