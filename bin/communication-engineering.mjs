@@ -206,7 +206,17 @@ function planned(root, requireInstalled) {
     }
   }
 
-  return { manifest, config, desired, changes, conflicts };
+  const provisional = { manifest, config, desired, changes, conflicts };
+  const desiredManifestText = JSON.stringify(buildManifest(provisional), null, 2) + "\n";
+  const currentManifestText = readText(manifestPath(root));
+  if (currentManifestText === null || normalize(currentManifestText) !== desiredManifestText) {
+    changes.push({
+      kind: currentManifestText === null ? "write-manifest" : "update-manifest",
+      path: path.relative(root, manifestPath(root)),
+      content: desiredManifestText
+    });
+  }
+  return provisional;
 }
 
 function buildManifest(plan) {
@@ -317,8 +327,6 @@ function run() {
   }
 
   for (const change of plan.changes) writeAtomic(path.join(root, change.path), change.content);
-  const manifest = buildManifest(plan);
-  writeAtomic(manifestPath(root), JSON.stringify(manifest,null,2)+"\n");
   const problems = verify(root,true);
   const failed = problems.some(p=>p.severity==="error");
   emit({schemaVersion:1,command,applied:true,changed:plan.changes.length>0,changes:plan.changes.map(({content,...x})=>x),conflicts:[],verification:{ok:!failed,problems},message:failed?"Installation changed but strict verification failed.":"Communication Engineering is installed and verified."},json);
