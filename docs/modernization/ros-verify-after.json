@@ -1,0 +1,20 @@
+{
+  "command": "verify",
+  "schemaVersion": 1,
+  "valid": true,
+  "strict": false,
+  "installation": {
+    "schemaVersion": 1,
+    "tool": "ros",
+    "package": "@echelon-foundry/repository-operating-system",
+    "cliVersion": "3.0.3",
+    "installedVersion": "3.0.3",
+    "configurationVersion": 1,
+    "profile": "greenfield",
+    "managedArtifactCount": 82,
+    "state": "installed",
+    "verified": true,
+    "upgradeAvailable": null
+  },
+  "failures": []
+}

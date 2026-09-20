@@ -1,0 +1,27 @@
+{
+  "repository": "communication-engineering",
+  "protocolVersion": "1.0.0",
+  "validation": "failed",
+  "findingCount": 1,
+  "workItems": [],
+  "telemetry": {
+    "executionCount": 0,
+    "activeExecutionCount": 0
+  },
+  "nextActions": [
+    "Correct the named file and field, then run \u0027./ros validate\u0027 again."
+  ],
+  "installation": {
+    "schemaVersion": 1,
+    "tool": "ros",
+    "package": "@echelon-foundry/repository-operating-system",
+    "cliVersion": "3.0.3",
+    "installedVersion": "legacy",
+    "configurationVersion": null,
+    "profile": null,
+    "managedArtifactCount": null,
+    "state": "upgrade-required",
+    "verified": true,
+    "upgradeAvailable": "3.0.3"
+  }
+}

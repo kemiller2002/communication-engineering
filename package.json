@@ -9,6 +9,7 @@
     "research:doctor": "research-publisher doctor"
   },
   "devDependencies": {
+    "@echelon-foundry/research-publisher": "^0.1.0",
     "research-publisher": "github:kemiller2002/research-publisher#main"
   }
 }
