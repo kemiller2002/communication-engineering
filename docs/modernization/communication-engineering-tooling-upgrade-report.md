@@ -47,3 +47,12 @@ This modernizes tooling only. It does not promote theory, accept review-stage re
 ## Next mission
 
 Build and test the evidence-bounded operational context described in `docs/communication-engineering-modernization-baseline.md`.
+
+
+## Publisher finalization note
+
+The legacy unscoped `research-publisher` dependency was removed. The repository now has one publisher authority: `@echelon-foundry/research-publisher@0.1.0`.
+
+The legacy pre-manifest adoption path required forced manifest convergence after the lifecycle tool had already applied its shared scripts/artifacts. The resulting `.echelon/research-publisher.json` was then verified successfully with `verify --strict`.
+
+Temporary migration-only workflow/helper files were removed before merge.
