@@ -4,7 +4,7 @@ module Preflight =
 
     let private duplicateIds (fields: CommunicationField list) =
         fields
-        |> List.groupBy _.Id
+        |> List.groupBy (fun field -> field.Id)
         |> List.choose (fun (id, values) ->
             if List.length values > 1 then Some id else None)
         |> List.sort
@@ -38,12 +38,12 @@ module Preflight =
             { Name = name
               Fields =
                 fields
-                |> List.map _.Id
+                |> List.map (fun field -> field.Id)
                 |> List.sort })
 
     let derive (input: PreflightInput) : Result<PreflightResult, PreflightError list> =
         match validate input with
-        | errors when not errors.IsEmpty ->
+        | errors when not (List.isEmpty errors) ->
             Error errors
         | _ ->
             let known =
@@ -74,7 +74,7 @@ module Preflight =
                     |> List.exists (fun field -> not field.SafeDefaultAvailable)
                 then
                     ClarificationRequired
-                elif not missingMaterial.IsEmpty then
+                elif not (List.isEmpty missingMaterial) then
                     PreflightNeeded
                 elif input.Consequence = High then
                     HighConsequenceVerificationRequired
