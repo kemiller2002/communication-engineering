@@ -2,7 +2,11 @@
   "private": true,
   "scripts": {
     "research:build": "research-publisher build --config ./research-publisher.config.mjs",
-    "research:validate": "research-publisher validate --config ./research-publisher.config.mjs"
+    "research:validate": "research-publisher validate --config ./research-publisher.config.mjs",
+    "research:inventory": "research-publisher inventory --config ./research-publisher.config.mjs",
+    "research:status": "research-publisher status",
+    "research:verify": "research-publisher verify",
+    "research:doctor": "research-publisher doctor"
   },
   "devDependencies": {
     "research-publisher": "github:kemiller2002/research-publisher#main"
