@@ -81,69 +81,68 @@ jobs:
             fi
 
             if [ ! -f .echelon/research-publisher.json ]; then
-              node <<'NODE'
-              const fs = require('fs');
-              const crypto = require('crypto');
+          node <<'NODE'
+          const fs = require('fs');
+          const crypto = require('crypto');
 
-              const promptPath = 'prompts/research-publisher-mark-documents.md';
-              const prompt = fs.readFileSync(promptPath, 'utf8').replace(/\r\n/g, '\n');
-              const promptHash = crypto.createHash('sha256').update(prompt, 'utf8').digest('hex');
-              const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+          const promptPath = 'prompts/research-publisher-mark-documents.md';
+          const prompt = fs.readFileSync(promptPath, 'utf8').replace(/\r\n/g, '\n');
+          const promptHash = crypto.createHash('sha256').update(prompt, 'utf8').digest('hex');
+          const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
 
-              const scriptNames = [
-                'research:inventory',
-                'research:validate',
-                'research:build',
-                'research:clean',
-                'research:status',
-                'research:verify',
-                'research:doctor'
-              ];
+          const scriptNames = [
+            'research:inventory',
+            'research:validate',
+            'research:build',
+            'research:clean',
+            'research:status',
+            'research:verify',
+            'research:doctor'
+          ];
 
-              const manifest = {
-                schema: 'echelon.tool-installation/1',
-                tool: 'research-publisher',
-                package: '@echelon-foundry/research-publisher',
-                installedVersion: '0.1.0',
-                configurationVersion: 2,
-                managedArtifacts: [
-                  { id: 'config', path: 'research-publisher.config.mjs', ownership: 'user-owned' },
-                  {
-                    id: 'marking-prompt',
-                    path: promptPath,
-                    ownership: 'shared',
-                    hash: 'sha256:' + promptHash
-                  },
-                  { id: 'manifest', path: '.echelon/research-publisher.json', ownership: 'tool-owned' },
-                  { id: 'site-output', path: 'dist', ownership: 'generated' },
-                  { id: 'engine-cache', path: '.research-publisher', ownership: 'generated' },
-                  { id: 'build-reports', path: 'build-reports', ownership: 'generated' }
-                ],
-                managedScripts: scriptNames.map(name => {
-                  const command = pkg.scripts?.[name];
-                  if (!command) throw new Error('Missing required publisher script: ' + name);
-                  return { name, command };
-                })
-              };
+          const manifest = {
+            schema: 'echelon.tool-installation/1',
+            tool: 'research-publisher',
+            package: '@echelon-foundry/research-publisher',
+            installedVersion: '0.1.0',
+            configurationVersion: 2,
+            managedArtifacts: [
+              { id: 'config', path: 'research-publisher.config.mjs', ownership: 'user-owned' },
+              {
+                id: 'marking-prompt',
+                path: promptPath,
+                ownership: 'shared',
+                hash: 'sha256:' + promptHash
+              },
+              { id: 'manifest', path: '.echelon/research-publisher.json', ownership: 'tool-owned' },
+              { id: 'site-output', path: 'dist', ownership: 'generated' },
+              { id: 'engine-cache', path: '.research-publisher', ownership: 'generated' },
+              { id: 'build-reports', path: 'build-reports', ownership: 'generated' }
+            ],
+            managedScripts: scriptNames.map(name => {
+              const command = pkg.scripts?.[name];
+              if (!command) throw new Error('Missing required publisher script: ' + name);
+              return { name, command };
+            })
+          };
 
-              fs.mkdirSync('.echelon', { recursive: true });
-              fs.writeFileSync(
-                '.echelon/research-publisher.json',
-                JSON.stringify(manifest, null, 2) + '\n'
-              );
+          fs.mkdirSync('.echelon', { recursive: true });
+          fs.writeFileSync(
+            '.echelon/research-publisher.json',
+            JSON.stringify(manifest, null, 2) + '\n'
+          );
 
-              fs.mkdirSync('docs/modernization', { recursive: true });
-              fs.writeFileSync(
-                'docs/modernization/research-publisher-forced-adoption.json',
-                JSON.stringify({
-                  reason: 'Research Publisher 0.1.0 legacy init applied shared artifacts/scripts but exited before writing its manifest on two consecutive convergence attempts.',
-                  authority: 'Research Publisher 0.1.0 documented manifest schema and current repository state',
-                  verificationRequired: 'npx @echelon-foundry/research-publisher verify --strict'
-                }, null, 2) + '\n'
-              );
-              NODE
+          fs.mkdirSync('docs/modernization', { recursive: true });
+          fs.writeFileSync(
+            'docs/modernization/research-publisher-forced-adoption.json',
+            JSON.stringify({
+              reason: 'Research Publisher 0.1.0 legacy init applied shared artifacts/scripts but exited before writing its manifest on two consecutive convergence attempts.',
+              authority: 'Research Publisher 0.1.0 documented manifest schema and current repository state',
+              verificationRequired: 'npx @echelon-foundry/research-publisher verify --strict'
+            }, null, 2) + '\n'
+          );
+          NODE
             fi
-          fi
 
           test -f .echelon/research-publisher.json
           npx @echelon-foundry/research-publisher verify --strict
