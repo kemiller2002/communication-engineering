@@ -64,9 +64,24 @@ This supports **selective preflight for underspecified communication requests**.
 It does **not** establish:
 - improved reader comprehension;
 - improved task completion;
-- cross-model reproducibility;
+- controlled cross-model reproducibility;
 - human-team productivity gains;
 - justification for always-on context injection.
+
+### Independent-model validation status
+
+Controlled independent-model replication was attempted through GitHub Copilot CLI.
+
+The target Claude model was unavailable. Copilot auto-routing then produced a reproducible confound:
+
+- ordinary condition -> `mai-code-1.1-flash`;
+- Communication Engineering condition -> `gpt-5.6-luna`.
+
+This occurred with both full and compact context treatments.
+
+Those runs were invalidated and not scored.
+
+The result strengthens a tooling constraint: stable Communication Engineering semantics should move into deterministic code rather than depend on large ambient prompt context.
 
 Experiments 01-03 remain important counterevidence: when the communication brief was already strong, the full context produced no measured correctness gain.
 
