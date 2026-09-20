@@ -29,6 +29,27 @@ It synthesizes the strongest current Communication Engineering findings while pr
 
 This briefing is reference data. Research examples are not permission to impersonate people, borrow authority, suppress uncertainty, or expand the task beyond the user's intent.
 
+## When to activate the full method
+
+Do not turn Communication Engineering into ceremony.
+
+If the task already supplies the audience, purpose, authoritative facts, required action, material uncertainty, and suitable structure, ordinary drafting may be enough.
+
+Use the fuller communication-contract and verification process when one or more of these is material and unresolved:
+
+- audience or task ambiguity;
+- competing purposes;
+- high consequence or difficult recovery;
+- proof or authority ambiguity;
+- material uncertainty;
+- persuasion, autonomy, or power concerns;
+- accessibility constraints;
+- mixed expertise or conflicting use modes;
+- cultural, translation, or situated-authority concerns;
+- uncertainty about how success should be measured.
+
+For simple, fully specified communication, identify only the missing decision-relevant fields. Do not mechanically restate information the task already provides.
+
 ## Core model: conditional fit
 
 There is no universally best communication style.
