@@ -50,6 +50,26 @@ The current evidence is strong enough to use the following as bounded decision c
 11. Translation, cultural authority, sacred/restricted material, and circulation rights can limit responsible transfer.
 12. Objective and subjective outcomes should be measured separately when both matter.
 
+## Supported working operational finding
+
+Two prospective same-model brief-construction experiments now support a selective preflight pattern:
+
+- internal leadership update: ordinary 5/10 vs Communication Engineering 10/10;
+- external customer notice: ordinary 6.5/10 vs Communication Engineering 10/10.
+
+In both cases, the Communication Engineering condition identified all preregistered missing decision-relevant communication inputs using four grouped questions, with no guardrail failures or redundant known-fact questions.
+
+This supports **selective preflight for underspecified communication requests**.
+
+It does **not** establish:
+- improved reader comprehension;
+- improved task completion;
+- cross-model reproducibility;
+- human-team productivity gains;
+- justification for always-on context injection.
+
+Experiments 01-03 remain important counterevidence: when the communication brief was already strong, the full context produced no measured correctness gain.
+
 ## Provisional strategies
 
 These may be used as candidate structures when the communication contract supports them, but they must not be presented as validated universal rules:
