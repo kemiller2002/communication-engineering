@@ -514,7 +514,7 @@ ROS MUST NOT become the authority that invents audience or communication semanti
 
 ## Still missing
 
-- independent model/provider replication;
+- valid controlled independent model/provider replication;
 - human/team workflow evidence;
 - downstream reader/user outcomes;
 - cost/latency comparison;
