@@ -1,4 +1,5 @@
 name: Finalize Communication Engineering Publisher
+# Finalization trigger: complete forced legacy publisher convergence.
 
 on:
   pull_request:
