@@ -35,7 +35,7 @@ Current human-maintained source files:
 
 The context is not yet a packaged lifecycle product.
 
-Packaging is currently deferred. Three prospective same-model experiments showed non-regression but no incremental correctness or defect-recall gain. Promotion now requires independent-model, human/team, participant, or brief-construction evidence.
+Full always-on packaging remains deferred. Two later brief-construction experiments showed a positive same-model preflight effect, which is sufficient for a formal requirements candidate and research prototype. Production lifecycle distribution still requires independent-model, human/team, or participant evidence.
 
 ## Operational-context experiment results
 
@@ -63,6 +63,26 @@ Packaging is currently deferred. Three prospective same-model experiments showed
 - Both corrected memos passed all preregistered guardrails.
 - Result: third null correctness result.
 - Interpretation: explicit Communication Engineering vocabulary did not increase defect recall for this model with complete source facts.
+
+### Operational Context Experiment 04 — brief construction
+
+- Condition A, ordinary response: 5/10 primary brief-construction score.
+- Condition B, Communication Engineering preflight: 10/10.
+- Difference: +5 points; no guardrail failures; four grouped clarification questions.
+- Result: first positive process result.
+
+### Operational Context Experiment 05 — external notice replication
+
+- Condition A, ordinary response: 6.5/10.
+- Condition B, Communication Engineering preflight: 10/10.
+- Difference: +3.5 points; no guardrail failures; four grouped clarification questions.
+- Result: positive same-model replication in a different communication domain.
+
+### Supported working finding
+
+Communication Engineering currently shows value as a **selective pre-drafting preflight** when decision-relevant communication state is incomplete.
+
+It has not shown incremental value as mandatory context for already well-specified drafting/review.
 
 ### Resulting method change
 
