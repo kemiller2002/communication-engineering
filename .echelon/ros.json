@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "tool": "ros",
   "package": "@echelon-foundry/repository-operating-system",
-  "installedVersion": "3.0.3",
+  "installedVersion": "3.1.1",
   "configurationVersion": 1,
   "profile": "greenfield",
   "managedArtifacts": [
@@ -29,12 +29,12 @@
     {
       "path": ".gitignore",
       "ownership": "user-owned",
-      "sha256": "e36887d58843f74feb9fd73604fcb0757754811b2085ea69441ada8130bfa6ac"
+      "sha256": "d210d0eb3cb0639f845642f43a8c1fb4ac21d6241b37a9d04c27c9424c9b20bd"
     },
     {
       "path": "AGENTS.md",
-      "ownership": "tool-owned",
-      "sha256": "39c75fd9e34af40c1628402e4b8a909482e3597a7a9309a6a8a2b7afd3a8976f"
+      "ownership": "shared",
+      "sha256": "feacd247dc7760f2561b3db415d66240a93e25b6809e5974293396dd623ad444"
     },
     {
       "path": "BOOTSTRAP.md",
@@ -54,7 +54,7 @@
     {
       "path": "HANDOFF.md",
       "ownership": "shared",
-      "sha256": "432af3f610861a29d4d3c455db97fff92ed15951a9d9b8da23aefb7d1de581f9"
+      "sha256": "290979912896dda9e5e08d1c3e2c0ef85f377349544a10d0912f6156fe63ebfe"
     },
     {
       "path": "PROJECT-CHARTER.md",
@@ -64,7 +64,7 @@
     {
       "path": "README.md",
       "ownership": "user-owned",
-      "sha256": "3b0ab9516efd8742585083fbc5b36455db37a98d50c83463ca5079affe45321f"
+      "sha256": "601e375ef9ae0db97c0d412c43d1b016b97417edd5166bbbc10a21a607d45408"
     },
     {
       "path": "context/ARCHITECTURE.md",
@@ -74,7 +74,7 @@
     {
       "path": "context/CURRENT-STATE.md",
       "ownership": "shared",
-      "sha256": "0bc434a272f5cc6d81e62b39387a510248eee8a17c07877bc5f701298860d2ed"
+      "sha256": "5833095cc5f2a703121de00b3982e309dc497b3739c9b6a1e7f6910978babced"
     },
     {
       "path": "context/DECISIONS.md",
@@ -140,6 +140,11 @@
       "path": "docs/development-telemetry.md",
       "ownership": "tool-owned",
       "sha256": "0b707c333f2f21ab6b98b2fee8cc0b765c193969225230f5305807c28d5c7f20"
+    },
+    {
+      "path": "docs/ordo-observation.md",
+      "ownership": "tool-owned",
+      "sha256": "5f2962faab59eac5cd61825e2d16324d2b201360b32c338b0a945ff7e54eff4f"
     },
     {
       "path": "docs/work-adapter-contract.md",
@@ -309,7 +314,7 @@
     {
       "path": "ros.json",
       "ownership": "shared",
-      "sha256": "4e31fbf7d5ab0d3e394aa2358205d882ad8c71688368633b6989c319b3f6d6f5"
+      "sha256": "3c781c1447efbfec4a7aae71d2397cddd10fea986e8d2b57a2b22c76b4a2addd"
     },
     {
       "path": "schemas/artifact-metadata.schema.json",
@@ -350,6 +355,31 @@
       "path": "schemas/rep.schema.json",
       "ownership": "tool-owned",
       "sha256": "113772ad0f940862db173072e6664fdc3d4ebf2cbd68c155e88dd70e21bb277f"
+    },
+    {
+      "path": "schemas/ros-effect-observation.schema.json",
+      "ownership": "tool-owned",
+      "sha256": "99556bbbb818a654225f868aa4b1c9c01fce3d61f278b53a1e8f4ff6b3ebe47a"
+    },
+    {
+      "path": "schemas/ros-effective-current.schema.json",
+      "ownership": "tool-owned",
+      "sha256": "37a62b67fd86bc04256962fafe5fad49eb433e1529dd05dc81c4563b0bfa4e61"
+    },
+    {
+      "path": "schemas/ros-handoff-authority.schema.json",
+      "ownership": "tool-owned",
+      "sha256": "92484f8fe726f6db241c32ff3837f1923765865c20f1b806818762277fea8006"
+    },
+    {
+      "path": "schemas/ros-resolution-assessment.schema.json",
+      "ownership": "tool-owned",
+      "sha256": "0533cbd58fc78ec22c206c4dcbb1a8057b489b3cde17629f74098de0489cd610"
+    },
+    {
+      "path": "schemas/ros-search-observation.schema.json",
+      "ownership": "tool-owned",
+      "sha256": "76ae1a96abf03567596845e6b716b6b231090638810fc73449dc71cd57dbe7a6"
     },
     {
       "path": "schemas/theory.schema.json",
