@@ -11,6 +11,9 @@ jobs:
   lifecycle:
     runs-on: ubuntu-latest
     steps:
+      - name: Wait for commit batch
+        run: sleep 600
+
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
