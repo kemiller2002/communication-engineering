@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "repository": "communication-engineering",
-  "nextSeq": 1,
+  "nextSeq": 2,
   "items": [
     {
       "id": "CE-LIFECYCLE-001",
@@ -15,6 +15,20 @@
       "attachments": [],
       "createdAt": "2026-09-20T19:14:46.190Z",
       "updatedAt": "2026-09-20T19:20:29Z",
+      "createdBy": "unknown",
+      "source": "manual",
+      "sourceReference": null
+    },
+    {
+      "id": "WI-0001",
+      "title": "Upgrade Limen to 0.7.0 (@echelon-foundry/limen) and declare the boundary not applicable",
+      "description": null,
+      "tags": [],
+      "priority": "medium",
+      "status": "complete",
+      "attachments": [],
+      "createdAt": "2026-10-05T17:04:19.627Z",
+      "updatedAt": "2026-10-05T17:04:44.000Z",
       "createdBy": "unknown",
       "source": "manual",
       "sourceReference": null

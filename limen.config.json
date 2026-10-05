@@ -1,1 +1,8 @@
-{"configurationVersion":1,"boundary":{"engine":[],"kernel":[]}}
+{
+  "configurationVersion": 1,
+  "boundary": {
+    "notApplicable": {
+      "rationale": "Research and operational-guidance repository: Markdown research, a Node.js lifecycle CLI and validation scripts, an F# preflight prototype and a statically generated research site. It has no browser application, no engine/kernel split and no WASM, so there is no Limen boundary to check."
+    }
+  }
+}
