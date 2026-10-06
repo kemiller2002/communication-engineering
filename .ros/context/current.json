@@ -97,11 +97,22 @@
         "EXE-20261006T111849075Z-ed5ebd66"
       ],
       "completedAt": "2026-10-06T11:19:03Z"
+    },
+    {
+      "id": "WI-0004",
+      "type": "mechanical",
+      "state": "active",
+      "semanticState": "active",
+      "evidence": [],
+      "updatedAt": "2026-10-06T12:18:22.000Z",
+      "telemetryExecutionIds": [
+        "EXE-20261006T121822566Z-c0bb6082"
+      ]
     }
   ],
   "protocolVersion": "1.0.0",
-  "actor": "ChatGPT",
-  "updatedAt": "2026-10-06T11:19:03Z",
+  "actor": "anthropic/claude-code",
+  "updatedAt": "2026-10-06T12:18:22.000Z",
   "startedAt": "2026-09-20T19:14:44Z",
   "baselineDirtyPaths": [
     ".ros/locks/57e6cb7412f4ae8ac889c97935eafdeb577425154fe81507a9ba201537ef403e.lock",
