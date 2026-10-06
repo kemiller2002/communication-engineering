@@ -97,11 +97,60 @@
         "EXE-20261006T111849075Z-ed5ebd66"
       ],
       "completedAt": "2026-10-06T11:19:03Z"
+    },
+    {
+      "id": "WI-0004",
+      "type": "mechanical",
+      "state": "complete",
+      "semanticState": "complete",
+      "evidence": [
+        {
+          "type": "implementation",
+          "path": ".echelon/ros.json"
+        },
+        {
+          "type": "documentation",
+          "path": "AGENTS.md"
+        },
+        {
+          "type": "tests",
+          "path": ".github/workflows/praxis-validation.yml"
+        },
+        {
+          "type": "implementation",
+          "path": ".echelon/sde.json"
+        }
+      ],
+      "updatedAt": "2026-10-06T12:19:54.000Z",
+      "telemetryExecutionIds": [
+        "EXE-20261006T121822566Z-c0bb6082"
+      ],
+      "latestCheckpoint": {
+        "id": "a3f0aa5372adce7a4332a482",
+        "recordedAt": "2026-10-06T12:19:40.000Z",
+        "executionId": "EXE-20261006T121822566Z-c0bb6082",
+        "repository": "communication-engineering",
+        "branch": "chore/praxis-3.7.1",
+        "commit": "1c33610c9e21f99e91513afe0ca488092768f05a",
+        "remote": {
+          "name": "origin",
+          "url": "https://github.com/kemiller2002/communication-engineering"
+        },
+        "remoteBranch": "chore/praxis-3.7.1",
+        "remoteCommit": "1c33610c9e21f99e91513afe0ca488092768f05a",
+        "summary": "upgrade applied, verified, pushed",
+        "nextAction": "complete, PR",
+        "verification": {
+          "status": "verified",
+          "mechanism": "git-remote-observation"
+        }
+      },
+      "completedAt": "2026-10-06T12:19:54.000Z"
     }
   ],
   "protocolVersion": "1.0.0",
-  "actor": "ChatGPT",
-  "updatedAt": "2026-10-06T11:19:03Z",
+  "actor": "anthropic/claude-code",
+  "updatedAt": "2026-10-06T12:19:54.000Z",
   "startedAt": "2026-09-20T19:14:44Z",
   "baselineDirtyPaths": [
     ".ros/locks/57e6cb7412f4ae8ac889c97935eafdeb577425154fe81507a9ba201537ef403e.lock",
