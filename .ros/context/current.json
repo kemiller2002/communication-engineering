@@ -150,18 +150,52 @@
     {
       "id": "WI-0005",
       "type": "mechanical",
-      "state": "active",
-      "semanticState": "active",
-      "evidence": [],
-      "updatedAt": "2026-10-06T13:53:30.000Z",
+      "state": "complete",
+      "semanticState": "complete",
+      "evidence": [
+        {
+          "type": "implementation",
+          "path": ".echelon/toolchain.json"
+        },
+        {
+          "type": "implementation",
+          "path": ".echelon/sde.json"
+        },
+        {
+          "type": "tests",
+          "path": ".github/workflows/praxis-validation.yml"
+        }
+      ],
+      "updatedAt": "2026-10-06T13:55:04.000Z",
       "telemetryExecutionIds": [
         "EXE-20261006T135330913Z-fc456a28"
-      ]
+      ],
+      "latestCheckpoint": {
+        "id": "0a281890b61db5d88d7e2976",
+        "recordedAt": "2026-10-06T13:55:03.000Z",
+        "executionId": "EXE-20261006T135330913Z-fc456a28",
+        "repository": "communication-engineering",
+        "branch": "chore/ordo-1.4.1",
+        "commit": "8aa0a4eb05e6d4ee54bdd7e98810188c671f4471",
+        "remote": {
+          "name": "origin",
+          "url": "https://github.com/kemiller2002/communication-engineering"
+        },
+        "remoteBranch": "chore/ordo-1.4.1",
+        "remoteCommit": "8aa0a4eb05e6d4ee54bdd7e98810188c671f4471",
+        "summary": "Ordo 1.4.1 applied, verified, pushed",
+        "nextAction": "complete, PR",
+        "verification": {
+          "status": "verified",
+          "mechanism": "git-remote-observation"
+        }
+      },
+      "completedAt": "2026-10-06T13:55:04.000Z"
     }
   ],
   "protocolVersion": "1.0.0",
   "actor": "anthropic/claude-code",
-  "updatedAt": "2026-10-06T13:53:30.000Z",
+  "updatedAt": "2026-10-06T13:55:04.000Z",
   "startedAt": "2026-09-20T19:14:44Z",
   "baselineDirtyPaths": [
     ".ros/locks/57e6cb7412f4ae8ac889c97935eafdeb577425154fe81507a9ba201537ef403e.lock",
