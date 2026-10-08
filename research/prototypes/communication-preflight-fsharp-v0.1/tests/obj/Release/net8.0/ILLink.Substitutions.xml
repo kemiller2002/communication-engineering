@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <assembly fullname="CommunicationPreflight.Tests">
+    <resource name="FSharpSignatureData.CommunicationPreflight.Tests" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedData.CommunicationPreflight.Tests" action="remove"></resource>
+    <resource name="FSharpSignatureDataB.CommunicationPreflight.Tests" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedDataB.CommunicationPreflight.Tests" action="remove"></resource>
+    <resource name="FSharpOptimizationData.CommunicationPreflight.Tests" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedData.CommunicationPreflight.Tests" action="remove"></resource>
+    <resource name="FSharpOptimizationDataB.CommunicationPreflight.Tests" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedDataB.CommunicationPreflight.Tests" action="remove"></resource>
+    <resource name="FSharpOptimizationInfo.CommunicationPreflight.Tests" action="remove"></resource>
+    <resource name="FSharpSignatureInfo.CommunicationPreflight.Tests" action="remove"></resource>
+  </assembly>
+</linker>

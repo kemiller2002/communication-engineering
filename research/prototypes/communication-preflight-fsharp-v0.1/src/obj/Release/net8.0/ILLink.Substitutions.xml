@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <assembly fullname="CommunicationPreflight">
+    <resource name="FSharpSignatureData.CommunicationPreflight" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedData.CommunicationPreflight" action="remove"></resource>
+    <resource name="FSharpSignatureDataB.CommunicationPreflight" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedDataB.CommunicationPreflight" action="remove"></resource>
+    <resource name="FSharpOptimizationData.CommunicationPreflight" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedData.CommunicationPreflight" action="remove"></resource>
+    <resource name="FSharpOptimizationDataB.CommunicationPreflight" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedDataB.CommunicationPreflight" action="remove"></resource>
+    <resource name="FSharpOptimizationInfo.CommunicationPreflight" action="remove"></resource>
+    <resource name="FSharpSignatureInfo.CommunicationPreflight" action="remove"></resource>
+  </assembly>
+</linker>
