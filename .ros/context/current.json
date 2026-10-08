@@ -240,11 +240,65 @@
         }
       },
       "completedAt": "2026-10-06T16:33:28.000Z"
+    },
+    {
+      "id": "WI-0007",
+      "type": "task",
+      "state": "complete",
+      "semanticState": "complete",
+      "evidence": [
+        {
+          "type": "implementation",
+          "path": "conditor.json"
+        },
+        {
+          "type": "implementation",
+          "path": ".conditor/lock.json"
+        },
+        {
+          "type": "implementation",
+          "path": ".conditor/authority/resolved-release-set.json"
+        },
+        {
+          "type": "implementation",
+          "path": ".echelon/toolchain.json"
+        },
+        {
+          "type": "tests",
+          "path": ".github/workflows/praxis-validation.yml"
+        }
+      ],
+      "updatedAt": "2026-10-08T07:17:06.791Z",
+      "telemetryExecutionIds": [
+        "EXE-20261008T071638966Z-65381550"
+      ],
+      "latestCheckpoint": {
+        "id": "909c2c9efb20a4dfeb8a8d21",
+        "recordedAt": "2026-10-08T07:17:05.875Z",
+        "executionId": "EXE-20261008T071638966Z-65381550",
+        "repository": "communication-engineering",
+        "branch": "chore/ordo-1.5.0",
+        "commit": "4c1b1e0890867cb7357099ad203fb91e29d959de",
+        "remote": {
+          "name": "origin",
+          "url": "https://github.com/kemiller2002/communication-engineering"
+        },
+        "remoteBranch": "chore/ordo-1.5.0",
+        "remoteCommit": "4c1b1e0890867cb7357099ad203fb91e29d959de",
+        "summary": "conditor upgrade --current to echelon-current 1.2.0 (Ordo 1.4.2 -> 1.5.0) committed and pushed; local checks passed",
+        "nextAction": "Open the PR, get CI green and merge",
+        "verification": {
+          "status": "verified",
+          "mechanism": "git-remote-observation"
+        }
+      },
+      "completedAt": "2026-10-08T07:17:06.791Z",
+      "conclusion": "Ordo 1.5.0 through echelon-current 1.2.0; local checks passed (log: /tmp/claude-0/-home-user-praxis/7bcb3038-90cc-534e-8e5b-9be62aa1de8c/scratchpad/sweep/logs/communication-engineering.log)"
     }
   ],
   "protocolVersion": "1.0.0",
   "actor": "anthropic/claude-code",
-  "updatedAt": "2026-10-06T16:33:28.000Z",
+  "updatedAt": "2026-10-08T07:17:06.791Z",
   "startedAt": "2026-09-20T19:14:44Z",
   "baselineDirtyPaths": [
     ".ros/locks/57e6cb7412f4ae8ac889c97935eafdeb577425154fe81507a9ba201537ef403e.lock",
