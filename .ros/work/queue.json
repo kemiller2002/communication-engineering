@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "repository": "communication-engineering",
-  "nextSeq": 8,
+  "nextSeq": 9,
   "items": [
     {
       "id": "CE-LIFECYCLE-001",
@@ -145,6 +145,27 @@
       "attachments": [],
       "createdAt": "2026-10-08T07:16:37.688Z",
       "updatedAt": "2026-10-08T07:17:06.791Z",
+      "createdBy": "unknown",
+      "createdByActor": {
+        "kind": "agent",
+        "id": "anthropic/claude-code",
+        "provider": "anthropic",
+        "model": "unknown",
+        "runtime": "claude-code"
+      },
+      "source": "manual",
+      "sourceReference": null
+    },
+    {
+      "id": "WI-0008",
+      "title": "Upgrade Limen from 0.7.1 to 0.9.0 (echelon-current)",
+      "description": null,
+      "tags": [],
+      "priority": "medium",
+      "status": "complete",
+      "attachments": [],
+      "createdAt": "2026-10-08T23:58:44.290Z",
+      "updatedAt": "2026-10-08T23:59:34.000Z",
       "createdBy": "unknown",
       "createdByActor": {
         "kind": "agent",
