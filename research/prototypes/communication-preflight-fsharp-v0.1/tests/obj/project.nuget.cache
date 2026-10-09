@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "HUZ9hvSK7h8=",
+  "success": true,
+  "projectFilePath": "/tmp/claude-0/-home-user-praxis/7bcb3038-90cc-534e-8e5b-9be62aa1de8c/scratchpad/communication-engineering/research/prototypes/communication-preflight-fsharp-v0.1/tests/CommunicationPreflight.Tests.fsproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/fsharp.core/10.0.112/fsharp.core.10.0.112.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.31/microsoft.netcore.app.host.linux-x64.8.0.31.nupkg.sha512"
+  ],
+  "logs": []
+}

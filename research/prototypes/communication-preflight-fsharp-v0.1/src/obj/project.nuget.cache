@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "S30RRcIC7rw=",
+  "success": true,
+  "projectFilePath": "/tmp/claude-0/-home-user-praxis/7bcb3038-90cc-534e-8e5b-9be62aa1de8c/scratchpad/communication-engineering/research/prototypes/communication-preflight-fsharp-v0.1/src/CommunicationPreflight.fsproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/fsharp.core/10.0.112/fsharp.core.10.0.112.nupkg.sha512"
+  ],
+  "logs": []
+}
