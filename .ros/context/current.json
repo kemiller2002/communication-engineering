@@ -352,11 +352,52 @@
       },
       "completedAt": "2026-10-08T23:59:34.000Z",
       "conclusion": "Limen upgraded 0.7.1 -> 0.9.0; limen verify --strict and the repository checks pass locally"
+    },
+    {
+      "id": "WI-0009",
+      "type": "task",
+      "state": "complete",
+      "semanticState": "complete",
+      "evidence": [
+        {
+          "type": "implementation",
+          "path": ".conditor/lock.json"
+        },
+        {
+          "type": "tests",
+          "path": ".github/workflows/build-research-site.yml"
+        }
+      ],
+      "updatedAt": "2026-11-25T17:55:22Z",
+      "telemetryExecutionIds": [
+        "EXE-20261125T175323030Z-d5a7a25e"
+      ],
+      "latestCheckpoint": {
+        "id": "74307d9447b3b5f57b382522",
+        "recordedAt": "2026-11-25T17:55:21Z",
+        "executionId": "EXE-20261125T175323030Z-d5a7a25e",
+        "repository": "communication-engineering",
+        "branch": "claude/vigila-implementation-jdeps1",
+        "commit": "25a53b645f50e29199d7244b48885aa94112bdf2",
+        "remote": {
+          "name": "origin",
+          "url": "https://github.com/kemiller2002/communication-engineering"
+        },
+        "remoteBranch": "claude/vigila-implementation-jdeps1",
+        "remoteCommit": "25a53b645f50e29199d7244b48885aa94112bdf2",
+        "summary": "Conditor upgraded to echelon-current 1.42.0 (praxis 3.25.0, ordo 1.20.0), limen 0.9.1; CI steps pass locally; praxis validate passes",
+        "nextAction": "complete the work item and open a draft PR",
+        "verification": {
+          "status": "verified",
+          "mechanism": "git-remote-observation"
+        }
+      },
+      "completedAt": "2026-11-25T17:55:22Z"
     }
   ],
   "protocolVersion": "1.0.0",
   "actor": "anthropic/claude-code",
-  "updatedAt": "2026-10-08T23:59:34.000Z",
+  "updatedAt": "2026-11-25T17:55:22Z",
   "startedAt": "2026-09-20T19:14:44Z",
   "baselineDirtyPaths": [
     ".ros/locks/57e6cb7412f4ae8ac889c97935eafdeb577425154fe81507a9ba201537ef403e.lock",
