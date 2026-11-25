@@ -11,3 +11,4 @@
 | WI-0006 | Move communication-engineering to Praxis 3.7.2, Ordo 1.4.2, Visual Engineering 1.0.1 and adopt Conditor | complete | praxis, ordo, toolchain | medium |
 | WI-0007 | Move communication-engineering to Ordo 1.5.0 via echelon-current 1.2.0 (conditor upgrade --current) | complete |  | medium |
 | WI-0008 | Upgrade Limen from 0.7.1 to 0.9.0 (echelon-current) | complete |  | medium |
+| WI-0009 | Upgrade to echelon-current 1.42.0 (praxis 3.7.2->3.25.0, ordo 1.5.0->1.20.0, limen 0.9.0->0.9.1) | ready |  | medium |
